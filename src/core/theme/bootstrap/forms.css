@@ -1,0 +1,58 @@
+.input-group {
+    overflow: hidden;
+
+    border: 1px solid transparent;
+    border-radius: var(--th-radius-input);
+
+    background-color: var(--th-color-surface-container);
+
+    transition:
+        background-color 160ms ease,
+        border-color 160ms ease;
+}
+
+.input-group:hover {
+    background-color: var(--th-color-surface-container-hover);
+}
+
+.input-group:focus-within {
+    border-color: var(--th-color-primary);
+}
+
+.input-group .form-control,
+.input-group .input-group-text,
+.input-group .btn {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.input-group .form-control:focus {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.input-group .input-group-text {
+    padding-left: var(--th-space-m);
+    padding-right: var(--th-space-xs);
+
+    color: var(--th-color-on-surface-variant);
+}
+
+.input-group .auth.password {
+    min-height: auto;
+    padding-inline: var(--th-space-m);
+
+    color: var(--th-color-on-surface-variant);
+
+    border-radius: 0;
+}
+
+.input-group .auth.password:hover {
+    color: var(--th-color-on-surface);
+}
+
+.input-group .auth.password:focus-visible {
+    outline: none;
+}

@@ -1,0 +1,86 @@
+{
+  "myLists": {
+    "lists": [
+      {
+        "id": "938d0e72-510a-5b93-a21c-5dab47546b70",
+        "name": "Pendientes",
+        "description": "Las que quiero ver cuando tenga un rato.",
+        "visibility": "PUBLIC",
+        "itemCount": 2,
+        "createdAt": "2026-09-20T14:00:00Z",
+        "updatedAt": "2026-10-03T19:20:00Z"
+      },
+      {
+        "id": "ce3d001a-4759-5e14-94a5-c178e9f1d24a",
+        "name": "Favoritas",
+        "description": "Las que volvería a ver sin pensarlo mucho.",
+        "visibility": "PUBLIC",
+        "itemCount": 2,
+        "createdAt": "2026-09-22T16:30:00Z",
+        "updatedAt": "2026-10-04T21:10:00Z"
+      }
+    ]
+  },
+  "details": {
+    "938d0e72-510a-5b93-a21c-5dab47546b70": {
+      "id": "938d0e72-510a-5b93-a21c-5dab47546b70",
+      "name": "Pendientes",
+      "description": "Las que quiero ver cuando tenga un rato.",
+      "visibility": "PUBLIC",
+      "items": [
+        {
+          "tmdbId": 95350,
+          "mediaType": "TV",
+          "title": "Linternas",
+          "posterPath": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+          "voteAverage": 8.352,
+          "releaseDate": "2026-08-16",
+          "duration": null,
+          "numberOfSeasons": 1
+        },
+        {
+          "tmdbId": 1405,
+          "mediaType": "TV",
+          "title": "Dexter",
+          "posterPath": "/i8ORB1biusVy703lGxUi5Rle6zA.jpg",
+          "voteAverage": 8.2,
+          "releaseDate": "2006-10-01",
+          "duration": null,
+          "numberOfSeasons": 8
+        }
+      ],
+      "createdAt": "2026-09-20T14:00:00Z",
+      "updatedAt": "2026-10-03T19:20:00Z"
+    },
+    "ce3d001a-4759-5e14-94a5-c178e9f1d24a": {
+      "id": "ce3d001a-4759-5e14-94a5-c178e9f1d24a",
+      "name": "Favoritas",
+      "description": "Las que volvería a ver sin pensarlo mucho.",
+      "visibility": "PUBLIC",
+      "items": [
+        {
+          "tmdbId": 1396,
+          "mediaType": "TV",
+          "title": "Breaking Bad",
+          "posterPath": "/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+          "voteAverage": 8.954,
+          "releaseDate": "2008-01-20",
+          "duration": null,
+          "numberOfSeasons": 5
+        },
+        {
+          "tmdbId": 299534,
+          "mediaType": "MOVIE",
+          "title": "Vengadores: Endgame",
+          "posterPath": "/br6krBFpaYmCSglLBWRuhui7tPc.jpg",
+          "voteAverage": 8.246,
+          "releaseDate": "2019-04-24",
+          "duration": 181,
+          "numberOfSeasons": null
+        }
+      ],
+      "createdAt": "2026-09-22T16:30:00Z",
+      "updatedAt": "2026-10-04T21:10:00Z"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+:root {
+    /* ---------- primary ---------- */
+    --th-color-primary: #673ab7;
+    --th-color-primary-rgb: 103, 58, 183;
+    --th-color-on-primary: #ffffff;
+    --th-color-primary-hover: #7448bf;
+    --th-color-primary-active: #5b31a6;
+    --th-color-primary-disabled: rgba(103, 58, 183, 0.5);
+    --th-color-primary-subtle: rgba(103, 58, 183, 0.12);
+    --th-color-primary-subtle-active: rgba(103, 58, 183, 0.2);
+
+    /* ---------- surface ---------- */
+    --th-color-surface: #fafaf8;
+    --th-color-surface-container: #ebeae6;
+    --th-color-surface-container-hover: #e3e2de;
+    --th-color-surface-raised: #ffffff;
+    --th-color-on-surface: #14151a;
+    --th-color-on-surface-variant: #6b6970;
+
+    /* ---------- outline ---------- */
+    --th-color-outline: #363636;
+    --th-color-outline-variant: rgba(54, 54, 54, 0.35);
+
+    /* ---------- semantic ---------- */
+    --th-color-error: #d41936;
+    --th-color-on-error: #ffffff;
+    --th-color-success: #14a34a;
+    --th-color-on-success: #ffffff;
+    --th-color-warning: #d97706;
+    --th-color-on-warning: #14151a;
+
+    /* ---------- interaction ---------- */
+    --th-color-link-hover: #000000;
+    --th-color-selection: rgba(103, 58, 183, 0.45);
+
+    /* ---------- shadow y navegacion ---------- */
+    --th-color-shadow: rgba(20, 21, 26, 0.14);
+    --th-color-navbar: rgba(250, 250, 248, 0.9);
+
+    /* ---------- overlays ---------- */
+    --th-color-card-overlay: linear-gradient(
+        180deg,
+        transparent 42%,
+        rgba(12, 12, 14, 0.88) 100%
+    );
+
+    --th-color-hero-scrim-strong: rgba(250, 250, 248, 0.98);
+    --th-color-hero-scrim-mid: rgba(250, 250, 248, 0.82);
+    --th-color-hero-scrim-soft: rgba(250, 250, 248, 0.16);
+
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* ---------- surface ---------- */
+        --th-color-surface: #101012;
+        --th-color-surface-container: #19191c;
+        --th-color-surface-container-hover: #202024;
+        --th-color-surface-raised: #222226;
+        --th-color-on-surface: #f5f5f7;
+        --th-color-on-surface-variant: #8a8a90;
+
+        /* ---------- outline ---------- */
+        --th-color-outline: #707070;
+        --th-color-outline-variant: rgba(112, 112, 112, 0.35);
+
+        /* ---------- semantic ---------- */
+        --th-color-error: #b00020;
+        --th-color-on-error: #ffffff;
+        --th-color-success: #4ade80;
+        --th-color-on-success: #101012;
+        --th-color-warning: #fbbf24;
+        --th-color-on-warning: #101012;
+
+        /* ---------- interaction ---------- */
+        --th-color-link-hover: #ffffff;
+
+        /* ---------- shadow y navegacion ---------- */
+        --th-color-shadow: rgba(0, 0, 0, 0.35);
+        --th-color-navbar: rgba(16, 16, 18, 0.86);
+
+        /* ---------- overlays ---------- */
+        --th-color-card-overlay: linear-gradient(
+            180deg,
+            transparent 45%,
+            rgba(0, 0, 0, 0.92) 100%
+        );
+
+        --th-color-hero-scrim-strong: rgba(16, 16, 18, 0.98);
+        --th-color-hero-scrim-mid: rgba(16, 16, 18, 0.8);
+        --th-color-hero-scrim-soft: rgba(16, 16, 18, 0.18);
+
+        color-scheme: dark;
+    }
+}

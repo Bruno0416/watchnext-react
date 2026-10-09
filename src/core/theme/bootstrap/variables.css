@@ -1,0 +1,19 @@
+:root {
+    --bs-primary: var(--th-color-primary);
+    --bs-primary-rgb: var(--th-color-primary-rgb);
+
+    --bs-body-bg: var(--th-color-surface);
+    --bs-body-color: var(--th-color-on-surface);
+
+    --bs-secondary-color: var(--th-color-on-surface-variant);
+    --bs-secondary-bg: var(--th-color-surface-container);
+    --bs-tertiary-bg: var(--th-color-surface-container);
+
+    --bs-emphasis-color: var(--th-color-on-surface);
+    --bs-border-color: var(--th-color-outline-variant);
+
+    --bs-link-color: var(--th-color-on-surface);
+    --bs-link-hover-color: var(--th-color-link-hover);
+
+    --bs-focus-ring-opacity: 0;
+}

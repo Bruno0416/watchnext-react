@@ -1,0 +1,75 @@
+.btn {
+    min-height: var(--th-button-min-height);
+    padding: var(--th-button-padding-y) var(--th-button-padding-x);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--th-radius-button);
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+
+    box-shadow: none;
+
+    transition:
+        background-color 140ms ease,
+        border-color 140ms ease,
+        color 140ms ease;
+
+    text-box: trim-both cap alphabetic;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    box-shadow: none;
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--th-color-primary);
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--th-color-on-primary);
+    --bs-btn-bg: var(--th-color-primary);
+    --bs-btn-border-color: var(--th-color-primary);
+
+    --bs-btn-hover-color: var(--th-color-on-primary);
+    --bs-btn-hover-bg: var(--th-color-primary-hover);
+    --bs-btn-hover-border-color: var(--th-color-primary-hover);
+
+    --bs-btn-active-color: var(--th-color-on-primary);
+    --bs-btn-active-bg: var(--th-color-primary-active);
+    --bs-btn-active-border-color: var(--th-color-primary-active);
+
+    --bs-btn-disabled-color: var(--th-color-on-primary);
+    --bs-btn-disabled-bg: var(--th-color-primary-disabled);
+    --bs-btn-disabled-border-color: var(--th-color-primary-disabled);
+}
+
+.btn-secondary {
+    --bs-btn-color: var(--th-color-on-surface);
+    --bs-btn-bg: var(--th-color-surface-container);
+    --bs-btn-border-color: var(--th-color-surface-container);
+
+    --bs-btn-hover-color: var(--th-color-on-surface);
+    --bs-btn-hover-bg: var(--th-color-surface-container-hover);
+    --bs-btn-hover-border-color: var(--th-color-surface-container-hover);
+
+    --bs-btn-active-color: var(--th-color-on-surface);
+    --bs-btn-active-bg: var(--th-color-surface-raised);
+    --bs-btn-active-border-color: var(--th-color-surface-raised);
+}
+
+.btn-link {
+    --bs-btn-color: var(--th-color-on-surface-variant);
+    --bs-btn-hover-color: var(--th-color-on-surface);
+
+    min-height: auto;
+    padding-block: var(--th-space-s);
+
+    text-decoration: none;
+}

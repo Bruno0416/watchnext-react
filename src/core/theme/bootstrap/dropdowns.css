@@ -1,0 +1,14 @@
+.dropdown-menu {
+    --bs-dropdown-bg: var(--th-color-surface-raised);
+    --bs-dropdown-color: var(--th-color-on-surface);
+
+    --bs-dropdown-link-color: var(--th-color-on-surface);
+    --bs-dropdown-link-hover-color: var(--th-color-on-surface);
+    --bs-dropdown-link-hover-bg: var(--th-color-primary-subtle);
+
+    --bs-dropdown-link-active-color: var(--th-color-on-surface);
+    --bs-dropdown-link-active-bg: var(--th-color-primary-subtle-active);
+
+    border-color: var(--th-color-outline-variant);
+    box-shadow: 0 16px 40px var(--th-color-shadow);
+}

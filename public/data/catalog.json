@@ -1,0 +1,2964 @@
+{
+  "movies": {
+    "nowPlaying": [
+      {
+        "id": 1599191,
+        "title": "仙逆剧场版：弑仙之战",
+        "original_title": "仙逆剧场版：弑仙之战",
+        "overview": "",
+        "poster_path": "/cpgLuRAT8SW7YiZaBYUGZ43GiLL.jpg",
+        "backdrop_path": "/rJT7ARv4G2sr1uTZnBEUSigg1hf.jpg",
+        "release_date": "2026-10-01",
+        "vote_average": 7.3,
+        "vote_count": 13,
+        "popularity": 399.5621,
+        "genre_ids": [
+          16,
+          28,
+          12,
+          14
+        ],
+        "original_language": "zh",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1423191,
+        "title": "Resident Evil",
+        "original_title": "Resident Evil",
+        "overview": "Película basada en la saga de videojuegos de Capcom del mismo nombre. En una reinvención totalmente nueva, el mensajero médico Bryan se ve inmerso en una carrera de acción sin descanso por la supervivencia, mientras el caos se desata a su alrededor.",
+        "poster_path": "/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
+        "backdrop_path": "/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "release_date": "2026-09-16",
+        "vote_average": 7.3,
+        "vote_count": 768,
+        "popularity": 384.9808,
+        "genre_ids": [
+          27,
+          878,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1368337,
+        "title": "La Odisea",
+        "original_title": "The Odyssey",
+        "overview": "Tras la caída de Troya, el legendario rey de Ítaca, Odiseo a.k.a. Ulises, emprende un largo y peligroso viaje para regresar junto a su esposa Penélope y su hijo Telémaco. En el camino deberá enfrentarse a criaturas mitológicas, dioses caprichosos y pruebas que pondrán a prueba su ingenio, su resistencia y su humanidad. Mientras tanto, en Ítaca, el futuro de su reino pende de un hilo ante la creciente amenaza de quienes creen que jamás volverá.",
+        "poster_path": "/sf2ke1nwFOLLcwLZiXu9VaMMv8e.jpg",
+        "backdrop_path": "/bulFtfy3oBQtCnAMSi7g6DSSds3.jpg",
+        "release_date": "2026-07-15",
+        "vote_average": 8.014,
+        "vote_count": 4033,
+        "popularity": 300.6444,
+        "genre_ids": [
+          12,
+          28,
+          14
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1228834,
+        "title": "Operación Teherán",
+        "original_title": "The Fix",
+        "overview": "Tras el final de la guerra en Afganistán, un grupo de exoperadores de la CIA se han quedado marcados por la violencia, el abandono y la culpa. Sin patria ni propósitos a corto plazo, aceptan una última misión y viajan a Teherán para llevar a cabo un golpe arriesgado e ilegal que podría ser su opción para perdonarse a sí mismos o para acabar del todo. Mientras el pasado los persigue y la desconfianza entre ellos va en aumento, la operación se transforma en una prueba moral en la que tendrán que decidir si ser soldados obedientes o son hombres dispuestos a recuperar el control de sus vidas.",
+        "poster_path": "/5uB1PWP3QHEcgMXKChsaYmtTUkQ.jpg",
+        "backdrop_path": "/yT8EkAvEkJDFeAxK7s7HlIPELRT.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 6.91,
+        "vote_count": 50,
+        "popularity": 286.8743,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1377237,
+        "title": "Entrega al límite",
+        "original_title": "Runner",
+        "overview": "Un exsoldado se ve envuelto en una brutal carrera contrarreloj cuando una entrega médica crucial los convierte, a él y a su inesperada compañera, en el objetivo de un cártel despiadado. A medida que la misión se transforma en una cacería mortal, cada desvío, retraso y bala los acerca más al fracaso. Acosados ​​por la traición desde todos los frentes, deberán sobrevivir a la persecución y entregar su carga para salvar la vida de una niña.",
+        "poster_path": "/pmjSjZtFOYDWhAs4B2AbBE8hTQf.jpg",
+        "backdrop_path": "/iXR79oKsLHwLno9jdzxxeFP21sy.jpg",
+        "release_date": "2026-09-07",
+        "vote_average": 8.329,
+        "vote_count": 398,
+        "popularity": 284.8046,
+        "genre_ids": [
+          28,
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1204680,
+        "title": "Coyote vs. Acme",
+        "original_title": "Coyote vs. Acme",
+        "overview": "Después de que todos los productos fabricados por ACME Corporation le salgan mal a Wile E. Coyote, en su persecución del Correcaminos, contrata a un abogado humano igualmente desafortunado para demandar a la empresa. Cuando el abogado de Wile E. descubre que el intimidante jefe de su antiguo bufete es el director general de ACME, se une a Wile E. para ganar el juicio contra él.",
+        "poster_path": "/vWFz9spZFBkJvForuYrKK2ntOLB.jpg",
+        "backdrop_path": "/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+        "release_date": "2026-08-17",
+        "vote_average": 7.5,
+        "vote_count": 682,
+        "popularity": 249.797,
+        "genre_ids": [
+          35,
+          12,
+          10751
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1751701,
+        "title": "After Impact",
+        "original_title": "After Impact",
+        "overview": "Después de heredar el enorme invernadero de su padre cuando un asteroide amenaza a la Tierra, Ethan enfrenta la traición y el aislamiento. Sobreviviendo al impacto en el búnker de su familia, maltratado y desesperado, una voz en la radio revela que no está solo.",
+        "poster_path": "/yzDuAQCY2n6zzOlBkn6JzhLhY3k.jpg",
+        "backdrop_path": "/k22XyPbce7zvzzf5OnT4uaY8ZD1.jpg",
+        "release_date": "2026-09-15",
+        "vote_average": 6.167,
+        "vote_count": 24,
+        "popularity": 242.439,
+        "genre_ids": [
+          878,
+          18,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1248832,
+        "title": "Digger",
+        "original_title": "Digger",
+        "overview": "El hombre más poderoso del mundo se embarca en una misión frenética para demostrar que es el salvador de la humanidad antes de que el desastre que ha desencadenado lo destruya todo.",
+        "poster_path": "/koqE0V2IgIPVy5o2vVkoGJvnB8b.jpg",
+        "backdrop_path": "/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
+        "release_date": "2026-09-28",
+        "vote_average": 7.5,
+        "vote_count": 187,
+        "popularity": 226.1274,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1101383,
+        "title": "El final de Oak Street",
+        "original_title": "The End of Oak Street",
+        "overview": "Después de que un misterioso fenómeno cósmico arranque Oak Street de su entorno suburbano y transporte a sus habitantes a un lugar desconocido, la familia Platt pronto descubre que su propia supervivencia depende de que permanezcan unidos mientras se orientan en un entorno que ya no reconocen.",
+        "poster_path": "/g9DUGw8ufetrwhCIrwq3h1NlpWO.jpg",
+        "backdrop_path": "/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+        "release_date": "2026-08-12",
+        "vote_average": 7.1,
+        "vote_count": 1879,
+        "popularity": 205.5067,
+        "genre_ids": [
+          878,
+          9648,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1032863,
+        "title": "La hipótesis del amor",
+        "original_title": "The Love Hypothesis",
+        "overview": "Olive es una brillante estudiante de doctorado. Cuando descubre que su mejor amiga, Ahn, se ha enamorado de Jeremy, el chico que a ella le gustaba, Olive besa impulsivamente al intimidante profesor Adam Carlsen para demostrar que lo ha superado. El beso les lleva a ambos a mantener una relación falsa con reglas, límites y un acuerdo mutuamente beneficioso. Pero cuando su acuerdo empieza a difuminarse entre la ficción y la realidad, Olive se ve obligada a poner a prueba su hipótesis: que quizá el amor sí merezca la pena.",
+        "poster_path": "/ylrSdW6fZYwaInYH6WAqvIEnSiV.jpg",
+        "backdrop_path": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+        "release_date": "2026-09-23",
+        "vote_average": 8.063,
+        "vote_count": 492,
+        "popularity": 177.1075,
+        "genre_ids": [
+          10749,
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 977942,
+        "title": "El hombre que desafió al rey",
+        "original_title": "The Uprising",
+        "overview": "En la Inglaterra del siglo XIV, asolada por la peste, un campesino desencadena una rebelión contra el rey Ricardo II y se convierte involuntariamente en una leyenda de la resistencia.",
+        "poster_path": "/rveEjlQQ0LlyyPk8ev2pHBmQPZZ.jpg",
+        "backdrop_path": "/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 8.0,
+        "vote_count": 228,
+        "popularity": 160.78,
+        "genre_ids": [
+          36,
+          18,
+          28
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1339713,
+        "title": "Obsession",
+        "original_title": "Obsession",
+        "overview": "El anhelo romántico desesperado de un chico por su amor platónico de toda la vida desencadena un siniestro hechizo: Nikki se vuelve irracionalmente obsesiva hasta convertirse en la sombra de Bear. Una fantasía aparentemente inofensiva que se convertirá en una perturbadora pesadilla.",
+        "poster_path": "/p1QFjQ8wwlXXlxwaWlehJ37uXVj.jpg",
+        "backdrop_path": "/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+        "release_date": "2026-05-13",
+        "vote_average": 8.183,
+        "vote_count": 5952,
+        "popularity": 158.9043,
+        "genre_ids": [
+          27,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1375646,
+        "title": "Colony",
+        "original_title": "군체",
+        "overview": "El profesor Se-jeong es arrojado a una pesadilla cuando un  virus en rápida mutación se libera durante una conferencia de  biotecnología, lo que lleva a las autoridades a sellar las  instalaciones. Atrapado dentro sin escapatoria, Se-jeong, junto a un  pequeño grupo de supervivientes, debe luchar por mantenerse con vida  mientras los infectados sufren transformaciones horribles.",
+        "poster_path": "/bWzwORubAQ40nvzsTZidle19Dbm.jpg",
+        "backdrop_path": "/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
+        "release_date": "2026-05-21",
+        "vote_average": 8.1,
+        "vote_count": 1062,
+        "popularity": 148.9103,
+        "genre_ids": [
+          27,
+          28,
+          878
+        ],
+        "original_language": "ko",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1232569,
+        "title": "Pinocho: Desatado",
+        "original_title": "Pinocchio: Unstrung",
+        "overview": "Gepetto le regala para el cumple de su nieto James un titere llamado Pinocho, aunque no sabian que estaria desquiciado, donde buscaria matar a quien fuera junto con su consciencia llamada Pepe Grillo para convertirse en un niño de verdad",
+        "poster_path": "/kuPRjis9YN1V9m4ud0hePtREUCo.jpg",
+        "backdrop_path": "/vgZDb7kmaxP24cFbt1KJdMLlHFZ.jpg",
+        "release_date": "2026-07-22",
+        "vote_average": 6.5,
+        "vote_count": 126,
+        "popularity": 148.6125,
+        "genre_ids": [
+          27,
+          14,
+          9648
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1288445,
+        "title": "El motín",
+        "original_title": "Mutiny",
+        "overview": "Después de que su jefe, un industrial multimillonario, sea asesinado delante de él, Cole Reed se ve obligado a cargar con la culpa del crimen, lo que le obliga a huir mientras trabaja para descubrir una conspiración internacional.",
+        "poster_path": "/5zmLk7K4wHWG68OlniFzrNrZjJE.jpg",
+        "backdrop_path": "/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+        "release_date": "2026-08-19",
+        "vote_average": 7.4,
+        "vote_count": 801,
+        "popularity": 148.4989,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1283515,
+        "title": "Verity. La sombra de un engaño",
+        "original_title": "Verity",
+        "overview": "Lowen Ashleigh es contratada como escritora fantasma por Jeremy Crawford para escribir las novelas de su esposa Verity, autora de bestsellers, impedida tras un accidente. Lowen descubre las inquietantes verdades de Verity mientras reside en casa de los Crawford para trabajar.",
+        "poster_path": "/t1rkXeUMJzsCS142ctqzbz4zGq7.jpg",
+        "backdrop_path": "/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+        "release_date": "2026-09-30",
+        "vote_average": 6.5,
+        "vote_count": 96,
+        "popularity": 148.0037,
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1291595,
+        "title": "Insidious: Fuera del más allá",
+        "original_title": "Insidious: Out of the Further",
+        "overview": "La saga de terror vuelve a sus raíces sobrenaturales. Una nueva protagonista se enfrenta a misteriosas apariciones que van mucho más allá de los fenómenos de embrujamiento clásicos. El mal encuentra nuevos caminos en la realidad. Un trío de acechadores se infiltra en un tranquilo suburbio obligando a una nueva familia a entrar en el plano astral, donde descubren una aterradora verdad: el Más Allá está sangrando en el mundo real",
+        "poster_path": "/uIMddTcnM9P6PrJiDjsXIeYp902.jpg",
+        "backdrop_path": "/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+        "release_date": "2026-08-19",
+        "vote_average": 6.82,
+        "vote_count": 222,
+        "popularity": 130.5284,
+        "genre_ids": [
+          27,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1556321,
+        "title": "ธี่หยด: สมิงเขาขวาง",
+        "original_title": "ธี่หยด: สมิงเขาขวาง",
+        "overview": "",
+        "poster_path": "/tOhbvoTC10Nf9WTBI1EIwaXz9Et.jpg",
+        "backdrop_path": "/ssg1qGCCRQEkwBNWHItDppBRQE2.jpg",
+        "release_date": "2026-09-29",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "popularity": 123.6847,
+        "genre_ids": [
+          27,
+          53,
+          28
+        ],
+        "original_language": "th",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1712451,
+        "title": "Dead Residents Evil",
+        "original_title": "Resident Dead",
+        "overview": "Un padre lucha contra un ejercito de no-muertos junto a su hija, gravemente herida, para llegar a la cura antes de que ella se transforme. Si logra llegar al laboratorio con la vacuna a tiempo, cree que su hija estará a salvo. Lamentablemente, el desafío más horrible lo espera en su destino final.",
+        "poster_path": "/yX8ziNTZ5aOszJ3l4R3BlT2gBIa.jpg",
+        "backdrop_path": "/yKx5gYrYgakKZuUWAsuFDStBroy.jpg",
+        "release_date": "2026-09-04",
+        "vote_average": 5.875,
+        "vote_count": 4,
+        "popularity": 120.6082,
+        "genre_ids": [
+          27
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1263337,
+        "title": "En el corazón de la bestia",
+        "original_title": "Heart of the Beast",
+        "overview": "Tras sobrevivir a un brutal accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan intentarán regresar a la civilización desde un remoto lugar en medio de los parajes salvajes de Alaska.",
+        "poster_path": "/h9Ql2vsltCOuf44c28nInxjzL2m.jpg",
+        "backdrop_path": "/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+        "release_date": "2026-09-19",
+        "vote_average": 7.5,
+        "vote_count": 233,
+        "popularity": 116.4011,
+        "genre_ids": [
+          12,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      }
+    ],
+    "popular": [
+      {
+        "id": 969681,
+        "title": "Spider-Man: Brand New Day",
+        "original_title": "Spider-Man: Brand New Day",
+        "overview": "Han pasado cuatro años desde los acontecimientos de No Way Home, y Peter Parker ahora es un adulto que vive completamente solo, ha desaparecido voluntariamente de las vidas y recuerdos de quienes ama. Combatiendo el crimen en una Nueva York que ya no conoce su nombre, se ha dedicado por completo a proteger su ciudad—un Spider-Man a tiempo completo—, pero a medida que aumentan las exigencias sobre él, la presión desencadena una evolución física que amenaza su existencia, al mismo tiempo que un extraño nuevo patrón de crímenes da lugar a una de las amenazas más poderosas a las que se ha enfrentado.",
+        "poster_path": "/9g0sEFhmvmK4nGhXj8DHuv2noYI.jpg",
+        "backdrop_path": "/eSvYccJm5ejJXFtJTqM2dIqrhK7.jpg",
+        "release_date": "2026-07-29",
+        "vote_average": 8.1,
+        "vote_count": 3668,
+        "popularity": 719.5221,
+        "genre_ids": [
+          878,
+          28,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1599191,
+        "title": "仙逆剧场版：弑仙之战",
+        "original_title": "仙逆剧场版：弑仙之战",
+        "overview": "",
+        "poster_path": "/cpgLuRAT8SW7YiZaBYUGZ43GiLL.jpg",
+        "backdrop_path": "/rJT7ARv4G2sr1uTZnBEUSigg1hf.jpg",
+        "release_date": "2026-10-01",
+        "vote_average": 7.3,
+        "vote_count": 13,
+        "popularity": 399.5621,
+        "genre_ids": [
+          16,
+          28,
+          12,
+          14
+        ],
+        "original_language": "zh",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1423191,
+        "title": "Resident Evil",
+        "original_title": "Resident Evil",
+        "overview": "Película basada en la saga de videojuegos de Capcom del mismo nombre. En una reinvención totalmente nueva, el mensajero médico Bryan se ve inmerso en una carrera de acción sin descanso por la supervivencia, mientras el caos se desata a su alrededor.",
+        "poster_path": "/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
+        "backdrop_path": "/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "release_date": "2026-09-16",
+        "vote_average": 7.3,
+        "vote_count": 768,
+        "popularity": 384.9808,
+        "genre_ids": [
+          27,
+          878,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1368337,
+        "title": "La Odisea",
+        "original_title": "The Odyssey",
+        "overview": "Tras la caída de Troya, el legendario rey de Ítaca, Odiseo a.k.a. Ulises, emprende un largo y peligroso viaje para regresar junto a su esposa Penélope y su hijo Telémaco. En el camino deberá enfrentarse a criaturas mitológicas, dioses caprichosos y pruebas que pondrán a prueba su ingenio, su resistencia y su humanidad. Mientras tanto, en Ítaca, el futuro de su reino pende de un hilo ante la creciente amenaza de quienes creen que jamás volverá.",
+        "poster_path": "/sf2ke1nwFOLLcwLZiXu9VaMMv8e.jpg",
+        "backdrop_path": "/bulFtfy3oBQtCnAMSi7g6DSSds3.jpg",
+        "release_date": "2026-07-15",
+        "vote_average": 8.014,
+        "vote_count": 4032,
+        "popularity": 300.6444,
+        "genre_ids": [
+          12,
+          28,
+          14
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1228834,
+        "title": "Operación Teherán",
+        "original_title": "The Fix",
+        "overview": "Tras el final de la guerra en Afganistán, un grupo de exoperadores de la CIA se han quedado marcados por la violencia, el abandono y la culpa. Sin patria ni propósitos a corto plazo, aceptan una última misión y viajan a Teherán para llevar a cabo un golpe arriesgado e ilegal que podría ser su opción para perdonarse a sí mismos o para acabar del todo. Mientras el pasado los persigue y la desconfianza entre ellos va en aumento, la operación se transforma en una prueba moral en la que tendrán que decidir si ser soldados obedientes o son hombres dispuestos a recuperar el control de sus vidas.",
+        "poster_path": "/5uB1PWP3QHEcgMXKChsaYmtTUkQ.jpg",
+        "backdrop_path": "/yT8EkAvEkJDFeAxK7s7HlIPELRT.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 6.91,
+        "vote_count": 50,
+        "popularity": 286.8743,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1377237,
+        "title": "Entrega al límite",
+        "original_title": "Runner",
+        "overview": "Un exsoldado se ve envuelto en una brutal carrera contrarreloj cuando una entrega médica crucial los convierte, a él y a su inesperada compañera, en el objetivo de un cártel despiadado. A medida que la misión se transforma en una cacería mortal, cada desvío, retraso y bala los acerca más al fracaso. Acosados ​​por la traición desde todos los frentes, deberán sobrevivir a la persecución y entregar su carga para salvar la vida de una niña.",
+        "poster_path": "/pmjSjZtFOYDWhAs4B2AbBE8hTQf.jpg",
+        "backdrop_path": "/iXR79oKsLHwLno9jdzxxeFP21sy.jpg",
+        "release_date": "2026-09-07",
+        "vote_average": 8.329,
+        "vote_count": 398,
+        "popularity": 284.8046,
+        "genre_ids": [
+          28,
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1204680,
+        "title": "Coyote vs. Acme",
+        "original_title": "Coyote vs. Acme",
+        "overview": "Después de que todos los productos fabricados por ACME Corporation le salgan mal a Wile E. Coyote, en su persecución del Correcaminos, contrata a un abogado humano igualmente desafortunado para demandar a la empresa. Cuando el abogado de Wile E. descubre que el intimidante jefe de su antiguo bufete es el director general de ACME, se une a Wile E. para ganar el juicio contra él.",
+        "poster_path": "/vWFz9spZFBkJvForuYrKK2ntOLB.jpg",
+        "backdrop_path": "/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+        "release_date": "2026-08-17",
+        "vote_average": 7.5,
+        "vote_count": 682,
+        "popularity": 249.797,
+        "genre_ids": [
+          35,
+          12,
+          10751
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1751701,
+        "title": "After Impact",
+        "original_title": "After Impact",
+        "overview": "Después de heredar el enorme invernadero de su padre cuando un asteroide amenaza a la Tierra, Ethan enfrenta la traición y el aislamiento. Sobreviviendo al impacto en el búnker de su familia, maltratado y desesperado, una voz en la radio revela que no está solo.",
+        "poster_path": "/yzDuAQCY2n6zzOlBkn6JzhLhY3k.jpg",
+        "backdrop_path": "/k22XyPbce7zvzzf5OnT4uaY8ZD1.jpg",
+        "release_date": "2026-09-15",
+        "vote_average": 6.167,
+        "vote_count": 24,
+        "popularity": 242.439,
+        "genre_ids": [
+          878,
+          18,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1248832,
+        "title": "Digger",
+        "original_title": "Digger",
+        "overview": "El hombre más poderoso del mundo se embarca en una misión frenética para demostrar que es el salvador de la humanidad antes de que el desastre que ha desencadenado lo destruya todo.",
+        "poster_path": "/koqE0V2IgIPVy5o2vVkoGJvnB8b.jpg",
+        "backdrop_path": "/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
+        "release_date": "2026-09-28",
+        "vote_average": 7.5,
+        "vote_count": 187,
+        "popularity": 226.1274,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1101383,
+        "title": "El final de Oak Street",
+        "original_title": "The End of Oak Street",
+        "overview": "Después de que un misterioso fenómeno cósmico arranque Oak Street de su entorno suburbano y transporte a sus habitantes a un lugar desconocido, la familia Platt pronto descubre que su propia supervivencia depende de que permanezcan unidos mientras se orientan en un entorno que ya no reconocen.",
+        "poster_path": "/g9DUGw8ufetrwhCIrwq3h1NlpWO.jpg",
+        "backdrop_path": "/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+        "release_date": "2026-08-12",
+        "vote_average": 7.1,
+        "vote_count": 1879,
+        "popularity": 205.5067,
+        "genre_ids": [
+          878,
+          9648,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 460458,
+        "title": "Resident Evil. Bienvenidos a Raccoon City",
+        "original_title": "Resident Evil: Welcome to Raccoon City",
+        "overview": "Nueva adaptación al cine de los videojuegos de Capcom. La que fue una pujante ciudad sede del gigante farmacéutico Umbrella Corporation, Raccoon City, es ahora un pueblo agonizante del Medio Oeste. El éxodo de la compañía dejó a la ciudad convertida en un erial… con un gran mal gestándose bajo la superficie. Cuando ese mal se desata, un grupo de supervivientes deben unirse para destapar la verdad detrás de Umbrella y sobrevivir a la noche.",
+        "poster_path": "/oRIoAzRLtoNO9adWRW0jeGfMr0N.jpg",
+        "backdrop_path": "/wYtEvBmpBRXPdwGgr1gcWiwJSI7.jpg",
+        "release_date": "2021-11-24",
+        "vote_average": 5.9,
+        "vote_count": 2846,
+        "popularity": 202.9282,
+        "genre_ids": [
+          28,
+          27,
+          878
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1294189,
+        "title": "The Mongoose",
+        "original_title": "The Mongoose",
+        "overview": "Acusado de un delito que no cometió y sin nada que perder, un héroe de guerra llamado Ryan «Fang» Flanagan se enfrenta a las agresivas fuerzas del orden en una persecución en coche por todo el país, con la ayuda de sus compañeros de armas y de un público comprensivo que anima su huida.",
+        "poster_path": "/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
+        "backdrop_path": "/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
+        "release_date": "2026-10-29",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "popularity": 185.9534,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1032863,
+        "title": "La hipótesis del amor",
+        "original_title": "The Love Hypothesis",
+        "overview": "Olive es una brillante estudiante de doctorado. Cuando descubre que su mejor amiga, Ahn, se ha enamorado de Jeremy, el chico que a ella le gustaba, Olive besa impulsivamente al intimidante profesor Adam Carlsen para demostrar que lo ha superado. El beso les lleva a ambos a mantener una relación falsa con reglas, límites y un acuerdo mutuamente beneficioso. Pero cuando su acuerdo empieza a difuminarse entre la ficción y la realidad, Olive se ve obligada a poner a prueba su hipótesis: que quizá el amor sí merezca la pena.",
+        "poster_path": "/ylrSdW6fZYwaInYH6WAqvIEnSiV.jpg",
+        "backdrop_path": "/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+        "release_date": "2026-09-23",
+        "vote_average": 8.063,
+        "vote_count": 492,
+        "popularity": 177.1075,
+        "genre_ids": [
+          10749,
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1084244,
+        "title": "Toy Story 5",
+        "original_title": "Toy Story 5",
+        "overview": "Los juguetes de Bonnie se enfrentan a otra amenaza cuando la niña recibe una tableta llamada Lilypad, la cual absorbe toda su atención y pone en peligro el juego tradicional. Todos deben unirse para competir contra la tecnología y recuperar su lugar.",
+        "poster_path": "/pTjZfbFVWUIwUM5OzX3LVh84ejU.jpg",
+        "backdrop_path": "/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+        "release_date": "2026-06-17",
+        "vote_average": 8.3,
+        "vote_count": 2502,
+        "popularity": 164.6966,
+        "genre_ids": [
+          16,
+          10751,
+          35,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 977942,
+        "title": "El hombre que desafió al rey",
+        "original_title": "The Uprising",
+        "overview": "En la Inglaterra del siglo XIV, asolada por la peste, un campesino desencadena una rebelión contra el rey Ricardo II y se convierte involuntariamente en una leyenda de la resistencia.",
+        "poster_path": "/rveEjlQQ0LlyyPk8ev2pHBmQPZZ.jpg",
+        "backdrop_path": "/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 7.991,
+        "vote_count": 228,
+        "popularity": 160.78,
+        "genre_ids": [
+          36,
+          18,
+          28
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1339713,
+        "title": "Obsession",
+        "original_title": "Obsession",
+        "overview": "El anhelo romántico desesperado de un chico por su amor platónico de toda la vida desencadena un siniestro hechizo: Nikki se vuelve irracionalmente obsesiva hasta convertirse en la sombra de Bear. Una fantasía aparentemente inofensiva que se convertirá en una perturbadora pesadilla.",
+        "poster_path": "/p1QFjQ8wwlXXlxwaWlehJ37uXVj.jpg",
+        "backdrop_path": "/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+        "release_date": "2026-05-13",
+        "vote_average": 8.183,
+        "vote_count": 5952,
+        "popularity": 158.9043,
+        "genre_ids": [
+          27,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 30723,
+        "title": "Cavegirl: La chica de las cavernas (Cavernícola 2)",
+        "original_title": "Cavegirl",
+        "overview": "Rex, estudiante de antropología, se encuentra de excursión con su clase de ciencias, cuando tropieza con una antigua excavación. Fascinado por la cueva decide entrar, sin saber que es zona de pruebas de misiles del gobierno. De pronto y accidentalmente uno de los misiles explosiona atrapando a Rex que cae inconsciente. Cuando recobra el sentido, Rex sale de la cueva, descubre que el lugar le es desconocido y que sus compañeros no están allí. En cambio, conoce a una hermosa joven llamada Eba, quien conduce a Rex hasta una tribu donde todos quedan admirados de su moderno atuendo , pero empiezan los problemas a la vez que el romance entre Rex y Eba.",
+        "poster_path": "/q3mAyzLO4azmwGAs2gcqvnCnA3D.jpg",
+        "backdrop_path": "/akJghVpe8jwWXEA5aWRNhJWozGL.jpg",
+        "release_date": "1985-05-01",
+        "vote_average": 3.9,
+        "vote_count": 26,
+        "popularity": 150.2657,
+        "genre_ids": [
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1375646,
+        "title": "Colony",
+        "original_title": "군체",
+        "overview": "El profesor Se-jeong es arrojado a una pesadilla cuando un  virus en rápida mutación se libera durante una conferencia de  biotecnología, lo que lleva a las autoridades a sellar las  instalaciones. Atrapado dentro sin escapatoria, Se-jeong, junto a un  pequeño grupo de supervivientes, debe luchar por mantenerse con vida  mientras los infectados sufren transformaciones horribles.",
+        "poster_path": "/bWzwORubAQ40nvzsTZidle19Dbm.jpg",
+        "backdrop_path": "/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
+        "release_date": "2026-05-21",
+        "vote_average": 8.1,
+        "vote_count": 1062,
+        "popularity": 148.9103,
+        "genre_ids": [
+          27,
+          28,
+          878
+        ],
+        "original_language": "ko",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1232569,
+        "title": "Pinocho: Desatado",
+        "original_title": "Pinocchio: Unstrung",
+        "overview": "Gepetto le regala para el cumple de su nieto James un titere llamado Pinocho, aunque no sabian que estaria desquiciado, donde buscaria matar a quien fuera junto con su consciencia llamada Pepe Grillo para convertirse en un niño de verdad",
+        "poster_path": "/kuPRjis9YN1V9m4ud0hePtREUCo.jpg",
+        "backdrop_path": "/vgZDb7kmaxP24cFbt1KJdMLlHFZ.jpg",
+        "release_date": "2026-07-22",
+        "vote_average": 6.5,
+        "vote_count": 126,
+        "popularity": 148.6125,
+        "genre_ids": [
+          27,
+          14,
+          9648
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1288445,
+        "title": "El motín",
+        "original_title": "Mutiny",
+        "overview": "Después de que su jefe, un industrial multimillonario, sea asesinado delante de él, Cole Reed se ve obligado a cargar con la culpa del crimen, lo que le obliga a huir mientras trabaja para descubrir una conspiración internacional.",
+        "poster_path": "/5zmLk7K4wHWG68OlniFzrNrZjJE.jpg",
+        "backdrop_path": "/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+        "release_date": "2026-08-19",
+        "vote_average": 7.4,
+        "vote_count": 801,
+        "popularity": 148.4989,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      }
+    ],
+    "topRated": [
+      {
+        "id": 980431,
+        "title": "Avatar Aang: El último maestro del aire",
+        "original_title": "Avatar Aang: The Last Airbender",
+        "overview": "Cuando el Avatar Aang, el último maestro del aire del mundo, descubre un poder ancestral que podría salvar a su cultura de la extinción, él y sus amigos se lanzan a la búsqueda de ese poder antes de que caiga en malas manos.",
+        "poster_path": "/gXyICsxc1amVyziopCT4yhnelNv.jpg",
+        "backdrop_path": "/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
+        "release_date": "2026-07-24",
+        "vote_average": 9.1,
+        "vote_count": 1267,
+        "popularity": 72.961,
+        "genre_ids": [
+          16,
+          12,
+          14,
+          28
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1560520,
+        "title": "Batman: Knightfall Part 1: Knightfall",
+        "original_title": "Batman: Knightfall Part 1: Knightfall",
+        "overview": "Cuando el misterioso gigante conocido únicamente como Bane libera a toda la galería de villanos de Batman del Manicomio de Arkham, el Cruzado Encapuchado se ve llevado al límite de su resistencia física y mental.",
+        "poster_path": "/fXvnylD29aoKx4ai3wBlHRXMSVp.jpg",
+        "backdrop_path": "/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
+        "release_date": "2026-06-23",
+        "vote_average": 9.1,
+        "vote_count": 430,
+        "popularity": 47.7952,
+        "genre_ids": [
+          16,
+          28,
+          12,
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1007757,
+        "title": "Intercambiados",
+        "original_title": "Swapped",
+        "overview": "Una pequeña criatura del bosque intercambia el cuerpo con un majestuoso pájaro del valle, lo que los obliga a colaborar para sobrevivir a la aventura más salvaje de sus vidas.",
+        "poster_path": "/i89vUDwNhAEWUZSFYITSiv1RIbK.jpg",
+        "backdrop_path": "/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+        "release_date": "2026-05-01",
+        "vote_average": 8.9,
+        "vote_count": 2226,
+        "popularity": 48.6613,
+        "genre_ids": [
+          12,
+          16,
+          10751,
+          14
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1632181,
+        "title": "Socias por accidente",
+        "original_title": "Socias por accidente",
+        "overview": "Alexa, una elegante relacionista pública, y Regina, una entrenadora de carácter fuerte y espíritu independiente, llevan vidas completamente opuestas hasta que un mismo hombre entra en su historia. Tras una coincidencia inesperada, ambas descubren que fueron engañadas por la misma persona y que sus caminos están más entrelazados de lo que imaginaban. Obligadas a unir fuerzas, Alexa y Regina pasarán de la desconfianza a una alianza improbable que pondrá a prueba sus diferencias, sus decisiones y su idea de lo que significa apoyarse entre mujeres.",
+        "poster_path": "/sr1Yoj6XLPTWYcbDoBy67xivW4I.jpg",
+        "backdrop_path": "/iCML6fBe3X0y06P33bM7dyYXPKZ.jpg",
+        "release_date": "2026-03-12",
+        "vote_average": 8.832,
+        "vote_count": 393,
+        "popularity": 13.145,
+        "genre_ids": [
+          35,
+          10749
+        ],
+        "original_language": "es",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1311031,
+        "title": "Guardianes de la noche: Kimetsu no Yaiba La fortaleza infinita",
+        "original_title": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+        "overview": "El Cuerpo de Cazadores de Demonios se enfrenta a los Doce Kizuki restantes antes de enfrentarse a Muzan en el Castillo del Infinito para derrotarlo de una vez por todas.",
+        "poster_path": "/lYnhd124Fi3vVYlh6qmItxpGZXd.jpg",
+        "backdrop_path": "/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+        "release_date": "2025-07-18",
+        "vote_average": 8.8,
+        "vote_count": 2245,
+        "popularity": 60.2989,
+        "genre_ids": [
+          16,
+          28,
+          14
+        ],
+        "original_language": "ja",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1621552,
+        "title": "La captura",
+        "original_title": "La captura",
+        "overview": "2016, estado de Sinaloa. Dos policías mexicanos, durante un control rutinario en las últimas horas de su turno, detienen un coche robado y se encuentran cara a cara con uno de los delincuentes más peligrosos del mundo: el Chapó Guzmán, patrón del temible Cártel de Sinaloa.",
+        "poster_path": "/iwCeOpuBtuTP1kLosqgniey5OvX.jpg",
+        "backdrop_path": "/c4U96GrPRfnNrS01mBtqnocvlLJ.jpg",
+        "release_date": "2026-08-21",
+        "vote_average": 8.78,
+        "vote_count": 882,
+        "popularity": 51.5468,
+        "genre_ids": [
+          80,
+          28,
+          53
+        ],
+        "original_language": "es",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 278,
+        "title": "Cadena perpetua",
+        "original_title": "The Shawshank Redemption",
+        "overview": "Acusado del asesinato de su mujer, Andrew Dufresne, tras ser condenado a cadena perpetua, es enviado a la prisión de Shawshank. Con el paso de los años conseguirá ganarse la confianza del director del centro y el respeto de sus compañeros presidiarios, especialmente de Red, el jefe de la mafia de los sobornos.",
+        "poster_path": "/uRRTV7p6l2ivtODWJVVAMRrwTn2.jpg",
+        "backdrop_path": "/pNjh59JSxChQktamG3LMp9ZoQzp.jpg",
+        "release_date": "1994-09-23",
+        "vote_average": 8.732,
+        "vote_count": 31506,
+        "popularity": 58.3147,
+        "genre_ids": [
+          18,
+          80
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 238,
+        "title": "El padrino",
+        "original_title": "The Godfather",
+        "overview": "Don Vito Corleone, conocido dentro de los círculos del hampa como \"El Padrino\", es el patriarca de una de las cinco familias que ejercen el mando de la Cosa Nostra en Nueva York (Estados Unidos) durante la década de 1940. Don Corleone tiene cuatro hijos: una chica, Connie, y tres varones; Sonny, Michael y Fredo. Cuando Vito reclina intervenir en el negocio de estupefacientes, empieza una cruenta lucha de violentos episodios entre las distintas familias del crimen organizado.",
+        "poster_path": "/5HlLUsmsv60cZVTzVns9ICZD6zU.jpg",
+        "backdrop_path": "/ejdD20cdHNFAYAN2DlqPToXKyzx.jpg",
+        "release_date": "1972-03-14",
+        "vote_average": 8.688,
+        "vote_count": 23692,
+        "popularity": 57.5878,
+        "genre_ids": [
+          18,
+          80
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 687163,
+        "title": "Proyecto Salvación",
+        "original_title": "Project Hail Mary",
+        "overview": "El profesor de ciencias Ryland Grace se despierta en una nave espacial a años luz de casa sin recordar quién es ni cómo ha llegado hasta allí. A medida que recupera la memoria, empieza a descubrir su misión: resolver el enigma de la misteriosa sustancia que provoca la extinción del sol. Deberá recurrir a sus conocimientos científicos y a sus ideas poco ortodoxas para salvar todo lo que hay en la Tierra de la extinción... pero una amistad inesperada significa que quizá no tenga que hacerlo solo.",
+        "poster_path": "/7lwOTxajURKEWO6gI370NTrVdBO.jpg",
+        "backdrop_path": "/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+        "release_date": "2026-03-15",
+        "vote_average": 8.636,
+        "vote_count": 8151,
+        "popularity": 93.9521,
+        "genre_ids": [
+          878,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 936075,
+        "title": "Michael",
+        "original_title": "Michael",
+        "overview": "El viaje de Michael Jackson más allá de la música, desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+        "poster_path": "/2uK36ujoDXOfNiJ5Yp3raVprB51.jpg",
+        "backdrop_path": "/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+        "release_date": "2026-04-22",
+        "vote_average": 8.6,
+        "vote_count": 4489,
+        "popularity": 53.5912,
+        "genre_ids": [
+          10402,
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1232449,
+        "title": "Young Hearts",
+        "original_title": "Young Hearts",
+        "overview": "Elias se siente atraído por su nuevo vecino Alexander. Pronto se da cuenta de que está realmente enamorado por primera vez.",
+        "poster_path": "/3fTngLHmgVERMlVPeHUpyj9aUa8.jpg",
+        "backdrop_path": "/3HaqAPZ0C8n6Hd5T86U53yJlBAN.jpg",
+        "release_date": "2024-10-26",
+        "vote_average": 8.599,
+        "vote_count": 323,
+        "popularity": 15.0329,
+        "genre_ids": [
+          18,
+          10749
+        ],
+        "original_language": "nl",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 389,
+        "title": "Doce hombres sin piedad",
+        "original_title": "12 Angry Men",
+        "overview": "Tras escuchar todos los testimonios y valorar las pruebas presentadas, un jurado popular compuesto por doce hombres tiene que decidir, por unanimidad, si absuelve o condena a muerte a un joven acusado de haber matado a su padre. Al principio, once están completamente convencidos de su culpabilidad y se inclinan por la condena, pero el que discrepa empieza a plantear dudas razonables que, poco a poco, van resquebrajando la inicial seguridad de los demás.",
+        "poster_path": "/t88XfoxO5cX3f0qaSxWsBS0Lc3.jpg",
+        "backdrop_path": "/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
+        "release_date": "1957-04-10",
+        "vote_average": 8.574,
+        "vote_count": 10439,
+        "popularity": 34.6766,
+        "genre_ids": [
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 240,
+        "title": "El padrino II",
+        "original_title": "The Godfather Part II",
+        "overview": "Continuación de la saga de los Corleone con dos historias paralelas: la elección de Michael Corleone como jefe de los negocios familiares y los orígenes del patriarca, el ya fallecido Don Vito, primero en Sicilia y luego en Estados Unidos, donde, empezando desde abajo, llegó a ser un poderosísimo jefe de la mafia de Nueva York.",
+        "poster_path": "/mbry0W5PRylSUHsYzdiY2FSJwze.jpg",
+        "backdrop_path": "/pGzqRKrYeK4LogoysNro0vG8d8N.jpg",
+        "release_date": "1974-12-20",
+        "vote_average": 8.6,
+        "vote_count": 14416,
+        "popularity": 37.3989,
+        "genre_ids": [
+          18,
+          80
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 424,
+        "title": "La lista de Schindler",
+        "original_title": "Schindler's List",
+        "overview": "Oskar Schindler, un hombre de enorme astucia y talento para las relaciones públicas, organiza un ambicioso plan para ganarse la simpatía de los nazis. Después de la invasión de Polonia por los alemanes, consigue, gracias a sus relaciones con los nazis, la propiedad de una fábrica de Cracovia. Allí emplea a cientos de operarios judíos, cuya explotación le hace prosperar rápidamente. Su gerente, también judío, es el verdadero director en la sombra, pues Schindler no tiene el menor conocimiento industrial.",
+        "poster_path": "/3Ho0pXsnMxpGJWqdOi0KDNdaTkT.jpg",
+        "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+        "release_date": "1993-12-15",
+        "vote_average": 8.568,
+        "vote_count": 17993,
+        "popularity": 34.5255,
+        "genre_ids": [
+          18,
+          36,
+          10752
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1630423,
+        "title": "Sangre asesina",
+        "original_title": "เลือดรักนักฆ่า",
+        "overview": "A una mujer le espera una bala con su nombre por culpa de su extraño grupo sanguíneo, pero encuentra cobijo en los brazos del asesino al que ama, y juntos luchan por sobrevivir.",
+        "poster_path": "/16TvbhCP8CfiGEbxcbtQLYWO6WG.jpg",
+        "backdrop_path": "/xA6AM5MvEkieZKlv1Tn3sN23I7i.jpg",
+        "release_date": "2026-05-06",
+        "vote_average": 8.554,
+        "vote_count": 307,
+        "popularity": 17.147,
+        "genre_ids": [
+          28,
+          18,
+          10749
+        ],
+        "original_language": "th",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1218925,
+        "title": "Chainsaw Man - La película: El arco de Reze",
+        "original_title": "劇場版 チェンソーマン レゼ篇",
+        "overview": "Denji trabajaba como cazador de demonios para la yakuza, tratando de saldar la deuda que había heredado de sus padres, pero la yakuza lo traicionó y lo mató. Antes de perder el conocimiento, Pochita, el perro-demonio motosierra de Denji, hizo un trato con él y le salvó la vida. Así se fusionaron, creando al imparable Chainsaw Man. Ahora, en medio de una brutal guerra entre demonios, cazadores y enemigos secretos, una misteriosa chica llamada Reze irrumpe en su mundo y Denji se enfrenta a su batalla más mortífera, impulsado por el amor, en un mundo donde la supervivencia no conoce reglas.",
+        "poster_path": "/fJdnp5OO2wh07tdy6noACNyaqMJ.jpg",
+        "backdrop_path": "/gqTz24ZRsCP6AKjARmEivY7m0cK.jpg",
+        "release_date": "2025-09-19",
+        "vote_average": 8.5,
+        "vote_count": 1229,
+        "popularity": 28.314,
+        "genre_ids": [
+          16,
+          28,
+          10749,
+          14
+        ],
+        "original_language": "ja",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 155,
+        "title": "El caballero oscuro",
+        "original_title": "The Dark Knight",
+        "overview": "Batman/Bruce Wayne regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman se propone destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra su eficacia, pero, de repente, aparece Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
+        "poster_path": "/8QDQExnfNFOtabLDKqfDQuHDsIg.jpg",
+        "backdrop_path": "/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+        "release_date": "2008-07-16",
+        "vote_average": 8.537,
+        "vote_count": 36892,
+        "popularity": 51.7157,
+        "genre_ids": [
+          28,
+          53,
+          80
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 129,
+        "title": "El viaje de Chihiro",
+        "original_title": "千と千尋の神隠し",
+        "overview": "Durante el traslado de su familia a los suburbios, una niña de 10 años de edad deambula por un mundo gobernado por dioses, brujas y espíritus, y donde los humanos se convierten en bestias.",
+        "poster_path": "/2RcxjDykOssx4SfqshewyI9vfSl.jpg",
+        "backdrop_path": "/dyJvKsNs2KP8qQnAXbRwDjblViy.jpg",
+        "release_date": "2001-07-20",
+        "vote_average": 8.536,
+        "vote_count": 18997,
+        "popularity": 40.9136,
+        "genre_ids": [
+          16,
+          10751,
+          14
+        ],
+        "original_language": "ja",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 497,
+        "title": "La milla verde",
+        "original_title": "The Green Mile",
+        "overview": "En el sur de los Estados Unidos, en plena Depresión, Paul Edgecomb es un vigilante penitenciario a cargo de la Milla Verde, un pasillo que separa las celdas de los reclusos condenados a la silla eléctrica. Esperando su ejecución está John Coffey, un gigantesco negro acusado de asesinar brutalmente a dos hermanas de nueve años. Tras una personalidad ingenua, Coffey esconde un don sobrenatural prodigioso. A medida que transcurre la historia, Paul Edgecomb aprende que los milagros ocurren... incluso en los lugares más insospechados.",
+        "poster_path": "/aBQiJRxGRrX0mXFMjxyzWYFtEnf.jpg",
+        "backdrop_path": "/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
+        "release_date": "1999-12-10",
+        "vote_average": 8.505,
+        "vote_count": 19910,
+        "popularity": 39.9351,
+        "genre_ids": [
+          14,
+          18,
+          80
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 122,
+        "title": "El señor de los anillos: El retorno del rey",
+        "original_title": "The Lord of the Rings: The Return of the King",
+        "overview": "Las fuerzas de Saruman han sido destruidas, y su fortaleza sitiada. Ha llegado el momento de que se decida el destino de la Tierra Media, y por primera vez en mucho tiempo, parece que hay una pequeña esperanza. La atención del señor oscuro Sauron se centra ahora en Gondor, el último reducto de los hombres, y del cual Aragorn tendrá que reclamar el trono para ocupar su puesto de rey. Pero las fuerzas de Sauron ya se preparan para lanzar el último y definitivo ataque contra el reino de Gondor, la batalla que decidirá el destino de todos. Mientras tanto, Frodo y Sam continuan su camino hacia Mordor, a la espera de que Sauron no repare en que dos pequeños Hobbits se acercan cada día más al final de su camino, el Monte del Destino.",
+        "poster_path": "/mWuFbQrXyLk2kMBKF9TUPtDwuPx.jpg",
+        "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+        "release_date": "2003-12-17",
+        "vote_average": 8.504,
+        "vote_count": 27507,
+        "popularity": 50.0908,
+        "genre_ids": [
+          12,
+          14,
+          28
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      }
+    ],
+    "upcoming": [
+      {
+        "id": 1423191,
+        "title": "Resident Evil",
+        "original_title": "Resident Evil",
+        "overview": "Película basada en la saga de videojuegos de Capcom del mismo nombre. En una reinvención totalmente nueva, el mensajero médico Bryan se ve inmerso en una carrera de acción sin descanso por la supervivencia, mientras el caos se desata a su alrededor.",
+        "poster_path": "/ntmaNFJ7O60n45E1E6HZlXeSV5e.jpg",
+        "backdrop_path": "/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "release_date": "2026-09-16",
+        "vote_average": 7.309,
+        "vote_count": 775,
+        "popularity": 384.9808,
+        "genre_ids": [
+          27,
+          878,
+          12
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1228834,
+        "title": "Operación Teherán",
+        "original_title": "The Fix",
+        "overview": "Tras el final de la guerra en Afganistán, un grupo de exoperadores de la CIA se han quedado marcados por la violencia, el abandono y la culpa. Sin patria ni propósitos a corto plazo, aceptan una última misión y viajan a Teherán para llevar a cabo un golpe arriesgado e ilegal que podría ser su opción para perdonarse a sí mismos o para acabar del todo. Mientras el pasado los persigue y la desconfianza entre ellos va en aumento, la operación se transforma en una prueba moral en la que tendrán que decidir si ser soldados obedientes o son hombres dispuestos a recuperar el control de sus vidas.",
+        "poster_path": "/5uB1PWP3QHEcgMXKChsaYmtTUkQ.jpg",
+        "backdrop_path": "/yT8EkAvEkJDFeAxK7s7HlIPELRT.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 6.91,
+        "vote_count": 50,
+        "popularity": 286.8743,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1377237,
+        "title": "Entrega al límite",
+        "original_title": "Runner",
+        "overview": "Un exsoldado se ve envuelto en una brutal carrera contrarreloj cuando una entrega médica crucial los convierte, a él y a su inesperada compañera, en el objetivo de un cártel despiadado. A medida que la misión se transforma en una cacería mortal, cada desvío, retraso y bala los acerca más al fracaso. Acosados ​​por la traición desde todos los frentes, deberán sobrevivir a la persecución y entregar su carga para salvar la vida de una niña.",
+        "poster_path": "/pmjSjZtFOYDWhAs4B2AbBE8hTQf.jpg",
+        "backdrop_path": "/iXR79oKsLHwLno9jdzxxeFP21sy.jpg",
+        "release_date": "2026-09-07",
+        "vote_average": 8.329,
+        "vote_count": 401,
+        "popularity": 284.8046,
+        "genre_ids": [
+          28,
+          35
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1204680,
+        "title": "Coyote vs. Acme",
+        "original_title": "Coyote vs. Acme",
+        "overview": "Después de que todos los productos fabricados por ACME Corporation le salgan mal a Wile E. Coyote, en su persecución del Correcaminos, contrata a un abogado humano igualmente desafortunado para demandar a la empresa. Cuando el abogado de Wile E. descubre que el intimidante jefe de su antiguo bufete es el director general de ACME, se une a Wile E. para ganar el juicio contra él.",
+        "poster_path": "/vWFz9spZFBkJvForuYrKK2ntOLB.jpg",
+        "backdrop_path": "/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+        "release_date": "2026-08-17",
+        "vote_average": 7.52,
+        "vote_count": 684,
+        "popularity": 249.797,
+        "genre_ids": [
+          35,
+          12,
+          10751
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1248832,
+        "title": "Digger",
+        "original_title": "Digger",
+        "overview": "El hombre más poderoso del mundo se embarca en una misión frenética para demostrar que es el salvador de la humanidad antes de que el desastre que ha desencadenado lo destruya todo.",
+        "poster_path": "/koqE0V2IgIPVy5o2vVkoGJvnB8b.jpg",
+        "backdrop_path": "/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
+        "release_date": "2026-09-28",
+        "vote_average": 7.488,
+        "vote_count": 200,
+        "popularity": 226.1274,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 977942,
+        "title": "El hombre que desafió al rey",
+        "original_title": "The Uprising",
+        "overview": "En la Inglaterra del siglo XIV, asolada por la peste, un campesino desencadena una rebelión contra el rey Ricardo II y se convierte involuntariamente en una leyenda de la resistencia.",
+        "poster_path": "/rveEjlQQ0LlyyPk8ev2pHBmQPZZ.jpg",
+        "backdrop_path": "/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 8.0,
+        "vote_count": 233,
+        "popularity": 160.78,
+        "genre_ids": [
+          36,
+          18,
+          28
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1375646,
+        "title": "Colony",
+        "original_title": "군체",
+        "overview": "El profesor Se-jeong es arrojado a una pesadilla cuando un  virus en rápida mutación se libera durante una conferencia de  biotecnología, lo que lleva a las autoridades a sellar las  instalaciones. Atrapado dentro sin escapatoria, Se-jeong, junto a un  pequeño grupo de supervivientes, debe luchar por mantenerse con vida  mientras los infectados sufren transformaciones horribles.",
+        "poster_path": "/bWzwORubAQ40nvzsTZidle19Dbm.jpg",
+        "backdrop_path": "/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
+        "release_date": "2026-05-21",
+        "vote_average": 8.1,
+        "vote_count": 1064,
+        "popularity": 148.9103,
+        "genre_ids": [
+          27,
+          28,
+          878
+        ],
+        "original_language": "ko",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1283515,
+        "title": "Verity. La sombra de un engaño",
+        "original_title": "Verity",
+        "overview": "Lowen Ashleigh es contratada como escritora fantasma por Jeremy Crawford para escribir las novelas de su esposa Verity, autora de bestsellers, impedida tras un accidente. Lowen descubre las inquietantes verdades de Verity mientras reside en casa de los Crawford para trabajar.",
+        "poster_path": "/t1rkXeUMJzsCS142ctqzbz4zGq7.jpg",
+        "backdrop_path": "/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+        "release_date": "2026-09-30",
+        "vote_average": 6.5,
+        "vote_count": 100,
+        "popularity": 148.0037,
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1263337,
+        "title": "En el corazón de la bestia",
+        "original_title": "Heart of the Beast",
+        "overview": "Tras sobrevivir a un brutal accidente aéreo, el oficial de las Fuerzas Especiales James Belmont y su perro de combate Odín intentan intentarán regresar a la civilización desde un remoto lugar en medio de los parajes salvajes de Alaska.",
+        "poster_path": "/h9Ql2vsltCOuf44c28nInxjzL2m.jpg",
+        "backdrop_path": "/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+        "release_date": "2026-09-19",
+        "vote_average": 7.46,
+        "vote_count": 236,
+        "popularity": 116.4011,
+        "genre_ids": [
+          12,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1422011,
+        "title": "It Ends",
+        "original_title": "It Ends",
+        "overview": "Cuatro amigos recién graduados emprenden un paseo nocturno y, por error, terminan atrapados en una carretera interminable y desolada, rodeada de misterios cósmicos y horrores inexplicables.",
+        "poster_path": "/1i8bzINBNv7MSZNqst6mDeOFFyz.jpg",
+        "backdrop_path": "/9Wf1xwPOycnxvdVnpr6Di381Zf.jpg",
+        "release_date": "2026-08-21",
+        "vote_average": 5.6,
+        "vote_count": 65,
+        "popularity": 99.7491,
+        "genre_ids": [
+          27,
+          9648
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1130948,
+        "title": "Rosebush Pruning",
+        "original_title": "Rosebush Pruning",
+        "overview": "En una opulenta villa española, los hermanos estadounidenses Jack, Ed, Anna y Robert se regodean en el aislamiento y en su fortuna heredada. Cuando Jack, el hermano mayor y pieza clave de la familia, anuncia que se muda con su novia Martha, los lazos se agrietan y Ed se ve obligado a descubrir la verdad sobre la muerte de su madre. Las mentiras comienzan a desvelarse y el tejido familiar empieza a desintegrarse.",
+        "poster_path": "/rsHEVjzxU8cxz1sm3vboj99daNv.jpg",
+        "backdrop_path": "/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
+        "release_date": "2026-04-23",
+        "vote_average": 5.893,
+        "vote_count": 61,
+        "popularity": 67.3418,
+        "genre_ids": [
+          35,
+          18,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1465063,
+        "title": "La isla olvidada",
+        "original_title": "Forgotten Island",
+        "overview": "Dos amigas se quedan varadas en el místico mundo de Nakali, donde su único escape podría costarles su vida compartida de recuerdos.",
+        "poster_path": "/vpTdXFoZGzwnCWzkVYU7JH8teAZ.jpg",
+        "backdrop_path": "/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
+        "release_date": "2026-09-10",
+        "vote_average": 8.2,
+        "vote_count": 48,
+        "popularity": 61.8749,
+        "genre_ids": [
+          16,
+          12,
+          14,
+          35,
+          10751
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1375441,
+        "title": "Primetime",
+        "original_title": "Primetime",
+        "overview": "En 2006, Chris Hansen, presentador de *To Catch a Predator*, se propone hacer historia en la televisión.",
+        "poster_path": "/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+        "backdrop_path": "/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
+        "release_date": "2026-09-23",
+        "vote_average": 6.788,
+        "vote_count": 92,
+        "popularity": 60.6039,
+        "genre_ids": [
+          18,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1101412,
+        "title": "Fall 2: Deadpoint",
+        "original_title": "Fall 2: Deadpoint",
+        "overview": "Tras perder a su intrépida hermana Shiloh, Jax, profundamente dolida, emprende una peligrosa escalada con Luce, una vieja amiga de Shiloh, para honrar su memoria. Mientras caminan sobre la cuerda floja por los peligrosos tablones del monte Kwan, un aterrador desprendimiento de rocas les deja varados a 1.500 metros de altura. En medio de vértigos, verdades oscuras y giros crueles, Jax debe enfrentarse a sus miedos más profundos para luchar por la supervivencia y el final.",
+        "poster_path": "/ccBIyg1ITvuCDr4eMeEH0ZgNh4t.jpg",
+        "backdrop_path": "/cPCgLDNCCUwtsedr181DtrlaDWx.jpg",
+        "release_date": "2026-09-01",
+        "vote_average": 6.165,
+        "vote_count": 82,
+        "popularity": 57.8372,
+        "genre_ids": [
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1542261,
+        "title": "Doraemon: Nobita y el nuevo castillo del diablo submarino",
+        "original_title": "映画ドラえもん 新・のび太の海底鬼岩城",
+        "overview": "Nobita y sus amigos descubren un castillo submarino secreto repleto de misterios y riquezas. Con los ingeniosos artilugios de Doraemon, se sumergen en una aventura oceánica que combina humor, trabajo en equipo e imaginación en un impresionante mundo acuático.",
+        "poster_path": "/wPzyoIvJBOXFnuGWgu09gnlO26K.jpg",
+        "backdrop_path": "/pxd9rc03EMMln3tVFdfd427Fpsi.jpg",
+        "release_date": "2026-02-27",
+        "vote_average": 7.1,
+        "vote_count": 11,
+        "popularity": 52.2959,
+        "genre_ids": [
+          16,
+          12,
+          14,
+          10751
+        ],
+        "original_language": "ja",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1280738,
+        "title": "The Furious",
+        "original_title": "火遮眼",
+        "overview": "Rainy, hija del experto en artes marciales Wang Wei, es secuestrada por una red de tráfico de menores. En un frenético intento de recuperarla, el padre se lanza a la guerra, enfrentándose a numerosos obstáculos mientras lucha contra criminales y policías corruptos. En el camino conoce a Navin, un periodista en busca de su esposa desaparecida. Ambos despliegan sus habilidades de combate mientras aprenden las virtudes de la confianza mutua.",
+        "poster_path": "/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+        "backdrop_path": "/i0eR9O1FnCgBm1cH8WwqxGbAXMS.jpg",
+        "release_date": "2026-06-10",
+        "vote_average": 8.201,
+        "vote_count": 815,
+        "popularity": 51.5458,
+        "genre_ids": [
+          28,
+          80,
+          53
+        ],
+        "original_language": "zh",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 131631,
+        "title": "Los Juegos del Hambre: Sinsajo - Parte 1",
+        "original_title": "The Hunger Games: Mockingjay - Part 1",
+        "overview": "Katniss Everdeen se encuentra en el Distrito 13 después de destrozar los Juegos para siempre. Bajo el liderazgo de la comandante Coin y el consejo de sus amigos más leales, Katniss extiende sus alas mientras lucha por salvar a Peeta Mellark y a una nación alentada por su valentía...",
+        "poster_path": "/wfLsciidZamFPeOb4FD8ywk1Q9c.jpg",
+        "backdrop_path": "/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
+        "release_date": "2014-11-19",
+        "vote_average": 6.813,
+        "vote_count": 17072,
+        "popularity": 43.3161,
+        "genre_ids": [
+          878,
+          12,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 1058424,
+        "title": "Hope",
+        "original_title": "호프",
+        "overview": "Tras un extraño hallazgo cerca de una aislada ciudad portuaria, los habitantes se ven envueltos en una desesperada lucha por la supervivencia.",
+        "poster_path": "/hHPIefotew38oJm3YCJPAzpi26c.jpg",
+        "backdrop_path": "/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
+        "release_date": "2026-07-15",
+        "vote_average": 7.216,
+        "vote_count": 109,
+        "popularity": 42.8667,
+        "genre_ids": [
+          878,
+          9648,
+          28
+        ],
+        "original_language": "ko",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 950028,
+        "title": "La invitación",
+        "original_title": "The Invite",
+        "overview": "Una pareja invita a los vecinos a su casa, lo que desencadena una velada llena de giros inesperados, revelando emociones profundamente reprimidas y una sexualidad inexplorada en esta historia que explora las complejidades de las relaciones de hoy en día.",
+        "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg",
+        "backdrop_path": "/bs32Ds4L8VADGjBVasSK1ASU7OW.jpg",
+        "release_date": "2026-04-30",
+        "vote_average": 7.211,
+        "vote_count": 736,
+        "popularity": 41.5328,
+        "genre_ids": [
+          35,
+          18,
+          10749
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      },
+      {
+        "id": 244786,
+        "title": "Whiplash",
+        "original_title": "Whiplash",
+        "overview": "El objetivo de Andrew Neiman, un joven y ambicioso baterista de jazz, es triunfar en el elitista Conservatorio de Música de la Costa Este en el que estudia. Marcado por el fracaso de la carrera literaria de su padre, Andrew alberga sueños de grandeza. Terence Fletcher, un profesor conocido tanto por su talento como por sus rigurosos métodos de enseñanza, dirige el mejor conjunto de jazz del Conservatorio. Cuando Fletcher elige a Andrew y para formar parte del conjunto musical que dirige, cambia para siempre la vida del joven. La pasión de Andrew por alcanzar la perfección se convierte en obsesión, al tiempo que su despiadado profesor lo lleva al límite de su capacidad y de su salud mental.",
+        "poster_path": "/uy36CPy5ARuC8qrH8Esg2ndFyJ5.jpg",
+        "backdrop_path": "/fRGxZuo7jJUWQsVg9PREb98Aclp.jpg",
+        "release_date": "2014-10-10",
+        "vote_average": 8.377,
+        "vote_count": 17180,
+        "popularity": 38.819,
+        "genre_ids": [
+          18,
+          10402,
+          53
+        ],
+        "original_language": "en",
+        "adult": false,
+        "video": false
+      }
+    ],
+    "genres": [
+      {
+        "id": 28,
+        "name": "Acción"
+      },
+      {
+        "id": 12,
+        "name": "Aventura"
+      },
+      {
+        "id": 16,
+        "name": "Animación"
+      },
+      {
+        "id": 35,
+        "name": "Comedia"
+      },
+      {
+        "id": 80,
+        "name": "Crimen"
+      },
+      {
+        "id": 99,
+        "name": "Documental"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Familia"
+      },
+      {
+        "id": 14,
+        "name": "Fantasía"
+      },
+      {
+        "id": 36,
+        "name": "Historia"
+      },
+      {
+        "id": 27,
+        "name": "Terror"
+      },
+      {
+        "id": 10402,
+        "name": "Música"
+      },
+      {
+        "id": 9648,
+        "name": "Misterio"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 878,
+        "name": "Ciencia ficción"
+      },
+      {
+        "id": 10770,
+        "name": "Película de TV"
+      },
+      {
+        "id": 53,
+        "name": "Suspense"
+      },
+      {
+        "id": 10752,
+        "name": "Bélica"
+      },
+      {
+        "id": 37,
+        "name": "Western"
+      }
+    ]
+  },
+  "tv": {
+    "onTheAir": [
+      {
+        "id": 2734,
+        "name": "Ley y orden: Unidad de Víctimas Especiales",
+        "original_name": "Law & Order: Special Victims Unit",
+        "overview": "‘Ley y Orden: Unidad de Víctimas Especiales’ es una serie de televisión estadounidense grabada en Nueva York donde es también principalmente producida. Con el estilo de la original ‘Ley y Orden’ los episodios son usualmente \"sacados de los titulares\" o basados libremente en verdaderos asesinatos que han recibido la atención de los medios.",
+        "poster_path": "/kvo558UKEhp8v3JoRGCSIx3Xxab.jpg",
+        "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+        "first_air_date": "1999-09-20",
+        "vote_average": 8.0,
+        "vote_count": 4365,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 95350,
+        "name": "Linternas",
+        "original_name": "Lanterns",
+        "overview": "Sigue al nuevo recluta John Stewart y al legendario Linterna Hal Jordan, dos policías intergalácticos que se ven envueltos en un oscuro misterio terrestre mientras investigan un asesinato en el corazón de Estados Unidos. Esto les lleva a misterios y ajustes de cuentas más oscuros.",
+        "poster_path": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+        "backdrop_path": "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
+        "first_air_date": "2026-08-16",
+        "vote_average": 8.349,
+        "vote_count": 621,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 456,
+        "name": "Los Simpson",
+        "original_name": "The Simpsons",
+        "overview": "El día a día de una peculiar familia formada por Homer, Marge, Bart, Maggie y Lisa Simpson y otros divertidos personajes de la localidad norteamericana de Springfield. Homer, el padre, es un desastroso inspector de seguridad de una central nuclear. Marge, la madre, es un ama de casa acostumbrada a soportar a su peculiar familia. Bart, de diez años, intenta divertirse con travesuras de todo tipo. Lisa es la más inteligente de la familia, y Maggie, la más pequeña, es un bebé que todavía no habla, pero que juega un importante papel.",
+        "poster_path": "/9hmoEmntaYrrlb4HKSFisWUQnqy.jpg",
+        "backdrop_path": "/qcSHGC5BfoqBoP99PzDIERYG5Qm.jpg",
+        "first_air_date": "1989-12-17",
+        "vote_average": 8.0,
+        "vote_count": 11050,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 549,
+        "name": "Ley y orden",
+        "original_name": "Law & Order",
+        "overview": "Serie sobre la investigación de crímenes en la ciudad de Nueva York. Policías y jueces son los principales protagonistas.",
+        "poster_path": "/vcr8xAdptafbIiU16alUgVak6aM.jpg",
+        "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+        "first_air_date": "1990-09-13",
+        "vote_average": 7.286,
+        "vote_count": 730,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 247718,
+        "name": "Tierra de mafiosos",
+        "original_name": "MobLand",
+        "overview": "El poder está en juego cuando los Harrigan y los Stevenson, dos familias criminales londinenses en guerra, se enfrentan en una batalla de matar o morir que amenaza con derribar imperios y arruinar vidas. Atrapado en el fuego cruzado está Harry Da Souza, el astuto \"solucionador\" tan peligroso como atractivo, que sabe muy bien dónde están las lealtades cuando las fuerzas opuestas chocan. A medida que los reinos se enfrentan, se cruzarán las líneas, y la única gracia salvadora es una garantía de vida o muerte: la familia por encima de todo.",
+        "poster_path": "/xOBnonAeHiZuiTPOLBFMFSPI6jy.jpg",
+        "backdrop_path": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+        "first_air_date": "2025-03-30",
+        "vote_average": 8.475,
+        "vote_count": 970,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 4614,
+        "name": "Navy: Investigación criminal",
+        "original_name": "NCIS",
+        "overview": "Gibbs, agente especial del servicio de investigación criminal de la armada, dirige un equipo extravagante para resolver crímenes que van desde el terrorismo y el espionaje hasta el terrorismo.",
+        "poster_path": "/rkWK3hcCiFwtIhLYnTPKjcZwTTN.jpg",
+        "backdrop_path": "/c1aBrG5s5xFa6Tbnihu2Hhj4t2q.jpg",
+        "first_air_date": "2003-09-23",
+        "vote_average": 7.6,
+        "vote_count": 2581,
+        "genre_ids": [
+          80,
+          18,
+          10759
+        ]
+      },
+      {
+        "id": 1413,
+        "name": "American Horror Story",
+        "original_name": "American Horror Story",
+        "overview": "American Horror Story es una serie antológica de televisión, creada y producida por Ryan Murphy y Brad Falchuk. Cada una de sus temporadas narra una trama independiente, ambientada en lugares diferentes y cerrando siempre la historia; donde muchos actores repiten, pero siempre interpretando personajes distintos.",
+        "poster_path": "/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+        "backdrop_path": "/5G4Bnc4Q0YUK1bwLEUYmIsmm2Ib.jpg",
+        "first_air_date": "2011-10-05",
+        "vote_average": 8.1,
+        "vote_count": 6213,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 97546,
+        "name": "Ted Lasso",
+        "original_name": "Ted Lasso",
+        "overview": "Un ingenuo entrenador de fútbol americano decide probar suerte en un club de fútbol inglés, pero su inexperiencia despierta recelo y desdén entre jugadores y aficionados. ¿Logrará conquistarlos con sus peculiares métodos?",
+        "poster_path": "/6YUzArR2TElmGMj1HmnnfVlgunL.jpg",
+        "backdrop_path": "/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+        "first_air_date": "2020-08-14",
+        "vote_average": 8.363,
+        "vote_count": 2717,
+        "genre_ids": [
+          18,
+          35
+        ]
+      },
+      {
+        "id": 95480,
+        "name": "Slow Horses",
+        "original_name": "Slow Horses",
+        "overview": "Drama de espías con tintes de comedia negra centrado en las andanzas de un incompetente equipo de agentes del MI5 y en su jefe, el irreverente Jackson Lamb, a medida que desmontan los artificios del espionaje para defender Inglaterra de las fuerzas del mal.",
+        "poster_path": "/3YwDLuIScomV0ea3RNL6kHpbi7Y.jpg",
+        "backdrop_path": "/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+        "first_air_date": "2022-04-01",
+        "vote_average": 8.0,
+        "vote_count": 1019,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 2661,
+        "name": "Kamen Rider",
+        "original_name": "仮面ライダー",
+        "overview": "Cada temporada de Kamen Rider presenta una historia diferente con personajes y tramas independientes, aunque todas siguen un esquema similar. El protagonista suele ser un motorista que por diversos medios, la mayor de las veces tecnológicos y a veces mágicos o combinación de ambos según la temporada, se transforma, siempre utilizando la frase Henshin (\"transformación\") en un superhéroe llamado Kamen Rider con un traje blindado y una máscara que generalmente está decorada recordando a un insecto.En unas temporadas hay un solo Kamen Rider, mientras que en otras hay dos o más, habiendo algunas que presentan más de diez Riders diferentes. Estos Riders luchan contra enemigos diversos o incluso a veces entre ellos. Los poderes del Kamen Rider siempre tienen un origen estrechamente relacionado con  los villanos, pero usa esos poderes para el bien en lugar de para el mal, y esta relación se convierte en fuente de conflictos argumentales según la temporada.",
+        "poster_path": "/fIJNVBa6MJStPiOvhLV69nAdu0e.jpg",
+        "backdrop_path": "/usLRh1bcbL0Q9X8zf6rL4OV1qrA.jpg",
+        "first_air_date": "1971-04-03",
+        "vote_average": 6.4,
+        "vote_count": 108,
+        "genre_ids": [
+          10759,
+          10765,
+          18
+        ]
+      },
+      {
+        "id": 94664,
+        "name": "Mushoku Tensei Jobless Reincarnation",
+        "original_name": "無職転生 ～異世界行ったら本気だす～",
+        "overview": "Un joven virgen \"nini\" de 34 años es echado de casa cuando se queda sin dinero. Él se arrepiente de su vida cuando muere en un accidente de tráfico. Tras el accidente, se reencarna en un bebé en un mundo fantástico de espada y brujería. Tras la decisión de hacer lo mejor que pueda con el conocimiento adquirido en su anterior mundo, él decide aprovechar la oportunidad y aprender a usar magia desde su nueva juventud.",
+        "poster_path": "/tn2mxPYSSUPHgfcAe5SCga1DO0i.jpg",
+        "backdrop_path": "/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+        "first_air_date": "2021-01-11",
+        "vote_average": 8.4,
+        "vote_count": 1766,
+        "genre_ids": [
+          10759,
+          16,
+          10765
+        ]
+      },
+      {
+        "id": 3034,
+        "name": "Tatort",
+        "original_name": "Tatort",
+        "overview": "La serie policiaca más longeva y famosa de Alemania, un clásico que lleva desde los años setenta enganchando a varias generaciones.",
+        "poster_path": "/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+        "backdrop_path": "/A4iwF1mpDq8HScQ3MZMhMJuT93k.jpg",
+        "first_air_date": "1970-11-29",
+        "vote_average": 6.2,
+        "vote_count": 127,
+        "genre_ids": [
+          18,
+          80
+        ]
+      },
+      {
+        "id": 57775,
+        "name": "ちびまる子ちゃん",
+        "original_name": "ちびまる子ちゃん",
+        "overview": "",
+        "poster_path": "/auruoMM9a9c4diotHvI5v7dKFbF.jpg",
+        "backdrop_path": "/vuajwjep1FxphPhMEWKv4bfrCnf.jpg",
+        "first_air_date": "1990-01-07",
+        "vote_average": 7.8,
+        "vote_count": 24,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 58841,
+        "name": "Chicago P.D.",
+        "original_name": "Chicago P.D.",
+        "overview": "Narra las historias del Distrito 21 del Departamento de Policía de Chicago, hombres y mujeres que lo dan todo para proteger su comunidad El distrito 21 está compuesto por dos grupos, los uniformados que patrullan la ciudad y se enfrentan a los delitos callejeros, y la unidad de inteligencia, que combate los grandes delitos - crimen organizado, tráfico de drogas, asesinatos y más.",
+        "poster_path": "/bez40PgT36RUu4gstD2A6GSM0tP.jpg",
+        "backdrop_path": "/18KSsDgcGQds7yOMC6MVRTbVJwt.jpg",
+        "first_air_date": "2014-01-08",
+        "vote_average": 8.4,
+        "vote_count": 2637,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 80748,
+        "name": "FBI",
+        "original_name": "FBI",
+        "overview": "La unidad de élite de la oficina del FBI en Nueva York ofrece todos sus talentos, intelecto y experiencia técnica en casos importantes para mantener a salvo a Nueva York y el país.",
+        "poster_path": "/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+        "backdrop_path": "/3yOcLUJsbC58EcthvVk8730ZhP.jpg",
+        "first_air_date": "2018-09-25",
+        "vote_average": 7.9,
+        "vote_count": 952,
+        "genre_ids": [
+          80,
+          10759,
+          18
+        ]
+      },
+      {
+        "id": 44006,
+        "name": "Chicago Fire",
+        "original_name": "Chicago Fire",
+        "overview": "El espectáculo sigue las vidas de los bomberos y paramédicos que trabajan en el Departamento de Bomberos de la ciudad de Chicago en la estación de bomberos 51, formada por el Camión 81, la Brigada 3, la Ambulancia 61 y la Patrulla 25.",
+        "poster_path": "/r915sk2JpthZSjHEgZKifWxgo6L.jpg",
+        "backdrop_path": "/14LzHqJrFcHk7ruMNCXpEkB0Thg.jpg",
+        "first_air_date": "2012-10-10",
+        "vote_average": 8.4,
+        "vote_count": 2444,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 65942,
+        "name": "Re:Zero - Empezar de cero en un mundo diferente",
+        "original_name": "Re:ゼロから始める異世界生活",
+        "overview": "Subaru Natsuki es un estudiante corriente de preparatoria que conoce a una hermosa chica de pelo plateado de otro mundo que lo rescata. Para devolverle el favor decide quedarse con ella, pero el destino con el que carga la muchacha es mucho más pesado de lo que Subaru puede imaginar. Los enemigos atacan sin descanso, uno tras otro, hasta que finalmente mueren tanto él como la chica. Subaru no quiere que la chica resulte herida, con lo que jura acabar con cualquier enemigo, con cualquier destino que le aguarde, siempre por protegerla.",
+        "poster_path": "/ccG0ZfXOQ0834bIus4SwZrXtkyM.jpg",
+        "backdrop_path": "/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+        "first_air_date": "2016-04-04",
+        "vote_average": 8.1,
+        "vote_count": 795,
+        "genre_ids": [
+          16,
+          9648,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 45790,
+        "name": "JoJo's Bizarre Adventure",
+        "original_name": "ジョジョの奇妙な冒険",
+        "overview": "La trama se desarrolla en torno a la historia del linaje Joestar, una poderosa familia de origen británico destinada a combatir fuerzas sobrenaturales malvadas usando poderes adquiridos; la obra abarca varias generaciones de dicho linaje, las cuales son adaptadas en cada parte poniendo un descendiente como protagonista, empezando con Jonathan en el año 1880.  El nombre «JoJo», presente en el título de la obra, consiste en un juego de palabras compuesto por el nombre de los protagonistas de cada parte, los cuales pueden abreviarse como «Jojo» y usarse a forma de apodo; sin embargo, en las últimas partes de la obra se hacen juegos de palabras más complejos: por ejemplo, Josuke es un juego de palabras en japonés en que la sílaba «suke» (助) se puede leer también como «jo», y el diminutivo de Giorno Giovana (Gio. Gio.) tiene una pronunciación bastante similar a «Jojo». Todos los Joestar se identifican porque tienen una marca de nacimiento en forma de estrella de cinco puntas.",
+        "poster_path": "/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+        "backdrop_path": "/5mUYDoFjDlPmDvnUWSknhYjGBBh.jpg",
+        "first_air_date": "2012-10-06",
+        "vote_average": 8.5,
+        "vote_count": 1670,
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 2190,
+        "name": "South Park",
+        "original_name": "South Park",
+        "overview": "South Park es una serie de televisión estadounidense de animación, creada por Trey Parker y Matt Stone para el canal Comedy Central. Está dirigida al público adulto y se caracteriza por satirizar con humor negro la sociedad, actualidad y cultura estadounidense a través de las historias y situaciones surrealistas que les suceden a sus protagonistas, cuatro niños (Stan, Kyle, Cartman y Kenny) residentes en un pueblo ficticio de Colorado que se llama South Park.",
+        "poster_path": "/w9Kz3tZsEn95F8WHh6ydFXaQIFO.jpg",
+        "backdrop_path": "/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+        "first_air_date": "1997-08-13",
+        "vote_average": 8.3,
+        "vote_count": 5183,
+        "genre_ids": [
+          35,
+          16
+        ]
+      },
+      {
+        "id": 298505,
+        "name": "Coven Academy: El hechizo de las brujas",
+        "original_name": "Coven Academy",
+        "overview": "En el corazón embrujado de Nueva Orleans, \"Coven Academy: El hechizo de las brujas\" sigue a tres brujas adolescentes y a sus peligrosamente encantadores compañeros brujos en un selecto internado mágico donde el poder es moneda de cambio, los secretos son letales y la atracción es una desventaja. Atrapados entre antiguas guerras sobrenaturales e intereses amorosos prohibidos, el aquelarre debe decidir hasta dónde están dispuestos a llegar para proteger su ciudad y a sí mismos.",
+        "poster_path": "/hcmeaEjGZE1mYfPp4KFd8mNgYbO.jpg",
+        "backdrop_path": "/mGFtH5pUXDd4hSXUfl8HnHlRWJV.jpg",
+        "first_air_date": "2026-10-01",
+        "vote_average": 7.3,
+        "vote_count": 22,
+        "genre_ids": [
+          9648,
+          18,
+          10765
+        ]
+      }
+    ],
+    "popular": [
+      {
+        "id": 108978,
+        "name": "Reacher",
+        "original_name": "Reacher",
+        "overview": "Cuando el exagente de la Policía Militar Jack Reacher es detenido por un asesinato que no ha cometido, se ve envuelto en una mortífera conspiración llena de policías corruptos, empresarios dudosos y políticos intrigantes. Armado solo con su ingenio, debe averiguar qué pasa en Margrave, Georgia. La primera temporada de Reacher se basa en Zona peligrosa, el superventas internacional de Lee Child.",
+        "poster_path": "/6iuVqg86hJPwTWAO1TDWKLxjgn4.jpg",
+        "backdrop_path": "/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+        "first_air_date": "2022-02-03",
+        "vote_average": 8.136,
+        "vote_count": 3459,
+        "genre_ids": [
+          10759,
+          80
+        ]
+      },
+      {
+        "id": 2734,
+        "name": "Ley y orden: Unidad de Víctimas Especiales",
+        "original_name": "Law & Order: Special Victims Unit",
+        "overview": "‘Ley y Orden: Unidad de Víctimas Especiales’ es una serie de televisión estadounidense grabada en Nueva York donde es también principalmente producida. Con el estilo de la original ‘Ley y Orden’ los episodios son usualmente \"sacados de los titulares\" o basados libremente en verdaderos asesinatos que han recibido la atención de los medios.",
+        "poster_path": "/kvo558UKEhp8v3JoRGCSIx3Xxab.jpg",
+        "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+        "first_air_date": "1999-09-20",
+        "vote_average": 8.0,
+        "vote_count": 4365,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 95350,
+        "name": "Linternas",
+        "original_name": "Lanterns",
+        "overview": "Sigue al nuevo recluta John Stewart y al legendario Linterna Hal Jordan, dos policías intergalácticos que se ven envueltos en un oscuro misterio terrestre mientras investigan un asesinato en el corazón de Estados Unidos. Esto les lleva a misterios y ajustes de cuentas más oscuros.",
+        "poster_path": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+        "backdrop_path": "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
+        "first_air_date": "2026-08-16",
+        "vote_average": 8.349,
+        "vote_count": 621,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 5920,
+        "name": "El mentalista",
+        "original_name": "The Mentalist",
+        "overview": "El mentalista es una serie policiaca americana sobre Patrick Jane, ex médium, que trabaja de asesor para la Oficina de Investigación de California (California Bureau of Investigation), usando su altamente desarrollada capacidad de observación, que anteriormente usaba para \"leer\" mentes.",
+        "poster_path": "/snKUzvCl3kGv0RWBjEjnOXMGvdl.jpg",
+        "backdrop_path": "/rJFqKcmMSttdNP58l0dVzY2NcTA.jpg",
+        "first_air_date": "2008-09-23",
+        "vote_average": 8.414,
+        "vote_count": 4814,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 1416,
+        "name": "Anatomía de Grey",
+        "original_name": "Grey's Anatomy",
+        "overview": "La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo sea de esos que te hacen la vida imposible. Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas más duro de la Facultad de Medicina de Harvard. Y ella lo va a comprobar. Pero no estará sola. Un elenco de compañeros de promoción tendrán que superar la misma prueba. Ahora están en el mundo real, son doctores del hospital. Y en un mundo donde la experiencia en el trabajo puede ser un factor de vida o muerte, todos ellos tendrán que lidiar con los altibajos de sus vidas personales.",
+        "poster_path": "/2kFOeA4oCxdHRfHiv8JEa7y3vD9.jpg",
+        "backdrop_path": "/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+        "first_air_date": "2005-03-27",
+        "vote_average": 8.2,
+        "vote_count": 11067,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 456,
+        "name": "Los Simpson",
+        "original_name": "The Simpsons",
+        "overview": "El día a día de una peculiar familia formada por Homer, Marge, Bart, Maggie y Lisa Simpson y otros divertidos personajes de la localidad norteamericana de Springfield. Homer, el padre, es un desastroso inspector de seguridad de una central nuclear. Marge, la madre, es un ama de casa acostumbrada a soportar a su peculiar familia. Bart, de diez años, intenta divertirse con travesuras de todo tipo. Lisa es la más inteligente de la familia, y Maggie, la más pequeña, es un bebé que todavía no habla, pero que juega un importante papel.",
+        "poster_path": "/9hmoEmntaYrrlb4HKSFisWUQnqy.jpg",
+        "backdrop_path": "/qcSHGC5BfoqBoP99PzDIERYG5Qm.jpg",
+        "first_air_date": "1989-12-17",
+        "vote_average": 8.0,
+        "vote_count": 11050,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 2316,
+        "name": "The Office",
+        "original_name": "The Office",
+        "overview": "Steve Carell protagoniza The Office, un fresco y divertido vistazo, con formato pseudo-documental, al día a día en la vida de unos excéntricos trabajadores de la empresa Dunder Mifflin. El serio pero despistadísimo director Michael Scott se considera un magnífico jefe y mentor, pero realmente inspira más críticas que respeto a sus empleados.",
+        "poster_path": "/5uwetbr0X8BPRy3Wmh63S9EhsiY.jpg",
+        "backdrop_path": "/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg",
+        "first_air_date": "2005-03-24",
+        "vote_average": 8.6,
+        "vote_count": 5545,
+        "genre_ids": [
+          35
+        ]
+      },
+      {
+        "id": 549,
+        "name": "Ley y orden",
+        "original_name": "Law & Order",
+        "overview": "Serie sobre la investigación de crímenes en la ciudad de Nueva York. Policías y jueces son los principales protagonistas.",
+        "poster_path": "/vcr8xAdptafbIiU16alUgVak6aM.jpg",
+        "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+        "first_air_date": "1990-09-13",
+        "vote_average": 7.286,
+        "vote_count": 730,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 113962,
+        "name": "Operaciones Especiales: Lioness",
+        "original_name": "Lioness",
+        "overview": "Cruz Manuelos, una joven infante de marina ruda pero apasionada, es reclutada para unirse al Equipo Lioness Engagement de la CIA para ayudar a acabar con una organización terrorista desde adentro. Joe, el jefe de estación del programa Lioness, tiene la tarea de capacitar, administrar y liderar a sus agentes encubiertos.",
+        "poster_path": "/d0r0rxI9UjMVvD5Krc5oET2O0gU.jpg",
+        "backdrop_path": "/mU7l9UaEItxHbg2YBNs0sHjoFVY.jpg",
+        "first_air_date": "2023-07-23",
+        "vote_average": 8.257,
+        "vote_count": 1675,
+        "genre_ids": [
+          18,
+          10768
+        ]
+      },
+      {
+        "id": 247718,
+        "name": "Tierra de mafiosos",
+        "original_name": "MobLand",
+        "overview": "El poder está en juego cuando los Harrigan y los Stevenson, dos familias criminales londinenses en guerra, se enfrentan en una batalla de matar o morir que amenaza con derribar imperios y arruinar vidas. Atrapado en el fuego cruzado está Harry Da Souza, el astuto \"solucionador\" tan peligroso como atractivo, que sabe muy bien dónde están las lealtades cuando las fuerzas opuestas chocan. A medida que los reinos se enfrentan, se cruzarán las líneas, y la única gracia salvadora es una garantía de vida o muerte: la familia por encima de todo.",
+        "poster_path": "/xOBnonAeHiZuiTPOLBFMFSPI6jy.jpg",
+        "backdrop_path": "/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+        "first_air_date": "2025-03-30",
+        "vote_average": 8.475,
+        "vote_count": 970,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 1434,
+        "name": "Padre de familia",
+        "original_name": "Family Guy",
+        "overview": "Los Griffin son una mediocre familia compuesta por Peter y Lois; sus hijos, Meg, Chris, y Stewie; y su antropomórfica mascota canina Brian. Está ambientada en la ciudad ficticia de Quahog, Rhode Island, y gran parte de su humor se exhibe en forma de pequeños cortes que frecuentemente se mofan de la cultura americana.",
+        "poster_path": "/oalgdH3vglKvg1SB4OaMyoJ29sx.jpg",
+        "backdrop_path": "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
+        "first_air_date": "1999-01-31",
+        "vote_average": 7.4,
+        "vote_count": 5135,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 1622,
+        "name": "Sobrenatural",
+        "original_name": "Supernatural",
+        "overview": "Cuando eran niños, Sam y Dean Winchester, perdieron a su madre debido a una misteriosa y demoníaca fuerza supernatural. Posteriormente, su padre los crió para que fueran soldados. Él les enseño sobre el mal que vive en los rincones obscuros y en las carreteras secundarias de América... y también les enseñó como matarlo. Ahora los hermanos Winchester recorren el país en su Chevy Impala del '67, luchando contra todo tipo de amenaza sobrenatural que encuentran en el camino.",
+        "poster_path": "/58Qaj36FZDz54H36LsUI8mGiW9y.jpg",
+        "backdrop_path": "/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+        "first_air_date": "2005-09-13",
+        "vote_average": 8.315,
+        "vote_count": 8729,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 4614,
+        "name": "Navy: Investigación criminal",
+        "original_name": "NCIS",
+        "overview": "Gibbs, agente especial del servicio de investigación criminal de la armada, dirige un equipo extravagante para resolver crímenes que van desde el terrorismo y el espionaje hasta el terrorismo.",
+        "poster_path": "/rkWK3hcCiFwtIhLYnTPKjcZwTTN.jpg",
+        "backdrop_path": "/c1aBrG5s5xFa6Tbnihu2Hhj4t2q.jpg",
+        "first_air_date": "2003-09-23",
+        "vote_average": 7.6,
+        "vote_count": 2581,
+        "genre_ids": [
+          80,
+          18,
+          10759
+        ]
+      },
+      {
+        "id": 4057,
+        "name": "Mentes criminales",
+        "original_name": "Criminal Minds",
+        "overview": "Mentes criminales (Criminal Minds) es una serie de drama criminológico. Se estrenó el 22 de septiembre de 2005 en el canal de televisión estadounidense, CBS. Muestra el trabajo de los miembros del equipo de Unidad de Análisis de Conducta del FBI, un grupo de investigadores de diversas ramas de la criminología que se dedica a hacer análisis psicológicos y criminológicos a criminales para facilitar su captura.",
+        "poster_path": "/3UyUgPfcs7ByA9hxbhWSW98xdpg.jpg",
+        "backdrop_path": "/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
+        "first_air_date": "2005-09-22",
+        "vote_average": 8.3,
+        "vote_count": 4186,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 1431,
+        "name": "CSI: Las Vegas",
+        "original_name": "CSI: Crime Scene Investigation",
+        "overview": "CSI: Crime Scene Investigation es una serie de televisión de ficción estadounidense transmitida por primera vez en los Estados Unidos por la cadena CBS. La serie se centra en torno a un grupo de científicos forenses y criminologos que trabajan en la ciudad estadounidense de Las Vegas (Nevada), investigando los crímenes que en ella suceden. La original fórmula de la serie y su éxito suscitó dos secuelas, CSI: Miami (2002-2012) y CSI: Nueva York (2004-2013), en torno a los equipos de científicos forenses de dichas ciudades, pero además influye en varias series posteriores relacionadas con la investigación criminal, como Bones o NCIS entre otras.",
+        "poster_path": "/i5hmoRjHNWady4AtAGICTUXknKH.jpg",
+        "backdrop_path": "/cvlLBcQWpO9X21jDHhgPJnE2aVq.jpg",
+        "first_air_date": "2000-10-06",
+        "vote_average": 7.6,
+        "vote_count": 1439,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 1433,
+        "name": "Padre made in USA",
+        "original_name": "American Dad!",
+        "overview": "Padre made in USA, es una serie de televisión de animación para adolescentes y adultos del creador de Padre de familia, Seth MacFarlane.",
+        "poster_path": "/tDmAHjMJ9jQ7sDIrBY0UKUb5mXm.jpg",
+        "backdrop_path": "/iixxhk3ycXmFqBn616pAsC3lu53.jpg",
+        "first_air_date": "2005-02-06",
+        "vote_average": 7.0,
+        "vote_count": 2460,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 79744,
+        "name": "The Rookie",
+        "original_name": "The Rookie",
+        "overview": "Comenzar de nuevo no es fácil, especialmente para el chico de una ciudad pequeña John Nolan que, después de un incidente que cambia su vida, está persiguiendo su sueño de ser un oficial de policía de Los Ángeles. Como el novato más viejo de la fuerza, se ha encontrado con el escepticismo de algunos de los superiores que lo ven como una crisis ambulante.",
+        "poster_path": "/g39Rn6PcZjK2yLzz5Z5oBKSpsZR.jpg",
+        "backdrop_path": "/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+        "first_air_date": "2018-10-16",
+        "vote_average": 8.5,
+        "vote_count": 3554,
+        "genre_ids": [
+          80,
+          18,
+          35
+        ]
+      },
+      {
+        "id": 1413,
+        "name": "American Horror Story",
+        "original_name": "American Horror Story",
+        "overview": "American Horror Story es una serie antológica de televisión, creada y producida por Ryan Murphy y Brad Falchuk. Cada una de sus temporadas narra una trama independiente, ambientada en lugares diferentes y cerrando siempre la historia; donde muchos actores repiten, pero siempre interpretando personajes distintos.",
+        "poster_path": "/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+        "backdrop_path": "/5G4Bnc4Q0YUK1bwLEUYmIsmm2Ib.jpg",
+        "first_air_date": "2011-10-05",
+        "vote_average": 8.1,
+        "vote_count": 6213,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 97546,
+        "name": "Ted Lasso",
+        "original_name": "Ted Lasso",
+        "overview": "Un ingenuo entrenador de fútbol americano decide probar suerte en un club de fútbol inglés, pero su inexperiencia despierta recelo y desdén entre jugadores y aficionados. ¿Logrará conquistarlos con sus peculiares métodos?",
+        "poster_path": "/6YUzArR2TElmGMj1HmnnfVlgunL.jpg",
+        "backdrop_path": "/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+        "first_air_date": "2020-08-14",
+        "vote_average": 8.363,
+        "vote_count": 2717,
+        "genre_ids": [
+          18,
+          35
+        ]
+      },
+      {
+        "id": 1396,
+        "name": "Breaking Bad",
+        "original_name": "Breaking Bad",
+        "overview": "Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y vender metanfetamina a fin de que su familia no pase apuros económicos.",
+        "poster_path": "/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+        "backdrop_path": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+        "first_air_date": "2008-01-20",
+        "vote_average": 9.0,
+        "vote_count": 18766,
+        "genre_ids": [
+          18,
+          80
+        ]
+      }
+    ],
+    "topRated": [
+      {
+        "id": 276161,
+        "name": "Así aprenderás",
+        "original_name": "참교육",
+        "overview": "Unos inspectores insólitos entran en escena en los colegios, con lecciones duras de las que no aparecen en los libros de texto, para acabar con las reiteradas faltas de respeto.",
+        "poster_path": "/lG83nWVT7cHl3nSxonaYhOjqyWH.jpg",
+        "backdrop_path": "/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+        "first_air_date": "2026-06-05",
+        "vote_average": 9.366,
+        "vote_count": 959,
+        "genre_ids": [
+          10759,
+          18,
+          35
+        ]
+      },
+      {
+        "id": 299167,
+        "name": "Rancho Dutton",
+        "original_name": "Dutton Ranch",
+        "overview": "Rip y Beth Dutton están construyendo una nueva vida en el sur de Texas junto al joven Carter, pero la promesa de un futuro lejos de Yellowstone choca con duras realidades y con un rancho rival que no se detendrá ante nada para proteger su imperio.",
+        "poster_path": "/7dAzAtmmfHeW5H6xxuukXsBBfzH.jpg",
+        "backdrop_path": "/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
+        "first_air_date": "2026-05-15",
+        "vote_average": 9.1,
+        "vote_count": 614,
+        "genre_ids": [
+          37,
+          18
+        ]
+      },
+      {
+        "id": 1396,
+        "name": "Breaking Bad",
+        "original_name": "Breaking Bad",
+        "overview": "Un profesor de química con cáncer terminal se asocia con un exalumno suyo para fabricar y vender metanfetamina a fin de que su familia no pase apuros económicos.",
+        "poster_path": "/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+        "backdrop_path": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+        "first_air_date": "2008-01-20",
+        "vote_average": 9.0,
+        "vote_count": 18766,
+        "genre_ids": [
+          18,
+          80
+        ]
+      },
+      {
+        "id": 273240,
+        "name": "Off Campus",
+        "original_name": "Off Campus",
+        "overview": "Hannah Wells hace un trato con el capitán de hockey Garrett Graham: ella le da clase de filosofía y él la ayuda a conquistar al chico que le gusta. Su acuerdo se convierte en una auténtica conexión cuando ambos se enfrentan a su pasado.",
+        "poster_path": "/pI4sEVVbswtyOL2uaFxZs2tPOnQ.jpg",
+        "backdrop_path": "/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg",
+        "first_air_date": "2026-05-13",
+        "vote_average": 8.9,
+        "vote_count": 877,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 85077,
+        "name": "The Chosen (Los elegidos)",
+        "original_name": "The Chosen",
+        "overview": "Por primera vez, la historia más grande jamás contada se presenta en una serie de varias temporadas. Enfocada en los personajes y el contexto histórico de los Evangelios, la primera temporada del mayor proyecto audiovisual producido mediante crowdfunding nos muestra a personas como Pedro, Nicodemo, María Magdalena, Mateo y, por supuesto, Jesús, de una manera nunca vista antes en pantalla. La serie muestra la parte más auténtica e íntima de la vida y el ministerio de una de las figuras más importantes e influyentes de la Historia de la humanidad.",
+        "poster_path": "/sADRlqLn9na8p7S1mLWMOU04uit.jpg",
+        "backdrop_path": "/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
+        "first_air_date": "2019-04-21",
+        "vote_average": 8.8,
+        "vote_count": 1010,
+        "genre_ids": [
+          10759,
+          10751,
+          18
+        ]
+      },
+      {
+        "id": 209867,
+        "name": "Frieren: Tras finalizar el viaje",
+        "original_name": "葬送のフリーレン",
+        "overview": "La maga Frieren formaba parte del grupo del héroe Himmel, quienes derrotaron al Rey Demonio tras un viaje de 10 años y devolvieron la paz al reino. Frieren es una elfa de más de mil años de vida, así que al despedirse de Himmel y sus compañeros promete que regresará para verlos y parte de viaje sola. Al cabo de cincuenta años, Frieren cumple su promesa y acude a visitar a Himmel y al resto. Aunque ella no ha cambiado, Himmel y los demás han envejecido y están en el final de sus vidas. Cuando Himmel muere, Frieren se arrepiente de no haber pasado más tiempo a su lado conociéndolo, así que emprende un viaje para conocer mejor a sus antiguos compañeros, a las personas y descubrir más del mundo.",
+        "poster_path": "/3NyQpXmkaBVWgYM8miDHEFqGMCB.jpg",
+        "backdrop_path": "/rBOnrVlck7BIlGeWVlzYiZeg4l2.jpg",
+        "first_air_date": "2023-09-29",
+        "vote_average": 8.8,
+        "vote_count": 985,
+        "genre_ids": [
+          16,
+          10759,
+          18,
+          10765
+        ]
+      },
+      {
+        "id": 219246,
+        "name": "Si la vida te da mandarinas...",
+        "original_name": "폭싹 속았수다",
+        "overview": "En la isla de Jeju, una chica llena de vida y un joven decidido viven una historia repleta de desafíos y triunfos que demuestra que el amor puede trascender el tiempo.",
+        "poster_path": "/h3Sv1qMAc6ADS6xWoIrUAzdXarf.jpg",
+        "backdrop_path": "/a9qlroMOHewiDsUR93PYMVfpbF5.jpg",
+        "first_air_date": "2025-03-07",
+        "vote_average": 8.8,
+        "vote_count": 599,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 246,
+        "name": "Avatar: La leyenda de Aang",
+        "original_name": "Avatar: The Last Airbender",
+        "overview": "La historia transcurre en un mundo de gente principalmente asiática (el estilo de vida en la serie se basa en la primera mitad del siglo XIX), donde predominan las artes marciales y la manipulación de los elementos en combinación con el misticismo oriental, dando seguimiento a las aventuras de Aang, el más reciente sucesor de una larga línea de avatares, y sus amigos en un intento por salvar su místico mundo de la despiadada Nación del Fuego que busca conquistar a las demás naciones. Durante sus travesías son acechados insistentemente por el desterrado príncipe del fuego Zuko, cuyo objetivo es capturar al avatar para recuperar su honor. Esta serie es presentada como si se tratara de una serie de libros, en donde cada episodio actúa como un «capítulo», y cada temporada como un solo «libro», los cuales se titulan por el elemento temático de la temporada.",
+        "poster_path": "/ucNtkZfpZ6KgxqPo039nN4LAyFR.jpg",
+        "backdrop_path": "/7oBGhqJIghRBvOwo5Qe0yM0cnMc.jpg",
+        "first_air_date": "2005-02-21",
+        "vote_average": 8.8,
+        "vote_count": 5133,
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 37854,
+        "name": "One Piece",
+        "original_name": "ワンピース",
+        "overview": "Esta historia se sitúa en el momento más álgido de la Gran Era de los Piratas, cuando el joven Monkey D. Luffy quiere llegar a ser el Rey de los Piratas y hacerse al fin con un legendario tesoro, el One Piece.",
+        "poster_path": "/8f33Q5AuM2G5ZqFeusbIqDjr3cI.jpg",
+        "backdrop_path": "/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
+        "first_air_date": "1999-10-20",
+        "vote_average": 8.8,
+        "vote_count": 5582,
+        "genre_ids": [
+          10759,
+          35,
+          16
+        ]
+      },
+      {
+        "id": 94605,
+        "name": "Arcane",
+        "original_name": "Arcane",
+        "overview": "Con las dispares ciudades de Piltover y Zaun como telón de fondo, dos hermanas luchan en bandos opuestos de una guerra entre tecnologías mágicas y creencias enfrentadas.",
+        "poster_path": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+        "backdrop_path": "/5cvnxEHT3e39DvT6ARw4GNCFrB0.jpg",
+        "first_air_date": "2021-11-06",
+        "vote_average": 8.7,
+        "vote_count": 6213,
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 250307,
+        "name": "The Pitt",
+        "original_name": "The Pitt",
+        "overview": "The Pitt ofrece una visión realista de los retos a los que se enfrenta el personal sanitario en los Estados Unidos de hoy, visto a través de la lente de los héroes de primera línea que trabajan en un hospital de la actualidad en Pittsburgh, Pensilvania.",
+        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+        "backdrop_path": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+        "first_air_date": "2025-01-09",
+        "vote_average": 8.7,
+        "vote_count": 997,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 87108,
+        "name": "Chernobyl",
+        "original_name": "Chernobyl",
+        "overview": "En Abril de 1986, la Central Nuclear de Chernóbil en Ucrania (en aquel entonces, la Unión Soviética), sufrió una explosión masiva que liberó material radioactivo en Bielorrusia, Rusia, Ucrania, así como en zonas de Escandinavia y Europa Central. La serie relata lo que aconteció en 1986, en uno de los mayores desastres provocados por el hombre en la historia reciente, así como los sacrificios realizados para salvar al continente de un desastre sin precedentes.",
+        "poster_path": "/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+        "backdrop_path": "/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+        "first_air_date": "2019-05-06",
+        "vote_average": 8.727,
+        "vote_count": 8379,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 60059,
+        "name": "Better Call Saul",
+        "original_name": "Better Call Saul",
+        "overview": "Esta precuela de \"Breaking Bad\" nominada al Emmy narra la vida del picapleitos Jimmy McGill y su transformación en Saul Goodman, el abogado de moral laxa.",
+        "poster_path": "/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
+        "backdrop_path": "/rfxryDIv8huejujg4JueDJx8zCz.jpg",
+        "first_air_date": "2015-02-08",
+        "vote_average": 8.7,
+        "vote_count": 6940,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 31911,
+        "name": "Fullmetal Alchemist: Brotherhood",
+        "original_name": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+        "overview": "Remake de Fullmetal Alchemist. Edward y Alphonse rompieron la regla basica de la alquimia, la cual les trajo graves consecuencias. Para remediar esto, se embarcan en busca de alguna forma de solucionar sus males",
+        "poster_path": "/vIkH7fUQf8Olo8Apq56FQLGDXOo.jpg",
+        "backdrop_path": "/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
+        "first_air_date": "2009-04-05",
+        "vote_average": 8.7,
+        "vote_count": 2602,
+        "genre_ids": [
+          16,
+          10759,
+          10765,
+          18
+        ]
+      },
+      {
+        "id": 301507,
+        "name": "Más que rivales",
+        "original_name": "Heated Rivalry",
+        "overview": "Dos de las mayores estrellas de la Major League Hockey están unidas por la ambición, la rivalidad y una atracción magnética que ninguna de las dos comprende del todo. Lo que comienza como una aventura secreta entre dos novatos se convierte en un viaje de años de amor, negación y autodescubrimiento. Durante los siguientes ocho años, mientras buscan la gloria sobre el hielo, luchan por comprender sus sentimientos mutuos. Divididos entre el deporte que les apasiona y el amor que no pueden ignorar, deben decidir si hay espacio en su mundo ferozmente competitivo para algo tan frágil —y poderoso— como el amor verdadero.",
+        "poster_path": "/rFZLFbuAOIQGZxXJT9XWhE87XMY.jpg",
+        "backdrop_path": "/3vuBfAuAltIR6UdANUQ1lLXOeia.jpg",
+        "first_air_date": "2025-11-28",
+        "vote_average": 8.7,
+        "vote_count": 623,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 138502,
+        "name": "X-Men '97",
+        "original_name": "X-Men '97",
+        "overview": "X-Men '97 vuelve a la icónica época de los años 90, donde los X-Men, un grupo de mutantes que utilizan sus asombrosos poderes para proteger a un mundo que los odia y los teme, se enfrentarán a su mayor desafío y a un nuevo, insospechado y peligroso futuro.",
+        "poster_path": "/oudLzoZ9vqcH7BQAOAeHeC7bcjT.jpg",
+        "backdrop_path": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+        "first_air_date": "2024-03-20",
+        "vote_average": 8.7,
+        "vote_count": 903,
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 200709,
+        "name": "Un héroe débil",
+        "original_name": "약한영웅",
+        "overview": "Yeon Shi Eun, un estudiante modelo con calificaciones que pertenecen al 1% superior de la escuela. Se ve débil pero lucha contra numerosas violencias dentro y fuera de la escuela. Representa a un chico naturalmente débil en términos de apariencia, dominando una escuela parecida a una jungla usando su cerebro, poder analítico y herramientas.",
+        "poster_path": "/wmYQAByUOf3mQp0xOQa0Xkf5ea1.jpg",
+        "backdrop_path": "/cLTAda6fMRirkCY1xfO4pmcHVkk.jpg",
+        "first_air_date": "2022-11-18",
+        "vote_average": 8.7,
+        "vote_count": 543,
+        "genre_ids": [
+          10759,
+          18
+        ]
+      },
+      {
+        "id": 1429,
+        "name": "Ataque a los Titanes",
+        "original_name": "進撃の巨人",
+        "overview": "Tras un siglo de aparente paz, un titán colosal rompe las murallas que protegían a la humanidad, desatando una nueva masacre. Eren Jaeger y el Cuerpo de Exploradores lucharán para recuperar su mundo y enfrentar la amenaza titán.",
+        "poster_path": "/yFPQ4JhhirnCVe2UIKGMYX7TOGZ.jpg",
+        "backdrop_path": "/wg0GsFpeHAFPbbcfsntTQBggWCo.jpg",
+        "first_air_date": "2013-04-07",
+        "vote_average": 8.687,
+        "vote_count": 7741,
+        "genre_ids": [
+          16,
+          10765,
+          10759
+        ]
+      },
+      {
+        "id": 127532,
+        "name": "Solo Leveling",
+        "original_name": "俺だけレベルアップな件",
+        "overview": "Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, un programa que solo él puede ver y que eleva su nivel en todos los sentidos. Ahora, está decidido a descubrir los secretos detrás de sus poderes y la mazmorra que los engendró.",
+        "poster_path": "/eCD7WS9h4lCT8N4Xavc9u8R1IGk.jpg",
+        "backdrop_path": "/xMNH87maNLt9n2bMDYeI6db5VFm.jpg",
+        "first_air_date": "2024-01-07",
+        "vote_average": 8.7,
+        "vote_count": 2018,
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ]
+      },
+      {
+        "id": 60625,
+        "name": "Rick y Morty",
+        "original_name": "Rick and Morty",
+        "overview": "Comedia animada que narra las aventuras de un científico loco Rick Sánchez, que regresa después de 20 años para vivir con su hija, su marido y sus hijos Morty y Summer.",
+        "poster_path": "/arSWOHGl9uQvhDrWjgyl3aaypca.jpg",
+        "backdrop_path": "/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+        "first_air_date": "2013-12-02",
+        "vote_average": 8.7,
+        "vote_count": 11445,
+        "genre_ids": [
+          16,
+          35,
+          10765,
+          10759
+        ]
+      }
+    ],
+    "discover": [
+      {
+        "id": 91759,
+        "name": "愛·回家之開心速遞",
+        "original_name": "愛·回家之開心速遞",
+        "overview": "",
+        "poster_path": "/lgD4j9gUGmMckZpWWRJjorWqGVT.jpg",
+        "backdrop_path": "/dyFTt1a9ZpFdKE96kPlE9fQvXOJ.jpg",
+        "first_air_date": "2017-02-20",
+        "vote_average": 5.4,
+        "vote_count": 46,
+        "genre_ids": [
+          10751,
+          35,
+          18
+        ]
+      },
+      {
+        "id": 70998,
+        "name": "Souryo to Majiwaru Shikiyoku no Yoru ni...",
+        "original_name": "僧侶と交わる色欲の夜に…",
+        "overview": "La historia da comienzo cuando una mujer se encuentra con Kujo, el que fue su primer amor, en una reunión de viejos compañeros de clase. Allí descubre que Kujo se ha convertido en sacerdote y se encarga del templo de la familia. Aunque ella piensa que los monjes no tienen relaciones románticas, una chispa desata la pasión entre ambos, lo que despierta dudas en la mujer sobre si lo que hacen es correcto.",
+        "poster_path": "/nX6G2UWqGqBNU1hOA1yOLB1APTi.jpg",
+        "backdrop_path": "/4kQiFnWtwndtCyKMszVJNPEE1kY.jpg",
+        "first_air_date": "2017-04-03",
+        "vote_average": 5.5,
+        "vote_count": 15,
+        "genre_ids": [
+          16,
+          18
+        ]
+      },
+      {
+        "id": 22980,
+        "name": "Watch What Happens Live with Andy Cohen",
+        "original_name": "Watch What Happens Live with Andy Cohen",
+        "overview": "",
+        "poster_path": "/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+        "backdrop_path": "/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+        "first_air_date": "2009-07-16",
+        "vote_average": 5.01,
+        "vote_count": 99,
+        "genre_ids": [
+          10767,
+          35
+        ]
+      },
+      {
+        "id": 108978,
+        "name": "Reacher",
+        "original_name": "Reacher",
+        "overview": "Cuando el exagente de la Policía Militar Jack Reacher es detenido por un asesinato que no ha cometido, se ve envuelto en una mortífera conspiración llena de policías corruptos, empresarios dudosos y políticos intrigantes. Armado solo con su ingenio, debe averiguar qué pasa en Margrave, Georgia. La primera temporada de Reacher se basa en Zona peligrosa, el superventas internacional de Lee Child.",
+        "poster_path": "/6iuVqg86hJPwTWAO1TDWKLxjgn4.jpg",
+        "backdrop_path": "/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+        "first_air_date": "2022-02-03",
+        "vote_average": 8.136,
+        "vote_count": 3459,
+        "genre_ids": [
+          10759,
+          80
+        ]
+      },
+      {
+        "id": 59941,
+        "name": "The Tonight Show Starring Jimmy Fallon",
+        "original_name": "The Tonight Show Starring Jimmy Fallon",
+        "overview": "Después del segundo retiro de Jay Leno del programa, Jimmy Fallon intervino como su reemplazo permanente. Después de 42 años en Los Ángeles, el programa regresó a Nueva York.",
+        "poster_path": "/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
+        "backdrop_path": "/i4OYRb5V13BrOnTPJGdyXWg4r0J.jpg",
+        "first_air_date": "2014-02-17",
+        "vote_average": 5.8,
+        "vote_count": 393,
+        "genre_ids": [
+          35,
+          10767
+        ]
+      },
+      {
+        "id": 2261,
+        "name": "The Tonight Show Starring Johnny Carson",
+        "original_name": "The Tonight Show Starring Johnny Carson",
+        "overview": "",
+        "poster_path": "/uSvET5YUvHNDIeoCpErrbSmasFb.jpg",
+        "backdrop_path": "/qFfWFwfaEHzDLWLuttWiYq7Poy2.jpg",
+        "first_air_date": "1962-10-01",
+        "vote_average": 7.562,
+        "vote_count": 97,
+        "genre_ids": [
+          10767
+        ]
+      },
+      {
+        "id": 63770,
+        "name": "The Late Show with Stephen Colbert",
+        "original_name": "The Late Show with Stephen Colbert",
+        "overview": "Stephen Colbert trae su característico humor y sátira a The Late Show with Stephen Colbert, el programa nocturno número uno, donde conversa con una variada selección de invitados sobre las últimas novedades en política, entretenimiento, negocios, música, tecnología y mucho más. Con la participación del director de orquesta Jon Batiste y su banda Stay Human, este programa nominado al premio Emmy se transmite desde el histórico Teatro Ed Sullivan.",
+        "poster_path": "/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
+        "backdrop_path": "/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
+        "first_air_date": "2015-09-08",
+        "vote_average": 6.1,
+        "vote_count": 367,
+        "genre_ids": [
+          35,
+          10767
+        ]
+      },
+      {
+        "id": 2734,
+        "name": "Ley y orden: Unidad de Víctimas Especiales",
+        "original_name": "Law & Order: Special Victims Unit",
+        "overview": "‘Ley y Orden: Unidad de Víctimas Especiales’ es una serie de televisión estadounidense grabada en Nueva York donde es también principalmente producida. Con el estilo de la original ‘Ley y Orden’ los episodios son usualmente \"sacados de los titulares\" o basados libremente en verdaderos asesinatos que han recibido la atención de los medios.",
+        "poster_path": "/kvo558UKEhp8v3JoRGCSIx3Xxab.jpg",
+        "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+        "first_air_date": "1999-09-20",
+        "vote_average": 8.0,
+        "vote_count": 4365,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 33238,
+        "name": "Running Man",
+        "original_name": "런닝맨",
+        "overview": "Running Man es un espectáculo de variedades de Corea del Sur transmitido desde el 11 de julio de 2010 hasta ahora a través de SBS. El programa forma parte de la formación de \"Good Sunday\". El programa fue creado por Jo Hyo-jin, Kim Joo-hyung y Im Hyung-taek.",
+        "poster_path": "/15SMnscZqd7HZ0bzruatOcKUlOV.jpg",
+        "backdrop_path": "/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+        "first_air_date": "2010-07-11",
+        "vote_average": 8.2,
+        "vote_count": 220,
+        "genre_ids": [
+          35,
+          10764
+        ]
+      },
+      {
+        "id": 95350,
+        "name": "Linternas",
+        "original_name": "Lanterns",
+        "overview": "Sigue al nuevo recluta John Stewart y al legendario Linterna Hal Jordan, dos policías intergalácticos que se ven envueltos en un oscuro misterio terrestre mientras investigan un asesinato en el corazón de Estados Unidos. Esto les lleva a misterios y ajustes de cuentas más oscuros.",
+        "poster_path": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+        "backdrop_path": "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
+        "first_air_date": "2026-08-16",
+        "vote_average": 8.352,
+        "vote_count": 619,
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ]
+      },
+      {
+        "id": 4304,
+        "name": "Xplay",
+        "original_name": "Xplay",
+        "overview": "",
+        "poster_path": "/7ynD7g4U9hOODu1Jzf6VN4zQc6a.jpg",
+        "backdrop_path": "/pptMFFYI3Rs15I8HovmJTrnTM8L.jpg",
+        "first_air_date": "2003-04-28",
+        "vote_average": 8.5,
+        "vote_count": 4,
+        "genre_ids": []
+      },
+      {
+        "id": 5920,
+        "name": "El mentalista",
+        "original_name": "The Mentalist",
+        "overview": "El mentalista es una serie policiaca americana sobre Patrick Jane, ex médium, que trabaja de asesor para la Oficina de Investigación de California (California Bureau of Investigation), usando su altamente desarrollada capacidad de observación, que anteriormente usaba para \"leer\" mentes.",
+        "poster_path": "/snKUzvCl3kGv0RWBjEjnOXMGvdl.jpg",
+        "backdrop_path": "/rJFqKcmMSttdNP58l0dVzY2NcTA.jpg",
+        "first_air_date": "2008-09-23",
+        "vote_average": 8.414,
+        "vote_count": 4814,
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 61818,
+        "name": "Late Night with Seth Meyers",
+        "original_name": "Late Night with Seth Meyers",
+        "overview": "",
+        "poster_path": "/qKFP9Se7LJtBaxrMS41iu63dtK3.jpg",
+        "backdrop_path": "/dfX2UaHVE5c7kLBFbgmEZJuy4Ev.jpg",
+        "first_air_date": "2014-02-25",
+        "vote_average": 5.088,
+        "vote_count": 136,
+        "genre_ids": [
+          10767,
+          35
+        ]
+      },
+      {
+        "id": 1416,
+        "name": "Anatomía de Grey",
+        "original_name": "Grey's Anatomy",
+        "overview": "La vida de Meredith Grey no es nada fácil. Intenta tomar las riendas de su vida, aunque su trabajo sea de esos que te hacen la vida imposible. Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas más duro de la Facultad de Medicina de Harvard. Y ella lo va a comprobar. Pero no estará sola. Un elenco de compañeros de promoción tendrán que superar la misma prueba. Ahora están en el mundo real, son doctores del hospital. Y en un mundo donde la experiencia en el trabajo puede ser un factor de vida o muerte, todos ellos tendrán que lidiar con los altibajos de sus vidas personales.",
+        "poster_path": "/2kFOeA4oCxdHRfHiv8JEa7y3vD9.jpg",
+        "backdrop_path": "/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+        "first_air_date": "2005-03-27",
+        "vote_average": 8.2,
+        "vote_count": 11067,
+        "genre_ids": [
+          18
+        ]
+      },
+      {
+        "id": 456,
+        "name": "Los Simpson",
+        "original_name": "The Simpsons",
+        "overview": "El día a día de una peculiar familia formada por Homer, Marge, Bart, Maggie y Lisa Simpson y otros divertidos personajes de la localidad norteamericana de Springfield. Homer, el padre, es un desastroso inspector de seguridad de una central nuclear. Marge, la madre, es un ama de casa acostumbrada a soportar a su peculiar familia. Bart, de diez años, intenta divertirse con travesuras de todo tipo. Lisa es la más inteligente de la familia, y Maggie, la más pequeña, es un bebé que todavía no habla, pero que juega un importante papel.",
+        "poster_path": "/9hmoEmntaYrrlb4HKSFisWUQnqy.jpg",
+        "backdrop_path": "/qcSHGC5BfoqBoP99PzDIERYG5Qm.jpg",
+        "first_air_date": "1989-12-17",
+        "vote_average": 8.0,
+        "vote_count": 11050,
+        "genre_ids": [
+          16,
+          35
+        ]
+      },
+      {
+        "id": 2316,
+        "name": "The Office",
+        "original_name": "The Office",
+        "overview": "Steve Carell protagoniza The Office, un fresco y divertido vistazo, con formato pseudo-documental, al día a día en la vida de unos excéntricos trabajadores de la empresa Dunder Mifflin. El serio pero despistadísimo director Michael Scott se considera un magnífico jefe y mentor, pero realmente inspira más críticas que respeto a sus empleados.",
+        "poster_path": "/5uwetbr0X8BPRy3Wmh63S9EhsiY.jpg",
+        "backdrop_path": "/mLyW3UTgi2lsMdtueYODcfAB9Ku.jpg",
+        "first_air_date": "2005-03-24",
+        "vote_average": 8.6,
+        "vote_count": 5545,
+        "genre_ids": [
+          35
+        ]
+      },
+      {
+        "id": 15226,
+        "name": "C.I.D",
+        "original_name": "सीआईडी",
+        "overview": "Un equipo de hombres y mujeres comprometidos con la investigación de crímenes lo arriesgará todo para resolver los más oscuros casos de Bombay.",
+        "poster_path": "/3UymnlLfLMKxG8OcFhSnAlnhQfZ.jpg",
+        "backdrop_path": "/1gZrOa2E9DOohEvSLLBJqus2zGu.jpg",
+        "first_air_date": "1998-01-21",
+        "vote_average": 5.7,
+        "vote_count": 31,
+        "genre_ids": [
+          10759,
+          80,
+          18,
+          9648
+        ]
+      },
+      {
+        "id": 549,
+        "name": "Ley y orden",
+        "original_name": "Law & Order",
+        "overview": "Serie sobre la investigación de crímenes en la ciudad de Nueva York. Policías y jueces son los principales protagonistas.",
+        "poster_path": "/vcr8xAdptafbIiU16alUgVak6aM.jpg",
+        "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+        "first_air_date": "1990-09-13",
+        "vote_average": 7.286,
+        "vote_count": 730,
+        "genre_ids": [
+          80,
+          18
+        ]
+      },
+      {
+        "id": 2224,
+        "name": "The Daily Show",
+        "original_name": "The Daily Show",
+        "overview": "Presentado por el humorista Jon Stewart, es el formato de sátira política más popular de la televisión norteamericana. Ha estado en antena en Comedy Central desde 1996 y ha ganado 18 Primetime Emmys. Se autodefine como un programa de noticias falso y enfoca su particular punto de vista en la actualidad, las noticias, los personajes políticos y de los medios de comunicación fundamentalmente con el objetivo de hacer reír. Generalmente el show comienza con un monólogo de Jon Stewart relacionado con los principales titulares de la actualidad. Después de este monólogo da paso a sus numerosos corresponsales y finalmente suele acabar con una entrevista a un personaje conocido.",
+        "poster_path": "/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+        "backdrop_path": "/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+        "first_air_date": "1996-07-22",
+        "vote_average": 6.4,
+        "vote_count": 664,
+        "genre_ids": [
+          10763,
+          35
+        ]
+      },
+      {
+        "id": 94722,
+        "name": "Tagesschau",
+        "original_name": "Tagesschau",
+        "overview": "",
+        "poster_path": "/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
+        "backdrop_path": "/jWXrQstj7p3Wl5MfYWY6IHqRpDb.jpg",
+        "first_air_date": "1952-12-26",
+        "vote_average": 6.8,
+        "vote_count": 256,
+        "genre_ids": [
+          10763
+        ]
+      }
+    ],
+    "genres": [
+      {
+        "id": 10759,
+        "name": "Action & Adventure"
+      },
+      {
+        "id": 16,
+        "name": "Animación"
+      },
+      {
+        "id": 35,
+        "name": "Comedia"
+      },
+      {
+        "id": 80,
+        "name": "Crimen"
+      },
+      {
+        "id": 99,
+        "name": "Documental"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Familia"
+      },
+      {
+        "id": 10762,
+        "name": "Kids"
+      },
+      {
+        "id": 9648,
+        "name": "Misterio"
+      },
+      {
+        "id": 10763,
+        "name": "News"
+      },
+      {
+        "id": 10764,
+        "name": "Reality"
+      },
+      {
+        "id": 10765,
+        "name": "Sci-Fi & Fantasy"
+      },
+      {
+        "id": 10766,
+        "name": "Soap"
+      },
+      {
+        "id": 10767,
+        "name": "Talk"
+      },
+      {
+        "id": 10768,
+        "name": "War & Politics"
+      },
+      {
+        "id": 37,
+        "name": "Western"
+      }
+    ]
+  }
+}

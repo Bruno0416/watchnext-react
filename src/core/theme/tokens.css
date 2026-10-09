@@ -1,0 +1,31 @@
+:root {
+    /* ---------- espaciado ---------- */
+    --th-space-xxxs: 2px;
+    --th-space-xxs: 4px;
+    --th-space-xs: 6px;
+    --th-space-s: 10px;
+    --th-space-m: 14px;
+    --th-space-l: 20px;
+    --th-space-xl: 28px;
+    --th-space-xxl: 40px;
+    --th-space-xxxl: 54px;
+    --th-space-xxxxl: 64px;
+
+    /* ---------- radius ---------- */
+    --th-radius-xxs: 8px;
+    --th-radius-xs: 12px;
+    --th-radius-s: 16px;
+    --th-radius-m: 20px;
+    --th-radius-l: 28px;
+    --th-radius-xl: 36px;
+    --th-radius-xxl: 48px;
+
+    --th-radius-input: 14px;
+    --th-radius-card: 20px;
+    --th-radius-button: 999px;
+
+    /* ---------- controles ---------- */
+    --th-button-padding-x: 20px;
+    --th-button-padding-y: 10px;
+    --th-button-min-height: 44px;
+}

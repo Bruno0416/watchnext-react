@@ -1,0 +1,148 @@
+{
+  "profiles": [
+    {
+      "id": "99bc8e9e-20bb-5f59-b573-e37658818050",
+      "userId": "fd925a45-0eae-58d4-9355-08d87db6bdb1",
+      "username": "watchnext_admin",
+      "displayName": "Equipo WatchNext",
+      "bio": "Cuenta oficial del equipo de WatchNext.",
+      "avatarUrl": null,
+      "country": "CL",
+      "visibility": "PRIVATE",
+      "onboardingCompleted": true,
+      "followersCount": 0,
+      "followingCount": 0,
+      "favorites": [],
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-10-01T12:00:00Z",
+      "followers": [],
+      "following": []
+    },
+    {
+      "id": "f7d71591-673a-54e5-8185-34c2b53cac81",
+      "userId": "2e29b7a1-07c3-5e46-8d0f-745b4f280aa7",
+      "username": "bru_vall",
+      "displayName": "Bruno",
+      "bio": "Veo de todo, pero casi siempre ciencia ficción.",
+      "avatarUrl": null,
+      "country": "CL",
+      "visibility": "PUBLIC",
+      "onboardingCompleted": true,
+      "followersCount": 1,
+      "followingCount": 1,
+      "favorites": [
+        {
+          "tmdbId": 1396,
+          "mediaType": "TV",
+          "title": "Breaking Bad",
+          "posterPath": "/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+          "voteAverage": 8.954,
+          "releaseDate": "2008-01-20",
+          "duration": null,
+          "numberOfSeasons": 5
+        },
+        {
+          "tmdbId": 95350,
+          "mediaType": "TV",
+          "title": "Linternas",
+          "posterPath": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+          "voteAverage": 8.352,
+          "releaseDate": "2026-08-16",
+          "duration": null,
+          "numberOfSeasons": 1
+        },
+        {
+          "tmdbId": 299534,
+          "mediaType": "MOVIE",
+          "title": "Vengadores: Endgame",
+          "posterPath": "/br6krBFpaYmCSglLBWRuhui7tPc.jpg",
+          "voteAverage": 8.246,
+          "releaseDate": "2019-04-24",
+          "duration": 181,
+          "numberOfSeasons": null
+        },
+        {
+          "tmdbId": 1405,
+          "mediaType": "TV",
+          "title": "Dexter",
+          "posterPath": "/i8ORB1biusVy703lGxUi5Rle6zA.jpg",
+          "voteAverage": 8.2,
+          "releaseDate": "2006-10-01",
+          "duration": null,
+          "numberOfSeasons": 8
+        }
+      ],
+      "createdAt": "2026-09-15T15:00:00Z",
+      "updatedAt": "2026-10-01T18:30:00Z",
+      "followers": [
+        {
+          "userId": "39bbdb0b-a3f1-5bf2-9ef0-aa40bbc44cf6",
+          "username": "ad_maceo",
+          "displayName": "Adonys",
+          "avatarUrl": null
+        }
+      ],
+      "following": [
+        {
+          "userId": "39bbdb0b-a3f1-5bf2-9ef0-aa40bbc44cf6",
+          "username": "adonys",
+          "displayName": "Adonys",
+          "avatarUrl": null
+        }
+      ]
+    },
+    {
+      "id": "cfb44165-5a11-58d4-b715-c5c5dddda281",
+      "userId": "39bbdb0b-a3f1-5bf2-9ef0-aa40bbc44cf6",
+      "username": "adonys",
+      "displayName": "Adonys",
+      "bio": "Series, películas de terror y recomendaciones sin spoilers.",
+      "avatarUrl": null,
+      "country": "CL",
+      "visibility": "PUBLIC",
+      "onboardingCompleted": true,
+      "followersCount": 1,
+      "followingCount": 1,
+      "favorites": [
+        {
+          "tmdbId": 95350,
+          "mediaType": "TV",
+          "title": "Linternas",
+          "posterPath": "/20ZcwtRQ4zMczKg3eBcIpC3FAuW.jpg",
+          "voteAverage": 8.352,
+          "releaseDate": "2026-08-16",
+          "duration": null,
+          "numberOfSeasons": 1
+        },
+        {
+          "tmdbId": 1405,
+          "mediaType": "TV",
+          "title": "Dexter",
+          "posterPath": "/i8ORB1biusVy703lGxUi5Rle6zA.jpg",
+          "voteAverage": 8.2,
+          "releaseDate": "2006-10-01",
+          "duration": null,
+          "numberOfSeasons": 8
+        }
+      ],
+      "createdAt": "2026-09-18T17:15:00Z",
+      "updatedAt": "2026-10-02T20:10:00Z",
+      "followers": [
+        {
+          "userId": "2e29b7a1-07c3-5e46-8d0f-745b4f280aa7",
+          "username": "bruno",
+          "displayName": "Bruno",
+          "avatarUrl": null
+        }
+      ],
+      "following": [
+        {
+          "userId": "2e29b7a1-07c3-5e46-8d0f-745b4f280aa7",
+          "username": "bruno",
+          "displayName": "Bruno",
+          "avatarUrl": null
+        }
+      ]
+    }
+  ]
+}

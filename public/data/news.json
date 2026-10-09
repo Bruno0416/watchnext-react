@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": "news-001",
+      "slug": "cuatro-titulos-para-tu-proxima-lista",
+      "title": "Cuatro títulos para tu próxima lista",
+      "summary": "Breaking Bad, Linternas, Dexter y Endgame ya están entre nuestros guardados.",
+      "content": "Si estás armando una lista nueva, estos cuatro títulos dan para partir por caminos bien distintos. Breaking Bad y Dexter sirven para una maratón larga, Linternas es una opción más reciente y Vengadores: Endgame queda como esa película que uno termina revisitando de vez en cuando.",
+      "imageUrl": "https://image.tmdb.org/t/p/w1280/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+      "publishedAt": "2026-10-01T15:00:00Z"
+    },
+    {
+      "id": "news-002",
+      "slug": "una-lista-para-no-perder-lo-que-quieres-ver",
+      "title": "Una lista para no perder lo que quieres ver",
+      "summary": "Guardar algo para después parece mínimo, hasta que tienes cinco títulos dando vueltas.",
+      "content": "La idea de las listas en WatchNext es sencilla: encuentras algo que te tinca, lo guardas y sigues mirando. Después vuelves a tus pendientes sin tener que acordarte del nombre ni buscarlo otra vez.",
+      "imageUrl": "https://image.tmdb.org/t/p/w1280/anFx9aTOOYqgS3v7x3R84Kz67ly.jpg",
+      "publishedAt": "2026-10-03T18:00:00Z"
+    }
+  ]
+}
