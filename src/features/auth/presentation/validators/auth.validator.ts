@@ -1,7 +1,6 @@
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
 
 // ------ helpers validacion formularios ------
-
 export function validateLogin(email: string, password: string) {
   const cleanEmail = email.trim();
   return {
@@ -11,7 +10,12 @@ export function validateLogin(email: string, password: string) {
         : !EMAIL_REGEX.test(cleanEmail)
           ? "El correo no tiene un formato valido"
           : null,
-    passwordError: password === "" ? "La contraseña es obligatoria" : null,
+    passwordError:
+      password === ""
+        ? "La contraseña es obligatoria"
+        : password.length < 6 || password.length > 10
+          ? "La contraseña debe tener al menos 6 caracteres y como máximo 10"
+          : null,
   };
 }
 
@@ -30,7 +34,12 @@ export function validateRegister(
           ? "El correo no tiene un formato valido"
           : null,
 
-    passwordError: password === "" ? "La contraseña es obligatoria" : null,
+    passwordError:
+      password === ""
+        ? "La contraseña es obligatoria"
+        : password.length < 6 || password.length > 10
+          ? "La contraseña debe tener al menos 6 caracteres y como máximo 10"
+          : null,
 
     confirmPasswordError:
       confirmPassword === ""
@@ -42,7 +51,6 @@ export function validateRegister(
 }
 
 // -------------------- helpers validacion campos --------------------
-
 export function validateEmail(email: string) {
   const cleanEmail = email.trim();
   return cleanEmail === ""
@@ -53,7 +61,11 @@ export function validateEmail(email: string) {
 }
 
 export function validatePassword(password: string) {
-  return password === "" ? "La contraseña es obligatoria" : null;
+  return password === ""
+    ? "La contraseña es obligatoria"
+    : password.length < 6 || password.length > 10
+      ? "La contraseña debe tener al menos 6 caracteres y como máximo 10"
+      : null;
 }
 
 export function validateConfirmPassword(
@@ -64,5 +76,17 @@ export function validateConfirmPassword(
     ? "Confirma tu contraseña"
     : password !== confirmPassword
       ? "Las contraseñas no coinciden"
+      : null;
+}
+
+export function validateCode(code: string) {
+  return code === "" ? "El código es obligatorio" : null;
+}
+
+export function validateNewPassword(password: string) {
+  return password === ""
+    ? "La contraseña es obligatoria"
+    : password.length < 8 || password.length > 60
+      ? "La contraseña debe tener entre 8 y 60 caracteres"
       : null;
 }

@@ -1,0 +1,329 @@
+/* ---------- pagina ---------- */
+.auth.page.shell {
+    min-height: 100dvh;
+
+    display: grid;
+    grid-template-columns: clamp(520px, 45vw, 720px) 1fr;
+
+    background: var(--th-color-surface);
+}
+
+/* ---------- panel ---------- */
+.auth.panel {
+    position: relative;
+    z-index: 1;
+
+    min-width: 0;
+    min-height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--th-space-xxxxl)
+        clamp(var(--th-space-xl), 5vw, var(--th-space-xxxxl));
+
+    background: var(--th-color-surface);
+}
+
+/* ---------- contenido ---------- */
+.auth.content {
+    width: 100%;
+    max-width: 440px;
+}
+
+/* ---------- fondo visual ---------- */
+.auth.visual {
+    min-width: 0;
+    min-height: 100dvh;
+
+    background-image: image-set(
+        url("/imgs/auth/desktop.webp") 1x,
+        url("/imgs/auth/desktop4k.webp") 2x
+    );
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: var(--th-color-surface);
+}
+
+/* ---------- saltar autenticacion ---------- */
+.auth.skip {
+    position: absolute;
+    top: var(--th-space-xl);
+    right: var(--th-space-xl);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition: color 140ms ease;
+}
+
+.auth.skip:hover {
+    color: var(--th-color-on-surface);
+}
+
+.auth.skip:focus-visible {
+    outline: 2px solid var(--th-color-primary);
+    outline-offset: 4px;
+
+    border-radius: var(--th-radius-xxs);
+}
+
+/* ---------- marca ---------- */
+.auth.brand {
+    margin: 0 0 var(--th-space-xl);
+
+    color: var(--th-color-primary);
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* ---------- encabezado ---------- */
+.auth.header {
+    margin-bottom: var(--th-space-xl);
+}
+
+.auth.title {
+    margin: 0 0 var(--th-space-s);
+
+    color: var(--th-color-on-surface);
+
+    font-size: clamp(1.75rem, 2vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.auth.subtitle {
+    max-width: 38ch;
+
+    margin: 0;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* ---------- formulario ---------- */
+.auth.form {
+    width: 100%;
+}
+
+.auth.fields {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--th-space-m);
+}
+
+/* ---------- error general ---------- */
+.auth.error {
+    margin: var(--th-space-m) 0 0;
+
+    color: var(--th-color-error);
+
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* ---------- submit ---------- */
+.auth.submit {
+    width: 100%;
+
+    margin-top: var(--th-space-xxl);
+}
+
+/* ---------- links ---------- */
+.auth.link {
+    color: var(--th-color-primary);
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 140ms ease,
+        opacity 140ms ease;
+}
+
+.auth.link:hover {
+    opacity: 0.8;
+}
+
+.auth.link:focus-visible {
+    outline: 2px solid var(--th-color-primary);
+    outline-offset: 3px;
+
+    border-radius: var(--th-radius-xxs);
+}
+
+/* ---------- cambio login register ---------- */
+.auth.switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: var(--th-space-xs);
+
+    margin-top: var(--th-space-xl);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.auth.switch .auth.link {
+    font-weight: 600;
+}
+
+/* ---------- tablet vertical y mobile ---------- */
+@media (max-width: 767px), (max-aspect-ratio: 4 / 5) {
+    .auth.page.shell {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 100dvh;
+    }
+
+    .auth.visual {
+        order: -1;
+
+        flex: 0 0 clamp(180px, 28vh, 280px);
+
+        min-width: 100%;
+        min-height: 0;
+
+        background-image: url("/imgs/auth/mobile.webp");
+
+        background-position: center 32%;
+        background-size: cover;
+    }
+
+    .auth.panel {
+        flex: 1;
+
+        min-height: 0;
+
+        align-items: flex-start;
+
+        padding: var(--th-space-xxxl) var(--th-space-l) var(--th-space-xxxxl);
+    }
+
+    .auth.content {
+        max-width: 520px;
+
+        margin-inline: auto;
+    }
+
+    .auth.skip {
+        top: var(--th-space-l);
+        right: var(--th-space-l);
+    }
+
+    .auth.brand {
+        margin-bottom: var(--th-space-l);
+    }
+}
+
+/* ---------- mobile compacto ---------- */
+@media (max-width: 480px) {
+    .auth.visual {
+        flex-basis: clamp(160px, 24vh, 220px);
+
+        background-position: center 28%;
+    }
+
+    .auth.panel {
+        padding: var(--th-space-xxl) var(--th-space-l) var(--th-space-xxxl);
+    }
+
+    .auth.title {
+        font-size: 1.75rem;
+    }
+
+    .auth.header {
+        margin-bottom: var(--th-space-l);
+    }
+}
+
+/* ---------- desktop amplio ---------- */
+@media (min-width: 1800px) {
+    .auth.page.shell {
+        position: relative;
+        isolation: isolate;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: clamp(var(--th-space-xxl), 5vw, var(--th-space-xxxxl));
+
+        background-image: image-set(
+            url("/imgs/auth/desktop.webp") 1x,
+            url("/imgs/auth/desktop4k.webp") 2x
+        );
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .auth.page.shell::before {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        background: color-mix(
+            in srgb,
+            var(--th-color-surface) 42%,
+            transparent
+        );
+    }
+
+    .auth.visual {
+        display: none;
+    }
+
+    .auth.panel {
+        width: min(100%, 560px);
+        min-height: auto;
+
+        padding: var(--th-space-xxxxl) var(--th-space-xxxl);
+
+        background: var(--th-color-surface-raised);
+        border-radius: var(--th-radius-card);
+        box-shadow: 0 24px 64px var(--th-color-shadow);
+    }
+
+    .auth.content {
+        max-width: 440px;
+
+        margin-inline: auto;
+    }
+
+    .auth.header {
+        margin-bottom: var(--th-space-xxl);
+    }
+
+    .auth.switch {
+        margin-top: var(--th-space-l);
+    }
+
+    .auth.skip {
+        top: var(--th-space-l);
+        right: var(--th-space-l);
+    }
+}

@@ -4,15 +4,21 @@ type AuthSwitchType = "login" | "register";
 
 type AuthSwitchProps = {
   type: AuthSwitchType;
+  onSwitch?: () => void;
 };
 
-export function AuthSwitch({ type }: AuthSwitchProps) {
+export function AuthSwitch({ type, onSwitch }: AuthSwitchProps) {
   if (type === "login") {
     return (
       <div className="auth switch">
         <span>¿No tienes una cuenta?</span>
 
-        <TextLink to="/auth/registrarse">Registrarse</TextLink>
+        <TextLink
+          to={onSwitch ? undefined : "/auth/registrarse"}
+          onClick={onSwitch}
+        >
+          Registrarse
+        </TextLink>
       </div>
     );
   }
@@ -21,7 +27,12 @@ export function AuthSwitch({ type }: AuthSwitchProps) {
     <div className="auth switch">
       <span>¿Ya tienes una cuenta?</span>
 
-      <TextLink to="/auth/iniciar-sesion">Iniciar sesión</TextLink>
+      <TextLink
+        to={onSwitch ? undefined : "/auth/iniciar-sesion"}
+        onClick={onSwitch}
+      >
+        Iniciar sesión
+      </TextLink>
     </div>
   );
 }

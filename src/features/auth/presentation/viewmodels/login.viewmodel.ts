@@ -91,7 +91,7 @@ export function useLoginViewModel(login: Login): {
     } catch (e) {
       const message =
         e instanceof InvalidCredentialsException
-          ? "Correo o contraseña incorrectos"
+          ? "Correo o contraseña incorrectos, inténtalo de nuevo"
           : e instanceof AuthException
             ? e.message
             : "Ocurrio un error inesperado";

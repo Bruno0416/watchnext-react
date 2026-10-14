@@ -13,6 +13,7 @@ type LoginFormProps = {
   setPassword: (password: string) => void;
   validateEmailField: () => void;
   validatePasswordField: () => void;
+  onSwitch?: () => void;
   submit: () => Promise<boolean>;
 };
 
@@ -22,6 +23,7 @@ export function LoginForm({
   validateEmailField,
   setPassword,
   validatePasswordField,
+  onSwitch,
   submit,
 }: LoginFormProps) {
   // ---------- estado ----------
@@ -52,7 +54,7 @@ export function LoginForm({
           placeholder="Ingresa tu contraseña"
           error={state.passwordError}
           leadingIcon="lock-fill"
-          trailingIcon={showPassword ? "eye-slash-fill" : "eye-fill"}
+          trailingIcon={showPassword ? "eye-fill" : "eye-slash-fill"}
           trailingLabel={
             showPassword ? "Ocultar contraseña" : "Mostrar contraseña"
           }
@@ -61,8 +63,9 @@ export function LoginForm({
           onTrailingClick={() => setShowPassword((current) => !current)}
           onBlur={validatePasswordField}
         />
-        {/* TODO: implementar funciones de recuperación de contraseña en mock */}
-        <TextLink className="auth forgot">¿Olvidaste tu contraseña?</TextLink>
+        <TextLink className="auth forgot" to="/auth/recuperar-contrasena">
+          ¿Olvidaste tu contraseña?
+        </TextLink>
       </div>
 
       {state.formError && <p className="auth error">{state.formError}</p>}
@@ -71,7 +74,7 @@ export function LoginForm({
         Iniciar sesión
       </Button>
 
-      <AuthSwitch type="login" />
+      <AuthSwitch type="login" onSwitch={onSwitch} />
     </form>
   );
 }

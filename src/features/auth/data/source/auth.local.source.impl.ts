@@ -11,6 +11,47 @@ export class AuthLocalSourceImpl implements AuthLocalSource {
     private readonly service: AuthService,
     private readonly storage: AuthStorage,
   ) {}
+
+  async verifyEmail(email: string, code: string): Promise<void> {
+    // 1. enviar peticion
+    const json = await this.service.confirmEmail({ email, code });
+
+    // 2. validar codigo recibido
+    if (!json) {
+      throw new AuthError(400);
+    }
+  }
+
+  async requestPasswordReset(email: string): Promise<void> {
+    // 1. solicitar recuperacion
+    const json = await this.service.requestPasswordReset({ email });
+
+    if (!json) {
+      throw new AuthError(400);
+    }
+  }
+
+  async verifyResetCode(email: string, code: string): Promise<string> {
+    // 1. verificar codigo
+    const json = await this.service.verifyResetCode({ email, code });
+
+    if (!json || typeof json.resetToken !== "string") {
+      throw new AuthError(400);
+    }
+
+    // 2. devolver token temporal
+    return json.resetToken;
+  }
+
+  async resetPassword(resetToken: string, newPassword: string): Promise<void> {
+    // 1. cambiar contrasena
+    const json = await this.service.resetPassword({ resetToken, newPassword });
+
+    if (!json) {
+      throw new AuthError(400);
+    }
+  }
+
   async getSession(): Promise<AuthSessionModel | null> {
     // 1. obtener datos almacenados
     const tokens = this.storage.getTokens();
@@ -42,6 +83,7 @@ export class AuthLocalSourceImpl implements AuthLocalSource {
     // 3. convertir respuesta a modelo
     return AuthTokensModel.fromJson(json);
   }
+
   async register(email: string, password: string): Promise<void> {
     // 1. enviar peticion
     const json = await this.service.register({ email, password });
@@ -51,6 +93,7 @@ export class AuthLocalSourceImpl implements AuthLocalSource {
       throw new AuthError(409);
     }
   }
+
   async refresh(refreshToken: string): Promise<AuthTokensModel> {
     // 1. enviar peticion
     const json = await this.service.refresh({ refreshToken });

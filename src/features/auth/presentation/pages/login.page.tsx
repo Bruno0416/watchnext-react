@@ -3,7 +3,7 @@ import { container } from "../../../../core/di/container";
 import type { Login } from "../../domain/usecases/login";
 import { LoginForm } from "../components/organisms/login.form";
 import { useLoginViewModel } from "../viewmodels/login.viewmodel";
-import "./auth.page.css";
+import "./style/auth.page.css";
 
 export function LoginPage() {
   const navigate = useNavigate();

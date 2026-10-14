@@ -3,7 +3,7 @@ import { container } from "../../../../core/di/container";
 import type { Register } from "../../domain/usecases/register";
 import { RegisterForm } from "../components/organisms/register.form";
 import { useRegisterViewModel } from "../viewmodels/register.viewmodel";
-import "./auth.page.css";
+import "./style/auth.page.css";
 
 export function RegisterPage() {
   const navigate = useNavigate();
@@ -32,8 +32,11 @@ export function RegisterPage() {
       return false;
     }
 
-    // 3. enviar al inicio de sesion
-    navigate("/auth/iniciar-sesion", { replace: true });
+    // 3. enviar a verificacion de correo
+    navigate(
+      `/auth/verificar-correo?email=${encodeURIComponent(state.email.trim())}`,
+      { replace: true },
+    );
 
     return true;
   }
