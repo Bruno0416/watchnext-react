@@ -1,6 +1,6 @@
 import type { JsonObject } from "../json.types";
 
-export class ListsStorage {
+export class ListStorage {
   private key = "lists";
 
   get(): JsonObject | null {

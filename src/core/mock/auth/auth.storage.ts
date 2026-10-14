@@ -4,6 +4,7 @@ export class AuthStorage {
   private tokenKey = "token";
   private refreshTokenKey = "refresh-token";
   private roleKey = "role";
+  private userIdKey = "user-id";
 
   getTokens(): JsonObject | null {
     const token = localStorage.getItem(this.tokenKey);
@@ -23,6 +24,10 @@ export class AuthStorage {
     return localStorage.getItem(this.roleKey);
   }
 
+  getUserId(): string | null {
+    return localStorage.getItem(this.userIdKey);
+  }
+
   setTokens(tokens: JsonObject): void {
     localStorage.setItem(this.tokenKey, tokens.token as string);
 
@@ -33,9 +38,14 @@ export class AuthStorage {
     localStorage.setItem(this.roleKey, role);
   }
 
+  setUserId(userId: string): void {
+    localStorage.setItem(this.userIdKey, userId);
+  }
+
   clear(): void {
     localStorage.removeItem(this.tokenKey);
     localStorage.removeItem(this.refreshTokenKey);
     localStorage.removeItem(this.roleKey);
+    localStorage.removeItem(this.userIdKey);
   }
 }

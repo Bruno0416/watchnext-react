@@ -1,10 +1,10 @@
 import type { JsonArray, JsonObject } from "../json.types";
-import { ListsDb } from "./lists.db";
+import { ListDb } from "./list.db";
 
-export class ListsService {
-  private db: ListsDb;
+export class ListService {
+  private db: ListDb;
 
-  constructor(db: ListsDb) {
+  constructor(db: ListDb) {
     this.db = db;
   }
 

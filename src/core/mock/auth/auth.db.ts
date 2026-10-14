@@ -40,6 +40,38 @@ export class AuthDb {
     return user ? structuredClone(user) : null;
   }
 
+  // ---------- modificaciones ----------
+  async verifyEmail(email: string): Promise<boolean> {
+    // 1. buscar usuario almacenado
+    const users = await this.load();
+    const user = users.find((item) => item.email === email);
+
+    if (!user) {
+      return false;
+    }
+
+    // 2. marcar correo como verificado
+    user.emailVerified = true;
+
+    return true;
+  }
+
+  async updatePassword(email: string, newPassword: string): Promise<boolean> {
+    // 1. buscar usuario almacenado
+    const users = await this.load();
+    const user = users.find((item) => item.email === email);
+
+    if (!user) {
+      return false;
+    }
+
+    // 2. actualizar contraseña
+    user.password = newPassword;
+
+    return true;
+  }
+
+  // ---------- inserciones ----------
   async insert(user: JsonObject): Promise<JsonObject> {
     const users = await this.load();
     const stored = structuredClone(user);

@@ -1,15 +1,15 @@
 import type { JsonArray, JsonObject } from "../json.types";
-import { ListsStorage } from "./lists.storage";
+import { ListStorage } from "./list.storage";
 
 interface ListsSeed extends JsonObject {
   myLists: JsonObject & { lists: JsonArray };
   details: Record<string, JsonObject>;
 }
 
-export class ListsDb {
-  private storage: ListsStorage;
+export class ListDb {
+  private storage: ListStorage;
 
-  constructor(storage: ListsStorage) {
+  constructor(storage: ListStorage) {
     this.storage = storage;
   }
 

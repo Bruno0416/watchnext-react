@@ -2,24 +2,28 @@ import { createContainer, InjectionMode } from "awilix";
 
 import { authFeatureDi } from "./features/auth.di";
 import { authMockDi } from "./mock/auth.di";
+import { contentMockDi } from "./mock/content.di";
 import { feedbackMockDi } from "./mock/feedback.di";
-import { listsMockDi } from "./mock/lists.di";
+import { listMockDi } from "./mock/list.di";
 import { newsMockDi } from "./mock/news.di";
-import { profileMockDi } from "./mock/profile.di";
+import { searchMockDi } from "./mock/search.di";
+import { userMockDi } from "./mock/user.di";
 
 export const container = createContainer({
   injectionMode: InjectionMode.PROXY,
 });
 
-// ----- registrar dependencias -----
+// ---------- registrar dependencias ----------
 container.register({
-  // ---- mocks ----
+  // ---------- mocks ----------
   ...authMockDi,
-  ...profileMockDi,
-  ...listsMockDi,
+  ...contentMockDi,
   ...feedbackMockDi,
+  ...listMockDi,
   ...newsMockDi,
+  ...searchMockDi,
+  ...userMockDi,
 
-  // ---- features ----
+  // ---------- features ----------
   ...authFeatureDi,
 });

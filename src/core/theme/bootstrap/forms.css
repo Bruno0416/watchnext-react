@@ -1,7 +1,7 @@
 .input-group {
     overflow: hidden;
 
-    border: 1px solid transparent;
+    border: 0.125rem solid var(--th-color-outline-variant);
     border-radius: var(--th-radius-input);
 
     background-color: var(--th-color-surface-container);
