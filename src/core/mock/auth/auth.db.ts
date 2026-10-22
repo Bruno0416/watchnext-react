@@ -21,6 +21,12 @@ export class AuthDb {
   }
 
   // ---------- consultas ----------
+  // agregado para la vista de administracion de usuarios
+  async getAll(): Promise<JsonArray> {
+    const users = await this.load();
+    return structuredClone(users);
+  }
+
   async findByEmail(email: string): Promise<JsonObject | null> {
     const users = await this.load();
     const user = users.find((item) => item.email === email);

@@ -41,6 +41,12 @@ export class ProfileDb {
   }
 
   // ---------- consultas ----------
+  // agregado para seguidores y administracion: todos los perfiles
+  async getAll(): Promise<JsonArray> {
+    const data = await this.load();
+    return structuredClone(data.profiles);
+  }
+
   async findByUserId(userId: string): Promise<JsonObject | null> {
     const data = await this.load();
     const profile = data.profiles.find((item) => item.userId === userId);

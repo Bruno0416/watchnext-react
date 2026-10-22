@@ -1,0 +1,237 @@
+/* ---------- layout ---------- */
+.news.page {
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto;
+    padding: var(--th-space-xl) var(--th-space-l) var(--th-space-xxxl);
+}
+
+.news.header {
+    margin-bottom: var(--th-space-xl);
+}
+
+.news.title {
+    margin: 0 0 var(--th-space-xs);
+
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.news.subtitle {
+    margin: 0;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.95rem;
+}
+
+/* ---------- grilla de tarjetas ---------- */
+.news.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+    gap: var(--th-space-l);
+}
+
+.news.card {
+    overflow: hidden;
+
+    border-radius: var(--th-radius-card);
+
+    background: var(--th-color-surface-container);
+
+    transition:
+        transform 160ms ease,
+        background-color 160ms ease,
+        box-shadow 160ms ease;
+}
+
+.news.card:hover {
+    transform: translateY(-2px);
+
+    background: var(--th-color-surface-container-hover);
+    box-shadow: 0 10px 24px var(--th-color-shadow);
+}
+
+.news.card-link {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.news.card-link:focus-visible {
+    outline: 2px solid var(--th-color-primary);
+    outline-offset: 2px;
+}
+
+.news.card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    background: var(--th-color-surface-raised);
+}
+
+.news.card-image.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 2.5rem;
+}
+
+.news.card-body {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--th-space-xs);
+
+    padding: var(--th-space-m) var(--th-space-l) var(--th-space-l);
+}
+
+.news.card-title {
+    margin: 0;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.news.card-summary {
+    margin: 0;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.news.date {
+    color: var(--th-color-primary);
+
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ---------- estados ---------- */
+.news.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--th-space-xs);
+
+    padding: var(--th-space-xxxl) var(--th-space-l);
+
+    border-radius: var(--th-radius-card);
+
+    background: var(--th-color-surface-container);
+    color: var(--th-color-on-surface-variant);
+
+    text-align: center;
+}
+
+.news.status-icon {
+    font-size: 2.5rem;
+}
+
+.news.status-title {
+    margin: 0;
+
+    color: var(--th-color-on-surface);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.news.status-description {
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+.news.status .btn {
+    margin-top: var(--th-space-m);
+}
+
+/* ---------- detalle ---------- */
+.news.back {
+    display: inline-flex;
+    align-items: center;
+
+    gap: var(--th-space-xs);
+
+    margin-bottom: var(--th-space-l);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.news.back:hover {
+    color: var(--th-color-primary);
+}
+
+.news.article {
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.news.article-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    margin-bottom: var(--th-space-xl);
+
+    border-radius: var(--th-radius-card);
+
+    object-fit: cover;
+}
+
+.news.article-title {
+    margin: var(--th-space-xs) 0 var(--th-space-m);
+
+    font-size: clamp(1.6rem, 4vw, 2.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.news.article-summary {
+    margin: 0 0 var(--th-space-xl);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.news.article-content {
+    margin: 0;
+
+    font-size: 1.02rem;
+    line-height: 1.75;
+
+    white-space: pre-line;
+}
+
+@media (max-width: 575px) {
+    .news.page {
+        padding: var(--th-space-l) var(--th-space-m) var(--th-space-xxl);
+    }
+
+    .news.grid {
+        grid-template-columns: 1fr;
+    }
+}
