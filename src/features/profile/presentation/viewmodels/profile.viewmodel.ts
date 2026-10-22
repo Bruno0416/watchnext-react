@@ -57,6 +57,7 @@ export function useProfileViewModel(
   submit: () => Promise<boolean>;
   removeFav: (fav: ProfileFavorite) => Promise<void>;
   reload: () => void;
+  refresh: () => void;
 } {
   const clave = username ?? "@me";
   const [loaded, setLoaded] = useState<Loaded>({ ...initialProfileState, loadedFor: null });
@@ -100,6 +101,11 @@ export function useProfileViewModel(
 
   function reload(): void {
     setLoaded({ ...initialProfileState, loadedFor: null });
+    setAttempt((c) => c + 1);
+  }
+
+  // recargo sin pasar por "cargando", ej: despues de seguir para que cambien los contadores
+  function refresh(): void {
     setAttempt((c) => c + 1);
   }
 
@@ -209,5 +215,6 @@ export function useProfileViewModel(
     submit,
     removeFav,
     reload,
+    refresh,
   };
 }

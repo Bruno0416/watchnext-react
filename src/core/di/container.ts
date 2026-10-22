@@ -5,6 +5,8 @@ import { newsFeatureDi } from "./features/news.di";
 import { listsFeatureDi } from "./features/lists.di";
 import { profileFeatureDi } from "./features/profile.di";
 import { newsManagementFeatureDi } from "./features/news.management.di";
+import { userManagementFeatureDi } from "./features/user.management.di";
+import { adminFeatureDi } from "./features/admin.di";
 import { authMockDi } from "./mock/auth.di";
 import { contentMockDi } from "./mock/content.di";
 import { feedbackMockDi } from "./mock/feedback.di";
@@ -36,4 +38,6 @@ container.register({
   ...listsFeatureDi,
   ...profileFeatureDi,
   ...newsManagementFeatureDi,
+  ...userManagementFeatureDi,
+  ...adminFeatureDi,
 });

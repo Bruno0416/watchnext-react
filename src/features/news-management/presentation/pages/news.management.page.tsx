@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import { container } from "../../../../core/di/container";
 import type { CreateNews } from "../../domain/usecases/create.news";
 import type { DeleteNews } from "../../domain/usecases/delete.news";
@@ -23,6 +25,10 @@ export function NewsManagementPage() {
 
   return (
     <main className="nm page">
+      <Link to="/admin" className="nm back">
+        <i className="bi bi-arrow-left" aria-hidden="true" /> Panel de administracion
+      </Link>
+
       <header className="nm header">
         <div>
           <h1 className="nm title">Administrar noticias</h1>

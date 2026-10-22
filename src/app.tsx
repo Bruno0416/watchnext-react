@@ -10,6 +10,11 @@ import { UserRoute } from "./core/router/user.route";
 import { ListsPage } from "./features/lists/presentation/pages/lists.page";
 import { ListDetailPage } from "./features/lists/presentation/pages/list.detail.page";
 import { ProfilePage } from "./features/profile/presentation/pages/profile.page";
+import { FollowListPage } from "./features/profile/presentation/pages/follow.list.page";
+import { FollowRequestsPage } from "./features/profile/presentation/pages/follow.requests.page";
+import { AdminPage } from "./features/admin/presentation/pages/admin.page";
+import { UsersPage } from "./features/user-management/presentation/pages/users.page";
+import { UserDetailPage } from "./features/user-management/presentation/pages/user.detail.page";
 import { NewsManagementPage } from "./features/news-management/presentation/pages/news.management.page";
 
 // ------- rutas de la aplicacion -------
@@ -55,13 +60,39 @@ function App() {
             </UserRoute>
           }
         />
+        <Route
+          path="/perfil/solicitudes"
+          element={
+            <UserRoute>
+              <FollowRequestsPage />
+            </UserRoute>
+          }
+        />
         <Route path="/perfil/:username" element={<ProfilePage />} />
+        <Route path="/perfil/:username/seguidores" element={<FollowListPage mode="followers" />} />
+        <Route path="/perfil/:username/seguidos" element={<FollowListPage mode="following" />} />
 
         <Route
           path="/admin"
           element={
             <AdminRoute>
-              <main>Admin</main>
+              <AdminPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/usuarios"
+          element={
+            <AdminRoute>
+              <UsersPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/usuarios/:id"
+          element={
+            <AdminRoute>
+              <UserDetailPage />
             </AdminRoute>
           }
         />

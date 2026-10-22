@@ -1,3 +1,6 @@
+import type { ReactNode } from "react";
+import { Link } from "react-router";
+
 import type { Profile } from "../../../domain/entities/profile";
 import { nombrePais } from "../../validators/profile.validator";
 import { Avatar } from "../atoms/avatar";
@@ -6,9 +9,10 @@ type ProfileHeaderProps = {
   profile: Profile;
   isMine: boolean;
   onEdit: () => void;
+  followSlot?: ReactNode; // boton de seguir cuando es el perfil de otro
 };
 
-export function ProfileHeader({ profile, isMine, onEdit }: ProfileHeaderProps) {
+export function ProfileHeader({ profile, isMine, onEdit, followSlot }: ProfileHeaderProps) {
   const pais = nombrePais(profile.country);
 
   return (
@@ -34,21 +38,29 @@ export function ProfileHeader({ profile, isMine, onEdit }: ProfileHeaderProps) {
               <i className="bi bi-geo-alt-fill" aria-hidden="true" /> {pais}
             </span>
           )}
-          <span>
+          <Link to={`/perfil/${profile.username}/seguidores`}>
             <b>{profile.followersCount}</b> seguidores
-          </span>
-          <span>
+          </Link>
+          <Link to={`/perfil/${profile.username}/seguidos`}>
             <b>{profile.followingCount}</b> seguidos
-          </span>
+          </Link>
         </p>
       </div>
 
       {isMine && (
-        <button type="button" className="btn btn-secondary profile edit-button" onClick={onEdit}>
-          <i className="bi bi-pencil-fill" aria-hidden="true" />
-          Editar perfil
-        </button>
+        <div className="profile follow">
+          <button type="button" className="btn btn-secondary profile edit-button" onClick={onEdit}>
+            <i className="bi bi-pencil-fill" aria-hidden="true" />
+            Editar perfil
+          </button>
+          {profile.isPrivate && (
+            <Link to="/perfil/solicitudes" className="btn btn-outline-secondary">
+              <i className="bi bi-person-lines-fill" aria-hidden="true" /> Solicitudes
+            </Link>
+          )}
+        </div>
       )}
+      {!isMine && followSlot}
     </header>
   );
 }

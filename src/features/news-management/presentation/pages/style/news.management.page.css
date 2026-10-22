@@ -7,6 +7,24 @@
     padding: var(--th-space-xl) var(--th-space-l) var(--th-space-xxxl);
 }
 
+.nm.back {
+    display: inline-flex;
+    align-items: center;
+
+    gap: var(--th-space-xs);
+
+    margin-bottom: var(--th-space-l);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.nm.back:hover {
+    color: var(--th-color-primary);
+}
+
 .nm.header {
     display: flex;
     flex-wrap: wrap;
