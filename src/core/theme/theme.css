@@ -1,9 +1,15 @@
+/* ---------- tokens ---------- */
 @import "./colors.css";
 @import "./tokens.css";
 
+/* ---------- estilos base ---------- */
 @import "./base.css";
 @import "./bootstrap/variables.css";
 
+/* ---------- bootstrap ---------- */
 @import "./bootstrap/buttons.css";
 @import "./bootstrap/dropdowns.css";
 @import "./bootstrap/forms.css";
+
+/* ---------- layout ---------- */
+@import "../layout/style/layout.css";
