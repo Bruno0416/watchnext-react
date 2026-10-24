@@ -27,7 +27,6 @@ export function useLoginViewModel(login: Login): {
   validatePasswordField: () => void;
   submit: () => Promise<boolean>;
 } {
-  "";
   // crear estado
   const [state, setState] = useState<LoginState>(initialLoginState);
 
