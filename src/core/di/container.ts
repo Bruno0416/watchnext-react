@@ -10,6 +10,7 @@ import { searchMockDi } from "./mock/search.di";
 import { userMockDi } from "./mock/user.di";
 import { onboardingFeatureDi } from "./features/onboarding.di";
 import { homeFeatureDi } from "./features/home.di";
+import { mediaFeatureDi } from "./features/media.di";
 
 export const container = createContainer({
   injectionMode: InjectionMode.PROXY,
@@ -30,4 +31,5 @@ container.register({
   ...authFeatureDi,
   ...onboardingFeatureDi,
   ...homeFeatureDi,
+  ...mediaFeatureDi,
 });

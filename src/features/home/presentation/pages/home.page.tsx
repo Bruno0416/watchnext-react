@@ -1,4 +1,5 @@
 import type { HomeState } from "../models/home.state";
+import type { HomeContent } from "../../domain/entities/home.content";
 import { ContentCarousel } from "../components/organisms/content.carousel";
 import { HeroCarousel } from "../components/organisms/hero.carousel";
 
@@ -38,6 +39,11 @@ const sections: ReadonlyArray<{
   },
   { key: "discoverTv", id: "discover-tv", title: "Descubrir series" },
 ];
+
+// ---------- ruta de detalle ----------
+function getDetailPath(content: HomeContent): string {
+  return `/media/${content.mediaType}/${content.tmdbId}`;
+}
 
 export function HomePage() {
   // ---------- dependencias de peliculas ----------
@@ -81,7 +87,7 @@ export function HomePage() {
       className="home-view"
       aria-label="Inicio de WatchNext"
     >
-      <HeroCarousel items={state.popular.items} />
+      <HeroCarousel items={state.popular.items} getDetailPath={getDetailPath} />
 
       <div className="container-fluid home-container home-catalog">
         {sections.map((section) => (
@@ -90,6 +96,7 @@ export function HomePage() {
             id={section.id}
             title={section.title}
             state={state[section.key]}
+            getDetailPath={getDetailPath}
           />
         ))}
       </div>

@@ -13,6 +13,7 @@ import { ResetPasswordPage } from "./features/auth/presentation/pages/reset.pass
 import { VerifyEmailPage } from "./features/auth/presentation/pages/verify.email.page";
 import { OnboardingPage } from "./features/onboarding/presentation/pages/onboarding.page";
 import { HomePage } from "./features/home/presentation/pages/home.page";
+import { MediaPage } from "./features/media/presentation/pages/media.page";
 import { ProfilePage } from "./features/profile/presentation/pages/profile.page";
 import { ListsPage } from "./features/lists/presentation/pages/lists.page";
 
@@ -55,6 +56,7 @@ function App() {
       <Route element={<ProtectedRoute allowGuest />}>
         <Route element={<AppLayout />}>
           <Route path="/inicio" element={<HomePage />} />
+          <Route path="/media/:mediaType/:tmdbId" element={<MediaPage />} />
 
           {/* ---------- vistas publicas con contenido segun sesion ---------- */}
           <Route path="/perfil" element={<ProfilePage />} />
