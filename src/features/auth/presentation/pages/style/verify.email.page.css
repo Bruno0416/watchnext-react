@@ -1,0 +1,69 @@
+/* ---------- otp ---------- */
+.auth.otp {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    gap: var(--th-space-s);
+
+    width: 100%;
+}
+
+.auth.otp.input {
+    width: 100%;
+    aspect-ratio: 1;
+
+    padding: 0;
+
+    border: 0.125rem solid var(--th-color-outline-variant);
+    border-radius: var(--th-radius-m);
+
+    background: var(--th-color-surface-container);
+    color: var(--th-color-on-surface);
+
+    text-align: center;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    box-shadow: none;
+}
+
+.auth.otp.input:hover {
+    border-color: var(--th-color-outline);
+}
+
+.auth.otp.input:focus {
+    border-color: var(--th-color-primary);
+
+    outline: none;
+    box-shadow: none;
+}
+
+/* ---------- acciones ---------- */
+.auth.verify.actions {
+    width: 100%;
+
+    margin-top: var(--th-space-xl);
+}
+
+.auth.verify.actions .btn {
+    width: 100%;
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 480px) {
+    .auth.otp {
+        gap: var(--th-space-xs);
+    }
+
+    .auth.otp.input {
+        font-size: 1rem;
+
+        border-radius: var(--th-radius-s);
+    }
+
+    .auth.verify.actions {
+        margin-top: var(--th-space-l);
+    }
+}

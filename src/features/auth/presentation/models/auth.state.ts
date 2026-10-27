@@ -37,3 +37,25 @@ export type RegisterState = {
   confirmPasswordError: string | null;
   formError: string | null;
 };
+
+export type VerifyCodeState = {
+  code: string;
+  isLoading: boolean;
+  error: string | null;
+};
+
+export type RecoveryRequestState = {
+  email: string;
+  emailError: string | null;
+  formError: string | null;
+  isLoading: boolean;
+};
+
+export type ResetPasswordState = {
+  password: string;
+  confirmPassword: string;
+  passwordError: string | null;
+  confirmPasswordError: string | null;
+  formError: string | null;
+  isLoading: boolean;
+};

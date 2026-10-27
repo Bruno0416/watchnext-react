@@ -1,0 +1,51 @@
+/* ---------- vistas con acceso de invitado ---------- */
+.guest-feature-view {
+    padding: clamp(2rem, 5vw, 4rem) 0 5rem;
+}
+
+.guest-feature-view > .app-container {
+    max-width: 1120px;
+}
+
+/* ---------- invitacion para iniciar sesion ---------- */
+.auth-required-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+    min-height: 56vh;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.auth-required-prompt-icon {
+    margin-bottom: 1rem;
+    color: var(--th-color-primary);
+    font-size: 2.5rem;
+}
+
+.auth-required-prompt.profile-guest .auth-required-prompt-icon {
+    font-size: 4rem;
+}
+
+.auth-required-prompt h1 {
+    margin: 0;
+    color: var(--th-color-on-surface);
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    font-weight: 700;
+}
+
+.auth-required-prompt p {
+    max-width: 45ch;
+    margin: 0.75rem 0 1.5rem;
+    color: var(--th-color-on-surface-variant);
+    line-height: 1.6;
+}
+
+@media (max-width: 575.98px) {
+    .guest-feature-view {
+        padding: 1.5rem 0 3rem;
+    }
+}

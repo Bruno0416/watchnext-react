@@ -1,0 +1,129 @@
+/* ---------- contenido del panel ---------- */
+.admin.page {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: var(--th-space-xl) var(--th-space-l) var(--th-space-xxxl);
+}
+
+.admin.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem 0 2rem;
+}
+
+.admin.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.75rem;
+    color: var(--th-color-primary);
+    font-size: 0.77rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.admin.title { margin: 0 0 0.6rem; font-size: clamp(1.8rem, 3vw, 2.3rem); font-weight: 750; letter-spacing: -0.03em; }
+.admin.subtitle { max-width: 580px; margin: 0; color: var(--th-color-on-surface-variant); font-size: 0.96rem; }
+
+.admin.refresh {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 40px;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--th-color-outline-variant);
+    border-radius: 999px;
+    background: var(--th-color-surface-container);
+    color: var(--th-color-on-surface);
+    font-size: 0.87rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.admin.refresh:hover:not(:disabled) { background: var(--th-color-surface-container-hover); }
+.admin.refresh:disabled { opacity: 0.55; }
+.admin.refresh:focus-visible, .admin.tile:focus-visible { outline: 2px solid var(--th-color-primary); outline-offset: 3px; }
+
+.admin.overview, .admin.destinations { margin-bottom: 2rem; }
+.admin.section-title { margin: 0; font-size: 1.12rem; font-weight: 700; letter-spacing: -0.01em; }
+.admin.overview > .admin.section-title { margin-bottom: 1rem; }
+.admin.section-heading { margin-bottom: 1rem; }
+.admin.section-heading p { margin: 0.3rem 0 0; color: var(--th-color-on-surface-variant); font-size: 0.87rem; }
+
+/* ---------- indicadores ---------- */
+.admin.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.admin.kpi {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-height: 160px;
+    padding: 1.25rem;
+    border: 1px solid var(--th-color-outline-variant);
+    border-radius: var(--th-radius-card);
+    background: var(--th-color-surface-container);
+}
+.admin.kpi-heading { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; color: var(--th-color-on-surface-variant); font-size: 0.84rem; font-weight: 600; }
+.admin.kpi-heading i { color: var(--th-color-primary); font-size: 1.1rem; }
+.admin.kpi-number { margin-top: 0.25rem; font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.admin.kpi-caption { margin-top: auto; color: var(--th-color-on-surface-variant); font-size: 0.79rem; }
+
+/* ---------- paneles analiticos ---------- */
+.admin.insights { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.3rem; }
+.admin.insight {
+    min-width: 0;
+    padding: 1.5rem;
+    border-radius: var(--th-radius-card);
+    background: var(--th-color-surface-container);
+}
+.admin.insight-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.admin.insight-emphasis { color: var(--th-color-primary); font-size: 1.55rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.admin.insight-description { margin: 0.5rem 0 1.3rem; color: var(--th-color-on-surface-variant); font-size: 0.9rem; }
+.admin.progress-track { overflow: hidden; height: 9px; border-radius: 999px; background: var(--th-color-surface-raised); }
+.admin.progress-bar { display: block; height: 100%; border-radius: inherit; background: var(--th-color-primary); transition: width 160ms ease; }
+.admin.insight-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.85rem; color: var(--th-color-on-surface-variant); font-size: 0.84rem; }
+.admin.insight-icon { color: var(--th-color-primary); font-size: 1.15rem; }
+.admin.publication-date { margin: -0.3rem 0 0.65rem; font-size: 1.25rem; font-weight: 700; }
+.admin.insight-footnote { margin: 0; color: var(--th-color-on-surface-variant); font-size: 0.82rem; }
+
+/* ---------- enlaces a modulos ---------- */
+.admin.tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--th-space-m);
+    height: 100%;
+    padding: var(--th-space-l);
+    border: 1px solid var(--th-color-outline-variant);
+    border-radius: var(--th-radius-card);
+    background: var(--th-color-surface-container);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 160ms ease, background-color 160ms ease;
+}
+.admin.tile:hover { transform: translateY(-2px); background: var(--th-color-surface-container-hover); }
+.admin.card-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; background: var(--th-color-primary); color: var(--th-color-on-primary, #fff); font-size: 1.4rem; }
+.admin.card-body { display: flex; flex-direction: column; gap: 2px; }
+.admin.card-title { font-size: 1.2rem; font-weight: 600; }
+.admin.card-description { color: var(--th-color-on-surface-variant); font-size: 0.9rem; }
+.admin.card-stats { display: flex; flex-wrap: wrap; gap: var(--th-space-l); }
+.admin.card-arrow { position: absolute; top: var(--th-space-l); right: var(--th-space-l); color: var(--th-color-on-surface-variant); }
+.admin.stat { display: flex; flex-direction: column; }
+.admin.stat-value { font-size: 1.3rem; font-weight: 700; }
+.admin.stat-label { color: var(--th-color-on-surface-variant); font-size: 0.8rem; }
+
+@media (max-width: 900px) {
+    .admin.kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+    .admin.page { padding: var(--th-space-l) var(--th-space-m) var(--th-space-xxl); }
+    .admin.hero { padding-top: 0.8rem; }
+    .admin.kpis, .admin.insights { grid-template-columns: 1fr; }
+    .admin.kpi { min-height: 130px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .admin.tile, .admin.progress-bar { transition: none; }
+}

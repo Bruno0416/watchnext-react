@@ -19,9 +19,6 @@ const initialRegisterState: RegisterState = {
   emailError: null,
   passwordError: null,
   confirmPasswordError: null,
-  validateEmailField: null,
-  validatePasswordField: null,
-  validateConfirmPasswordField: null,
   formError: null,
 };
 

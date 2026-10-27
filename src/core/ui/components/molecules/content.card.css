@@ -1,0 +1,178 @@
+/* ---------- tarjeta compartida de contenido ---------- */
+
+.media-card {
+  min-width: 0;
+  scroll-snap-align: start;
+  color: var(--th-color-on-surface);
+}
+
+.media-card-poster-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  background: var(--th-color-surface-container);
+  box-shadow: 0 8px 26px var(--th-color-shadow);
+  isolation: isolate;
+}
+
+.media-card-position {
+  position: absolute;
+  z-index: 2;
+  top: 0.65rem;
+  left: 0.65rem;
+  display: grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--th-color-primary);
+  color: var(--th-color-on-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.media-card-poster-link {
+  display: block;
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  overflow: hidden;
+  color: var(--th-color-on-surface-variant);
+  text-decoration: none;
+}
+
+.media-card-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.media-card-poster-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background: var(--th-color-surface-container);
+  font-size: 2.5rem;
+}
+
+.media-card:hover .media-card-poster {
+  transform: scale(1.045);
+}
+
+.media-card-action {
+  position: absolute;
+  z-index: 2;
+  top: 0.65rem;
+  right: 0.65rem;
+  display: grid;
+  width: 2.3rem;
+  height: 2.3rem;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 0.7rem;
+  background: rgba(16, 16, 18, 0.78);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+/* ---------- retirar contenido de listas y favoritos ---------- */
+.media-card-remove-button {
+  opacity: 0;
+  transition: opacity 140ms ease, background-color 140ms ease;
+}
+
+.media-card:hover .media-card-remove-button,
+.media-card:focus-within .media-card-remove-button,
+.media-card-remove-button:disabled {
+  opacity: 1;
+}
+
+.media-card-remove-button:hover,
+.media-card-remove-button:focus-visible {
+  background: var(--th-color-error);
+  color: var(--th-color-on-error);
+}
+
+@media (hover: none) {
+  .media-card-remove-button {
+    opacity: 1;
+  }
+}
+
+.content-add-button:hover,
+.content-add-button:focus-visible {
+  transform: translateY(-2px);
+  background: var(--th-color-primary);
+  color: var(--th-color-on-primary);
+}
+
+.media-card-body {
+  padding-top: 0.75rem;
+}
+
+.media-card-title {
+  margin: 0;
+  overflow: hidden;
+  font-size: 0.91rem;
+  font-weight: 650;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.media-card-link {
+  color: var(--th-color-on-surface);
+  text-decoration: none;
+}
+
+.media-card-link:hover {
+  color: var(--th-color-primary);
+}
+
+.media-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  color: var(--th-color-on-surface-variant);
+  font-size: 0.74rem;
+}
+
+.media-card-details {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.media-card-rating {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--th-color-on-surface);
+  font-weight: 650;
+}
+
+.media-card-rating .bi-star-fill {
+  color: var(--th-color-warning);
+}
+
+.media-card-poster-link:focus-visible,
+.media-card-link:focus-visible,
+.media-card-action:focus-visible {
+  outline: 2px solid var(--th-color-primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-card-poster,
+  .media-card-action {
+    transition: none;
+  }
+}

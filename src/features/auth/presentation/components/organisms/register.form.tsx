@@ -13,6 +13,7 @@ type RegisterFormProps = {
   validateEmailField: () => void;
   validatePasswordField: () => void;
   validateConfirmPasswordField: () => void;
+  onSwitch?: () => void;
   submit: () => Promise<boolean>;
 };
 
@@ -24,6 +25,7 @@ export function RegisterForm({
   validateEmailField,
   validatePasswordField,
   validateConfirmPasswordField,
+  onSwitch,
   submit,
 }: RegisterFormProps) {
   // ---------- estado ----------
@@ -55,7 +57,7 @@ export function RegisterForm({
           placeholder="Ingresa tu contraseña"
           error={state.passwordError}
           leadingIcon="lock-fill"
-          trailingIcon={showPassword ? "eye-slash-fill" : "eye-fill"}
+          trailingIcon={showPassword ? "eye-fill" : "eye-slash-fill"}
           onTrailingClick={() => setShowPassword((current) => !current)}
           onChange={setPassword}
           onBlur={validatePasswordField}
@@ -68,7 +70,7 @@ export function RegisterForm({
           placeholder="Repite tu contraseña"
           error={state.confirmPasswordError}
           leadingIcon="lock-fill"
-          trailingIcon={showConfirmPassword ? "eye-slash-fill" : "eye-fill"}
+          trailingIcon={showConfirmPassword ? "eye-fill" : "eye-slash-fill"}
           onTrailingClick={() => setShowConfirmPassword((current) => !current)}
           onChange={setConfirmPassword}
           onBlur={validateConfirmPasswordField}
@@ -81,7 +83,7 @@ export function RegisterForm({
         Registrarse
       </Button>
 
-      <AuthSwitch type="register" />
+      <AuthSwitch type="register" onSwitch={onSwitch} />
     </form>
   );
 }

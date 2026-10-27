@@ -15,25 +15,32 @@ export class FeedbackDb {
   }
 
   private data: FeedbackSeed | null = null;
+  private loading: Promise<FeedbackSeed> | null = null;
 
   // ---------- carga inicial ----------
   private async load(): Promise<FeedbackSeed> {
-    if (this.data) {
-      return this.data;
+    if (this.data) return this.data;
+
+    // 1. compartir la carga inicial entre solicitudes concurrentes
+    if (!this.loading) {
+      this.loading = (async () => {
+        const stored = this.storage.get() as FeedbackSeed | null;
+        if (stored) {
+          this.data = structuredClone(stored);
+        } else {
+          const response = await fetch("/data/feedback.json");
+          this.data = (await response.json()) as FeedbackSeed;
+          this.storage.set(this.data);
+        }
+        return this.data;
+      })();
     }
 
-    const stored = this.storage.get() as FeedbackSeed | null;
-
-    if (stored) {
-      this.data = structuredClone(stored);
-      return this.data;
+    try {
+      return await this.loading;
+    } finally {
+      this.loading = null;
     }
-
-    const response = await fetch("/data/feedback.json");
-    this.data = (await response.json()) as FeedbackSeed;
-    this.storage.set(this.data);
-
-    return this.data;
   }
 
   private persist(): void {
@@ -58,14 +65,48 @@ export class FeedbackDb {
     return reviews ? structuredClone(reviews) : null;
   }
 
-  async insertRating(rating: JsonObject): Promise<JsonObject> {
+  async findRating(userId: string, tmdbId: number): Promise<JsonObject | null> {
     const data = await this.load();
-    const stored = structuredClone(rating);
+    const rating = data.ratings.find(
+      (item) =>
+        item.userId === userId &&
+        item.tmdbId === tmdbId &&
+        item.mediaType === "MOVIE",
+    );
 
+    return rating ? structuredClone(rating) : null;
+  }
+
+  async insertRating(rating: JsonObject): Promise<JsonObject | null> {
+    const data = await this.load();
+
+    // 1. evitar duplicados incluso entre solicitudes simultaneas
+    const exists = data.ratings.some(
+      (item) =>
+        item.userId === rating.userId &&
+        item.tmdbId === rating.tmdbId &&
+        item.mediaType === rating.mediaType,
+    );
+    if (exists) return null;
+
+    // 2. guardar la valoracion
+    const stored = structuredClone(rating);
     data.ratings.push(stored);
     this.persist();
 
     return structuredClone(stored);
+  }
+
+  async deleteRating(id: string, userId: string): Promise<"deleted" | "forbidden" | "missing"> {
+    const data = await this.load();
+    const index = data.ratings.findIndex((item) => item.id === id);
+
+    if (index < 0) return "missing";
+    if (data.ratings[index].userId !== userId) return "forbidden";
+
+    data.ratings.splice(index, 1);
+    this.persist();
+    return "deleted";
   }
 
   async insertReview(review: JsonObject): Promise<JsonObject> {
@@ -106,4 +147,31 @@ export class FeedbackDb {
 
     return null;
   }
+
+  // ---------- baja de reseñas y valoraciones propias ----------
+  async deleteByUserId(userId: string): Promise<void> {
+    const data = await this.load();
+    const aggregates: Record<string, JsonObject> = {};
+    for (const [key, aggregate] of Object.entries(data.aggregatedReviews)) {
+      const watchnext = aggregate.watchnext as JsonObject | undefined;
+      const reviews = Array.isArray(watchnext?.reviews)
+        ? (watchnext.reviews as JsonArray).filter((review) => review.userId !== userId)
+        : [];
+      aggregates[key] = watchnext
+        ? {
+            ...aggregate,
+            watchnext: { ...watchnext, reviews, totalElements: reviews.length },
+          }
+        : aggregate;
+    }
+    const next: FeedbackSeed = {
+      ...data,
+      ratings: data.ratings.filter((rating) => rating.userId !== userId),
+      reviews: data.reviews.filter((review) => review.userId !== userId),
+      aggregatedReviews: aggregates,
+    };
+    this.storage.set(next);
+    this.data = next;
+  }
+
 }

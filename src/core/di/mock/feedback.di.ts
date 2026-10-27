@@ -3,6 +3,7 @@ import { asClass, asFunction } from "awilix";
 import { FeedbackDb } from "../../mock/feedback/feedback.db";
 import { FeedbackService } from "../../mock/feedback/feedback.service";
 import { FeedbackStorage } from "../../mock/feedback/feedback.storage";
+import type { AuthStorage } from "../../mock/auth/auth.storage";
 
 function createFeedbackDb({
   feedbackStorage,
@@ -12,8 +13,14 @@ function createFeedbackDb({
   return new FeedbackDb(feedbackStorage);
 }
 
-function createFeedbackService({ feedbackDb }: { feedbackDb: FeedbackDb }) {
-  return new FeedbackService(feedbackDb);
+function createFeedbackService({
+  feedbackDb,
+  authStorage,
+}: {
+  feedbackDb: FeedbackDb;
+  authStorage: AuthStorage;
+}) {
+  return new FeedbackService(feedbackDb, authStorage);
 }
 
 export const feedbackMockDi = {

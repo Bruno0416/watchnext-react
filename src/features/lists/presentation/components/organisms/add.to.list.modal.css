@@ -1,0 +1,34 @@
+/* ---------- modal de favoritos y listas ---------- */
+.add-to-list-modal .modal-content {
+  border: 1px solid var(--th-color-outline-variant);
+  border-radius: 1rem;
+  background: var(--th-color-surface-container);
+  color: var(--th-color-on-surface);
+  box-shadow: 0 24px 60px var(--th-color-shadow);
+}
+
+.add-to-list-modal .add-to-list-choice {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--th-color-outline-variant);
+  border-radius: 0.7rem;
+  background: var(--th-color-surface-raised);
+  cursor: pointer;
+}
+
+.add-to-list-modal .add-to-list-choice:hover {
+  border-color: var(--th-color-primary);
+}
+
+.add-to-list-modal .form-check-input { margin: 0; }
+.add-to-list-modal .add-to-list-message { color: var(--th-color-primary); }
+
+.add-to-list-modal .btn-close {
+  background-image: none;
+  color: var(--th-color-on-surface);
+  opacity: 1;
+}
+
+.add-to-list-modal .btn-close:hover { opacity: 0.75; }

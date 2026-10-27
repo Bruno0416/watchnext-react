@@ -41,6 +41,12 @@ export class ProfileDb {
   }
 
   // ---------- consultas ----------
+  // agregado para seguidores y administracion: todos los perfiles
+  async getAll(): Promise<JsonArray> {
+    const data = await this.load();
+    return structuredClone(data.profiles);
+  }
+
   async findByUserId(userId: string): Promise<JsonObject | null> {
     const data = await this.load();
     const profile = data.profiles.find((item) => item.userId === userId);
@@ -84,4 +90,36 @@ export class ProfileDb {
 
     return structuredClone(data.profiles[index]);
   }
+
+  // ---------- baja de perfil y referencias sociales ----------
+  async deleteByUserId(userId: string): Promise<void> {
+    const data = await this.load();
+    const withoutUser = (entries: unknown): JsonArray =>
+      Array.isArray(entries)
+        ? (entries as JsonArray).filter((entry) =>
+            (typeof entry === "string" ? entry : entry.userId) !== userId,
+          )
+        : [];
+
+    const next: ProfileSeed = {
+      ...data,
+      profiles: data.profiles
+        .filter((profile) => profile.userId !== userId)
+        .map((profile) => {
+          const followers = withoutUser(profile.followers);
+          const following = withoutUser(profile.following);
+          return {
+            ...profile,
+            followers,
+            following,
+            followRequests: withoutUser(profile.followRequests),
+            followersCount: followers.length,
+            followingCount: following.length,
+          };
+        }),
+    };
+    this.storage.set(next);
+    this.data = next;
+  }
+
 }

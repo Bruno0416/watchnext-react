@@ -1,12 +1,12 @@
 import type { JsonArray, JsonObject } from "../json.types";
 import { CatalogDb } from "./catalog.db";
+import { MediaDetailsDb } from "./media.details.db";
 
 export class ContentService {
-  private readonly catalogDb: CatalogDb;
-
-  constructor(catalogDb: CatalogDb) {
-    this.catalogDb = catalogDb;
-  }
+  constructor(
+    private readonly catalogDb: CatalogDb,
+    private readonly mediaDetailsDb: MediaDetailsDb,
+  ) {}
 
   // ---------- endpoints de peliculas ----------
   async getNowPlayingMovies(): Promise<JsonObject> {
@@ -40,6 +40,15 @@ export class ContentService {
 
   async discoverTv(): Promise<JsonObject> {
     return this.getCategory("tv", "discover");
+  }
+
+  // ---------- detalle por identificador ----------
+  async getMovieDetails(tmdbId: number): Promise<JsonObject | null> {
+    return this.mediaDetailsDb.getById("movies", tmdbId);
+  }
+
+  async getTvDetails(tmdbId: number): Promise<JsonObject | null> {
+    return this.mediaDetailsDb.getById("tv", tmdbId);
   }
 
   // ---------- endpoints internos ----------

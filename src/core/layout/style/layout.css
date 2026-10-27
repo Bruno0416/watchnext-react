@@ -1,0 +1,221 @@
+/* ---------- layout global ---------- */
+.app-layout {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--th-color-surface);
+    color: var(--th-color-on-surface);
+}
+
+.app-layout-main {
+    width: 100%;
+    min-width: 0;
+    flex: 1 0 auto;
+}
+
+/* ---------- navbar ---------- */
+.app-layout .navbar {
+    z-index: 1030;
+    background-color: var(--th-color-navbar);
+    border-color: var(--th-color-outline-variant) !important;
+    box-shadow: 0 2px 16px var(--th-color-shadow);
+}
+
+.app-layout .navbar-brand {
+    color: var(--th-color-on-surface);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.app-layout .navbar-brand:hover {
+    color: var(--th-color-on-surface);
+}
+
+.app-layout .navbar .nav-link {
+    color: var(--th-color-on-surface-variant);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--th-radius-xs);
+    padding-inline: 0.9rem;
+    transition:
+        color 180ms ease,
+        background-color 180ms ease;
+}
+
+.app-layout .navbar .nav-link:hover {
+    color: var(--th-color-on-surface);
+    background-color: var(--th-color-primary-subtle);
+}
+
+.app-layout .navbar .nav-link.active {
+    color: var(--th-color-primary);
+    font-weight: 600;
+}
+
+.app-layout .navbar-toggler {
+    color: var(--th-color-on-surface);
+    box-shadow: none;
+}
+
+.app-layout .navbar .dropdown-menu {
+    margin-top: 0.65rem;
+}
+
+/* ---------- footer ---------- */
+
+.app-footer {
+    margin-top: 0;
+    flex-shrink: 0;
+    background-color: var(--th-color-surface-container);
+    color: var(--th-color-on-surface);
+    border-top: 1px solid var(--th-color-outline-variant);
+}
+
+.app-footer .app-container {
+    padding-inline: 0;
+}
+
+/* ---------- contenido principal ---------- */
+.footer-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    width: min(1120px, calc(100% - 3rem));
+    margin: 0 auto;
+    padding: 2.5rem 0 2rem;
+    gap: 3rem;
+}
+
+/* ---------- marca ---------- */
+.footer-brand {
+    max-width: 420px;
+}
+
+.footer-brand h2 {
+    margin: 0;
+    color: var(--th-color-on-surface);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.footer-brand p {
+    max-width: 36ch;
+    margin: 0.65rem 0 0;
+    color: var(--th-color-on-surface-variant);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* ---------- navegacion ---------- */
+.footer-navigation {
+    display: flex;
+    min-width: 140px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.footer-navigation h2 {
+    margin: 0 0 0.25rem;
+    color: var(--th-color-on-surface);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.footer-navigation a,
+.footer-link-disabled {
+    color: var(--th-color-on-surface-variant);
+    font-size: 0.88rem;
+    text-decoration: none;
+}
+
+.footer-navigation a {
+    transition: color 160ms ease;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus-visible {
+    color: var(--th-color-primary);
+}
+
+.footer-link-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ---------- inferior ---------- */
+.footer-bottom {
+    width: min(1120px, calc(100% - 3rem));
+    margin: 0 auto;
+    padding: 1rem 0 1.5rem;
+    border-top: 1px solid var(--th-color-outline-variant);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--th-color-on-surface-variant);
+    font-size: 0.78rem;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 575.98px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        width: min(100% - 2rem, 560px);
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .footer-navigation {
+        min-width: 0;
+    }
+
+    .footer-bottom {
+        width: min(100% - 2rem, 560px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-navigation a {
+        transition: none;
+    }
+}
+
+/* ---------- accesibilidad ---------- */
+.app-layout .nav-link:focus-visible,
+.app-layout .navbar-brand:focus-visible,
+.app-layout footer a:focus-visible {
+    outline: 2px solid var(--th-color-primary);
+    outline-offset: 3px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1199.98px) {
+    .app-layout .navbar {
+        padding-block: 0.75rem !important;
+    }
+
+    .app-layout .navbar-collapse {
+        padding-top: 1rem;
+    }
+
+    .app-layout .navbar .nav-link {
+        padding: 0.75rem 0.9rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .app-layout footer {
+        padding-block: 2rem !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .app-layout .nav-link,
+    .app-layout footer a {
+        transition: none;
+    }
+}

@@ -1,0 +1,259 @@
+/* ---------- layout ---------- */
+.nm.page {
+    width: 100%;
+    max-width: 960px;
+
+    margin: 0 auto;
+    padding: var(--th-space-xl) var(--th-space-l) var(--th-space-xxxl);
+}
+
+.nm.back {
+    display: inline-flex;
+    align-items: center;
+
+    gap: var(--th-space-xs);
+
+    margin-bottom: var(--th-space-l);
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.nm.back:hover {
+    color: var(--th-color-primary);
+}
+
+.nm.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: var(--th-space-m);
+
+    margin-bottom: var(--th-space-m);
+}
+
+.nm.title {
+    margin: 0 0 var(--th-space-xs);
+
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.nm.subtitle {
+    margin: 0;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.95rem;
+}
+
+/* ---------- formulario ---------- */
+.nm.form {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--th-space-m);
+
+    margin-bottom: var(--th-space-xl);
+    padding: var(--th-space-l);
+
+    border-radius: var(--th-radius-card);
+
+    background: var(--th-color-surface-container);
+}
+
+.nm.form-title {
+    margin: 0;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nm.field-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    gap: var(--th-space-s);
+}
+
+.nm.optional {
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.nm.counter {
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.nm.counter.over {
+    color: var(--bs-danger);
+}
+
+.nm.form-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: var(--th-space-s);
+}
+
+/* ---------- buscador ---------- */
+.nm.search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: var(--th-space-m);
+
+    margin-bottom: var(--th-space-m);
+}
+
+.nm.search .input-group {
+    flex: 1 1 260px;
+}
+
+.nm.search-count {
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.85rem;
+}
+
+/* ---------- tabla ---------- */
+.nm.list {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--th-space-s);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nm.item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--th-space-m);
+
+    padding: var(--th-space-m) var(--th-space-l);
+
+    border-radius: var(--th-radius-card);
+
+    background: var(--th-color-surface-container);
+}
+
+.nm.item.confirming {
+    outline: 1px solid var(--bs-danger);
+}
+
+.nm.row-info {
+    flex: 1 1 320px;
+
+    min-width: 0;
+}
+
+.nm.row-title {
+    margin: 0;
+
+    font-weight: 600;
+}
+
+.nm.row-summary {
+    margin: 2px 0 4px;
+    overflow: hidden;
+
+    color: var(--th-color-on-surface-variant);
+
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nm.row-date {
+    color: var(--th-color-primary);
+
+    font-size: 0.8rem;
+}
+
+.nm.row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: var(--th-space-s);
+}
+
+.nm.confirm-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ---------- estados ---------- */
+.nm.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--th-space-xs);
+
+    padding: var(--th-space-xxxl) var(--th-space-l);
+
+    border-radius: var(--th-radius-card);
+
+    background: var(--th-color-surface-container);
+    color: var(--th-color-on-surface-variant);
+
+    text-align: center;
+}
+
+.nm.status-icon {
+    font-size: 2.5rem;
+}
+
+.nm.status-title {
+    margin: 0;
+
+    color: var(--th-color-on-surface);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nm.status-description {
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+.nm.status .btn {
+    margin-top: var(--th-space-m);
+}
+
+@media (max-width: 575px) {
+    .nm.page {
+        padding: var(--th-space-l) var(--th-space-m) var(--th-space-xxl);
+    }
+
+    .nm.header .btn,
+    .nm.row-actions {
+        width: 100%;
+    }
+
+    .nm.row-actions .btn {
+        flex: 1;
+    }
+}

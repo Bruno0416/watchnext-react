@@ -57,6 +57,63 @@ export class AuthRepositoryImpl implements AuthRepository {
     }
   }
 
+  async verifyEmail(email: string, code: string): Promise<void> {
+    try {
+      // 1. validar codigo de verificacion
+      await this.source.verifyEmail(email, code);
+    } catch (e) {
+      // 2. mapear error tecnico
+      if (e instanceof AuthError) {
+        throw this.mapError(e);
+      }
+
+      console.error(e);
+      throw e;
+    }
+  }
+
+  async requestPasswordReset(email: string): Promise<void> {
+    try {
+      // 1. solicitar recuperacion
+      await this.source.requestPasswordReset(email);
+    } catch (e) {
+      if (e instanceof AuthError) {
+        throw this.mapError(e);
+      }
+
+      console.error(e);
+      throw e;
+    }
+  }
+
+  async verifyResetCode(email: string, code: string): Promise<string> {
+    try {
+      // 1. verificar codigo
+      return await this.source.verifyResetCode(email, code);
+    } catch (e) {
+      if (e instanceof AuthError) {
+        throw this.mapError(e);
+      }
+
+      console.error(e);
+      throw e;
+    }
+  }
+
+  async resetPassword(resetToken: string, newPassword: string): Promise<void> {
+    try {
+      // 1. cambiar contrasena
+      await this.source.resetPassword(resetToken, newPassword);
+    } catch (e) {
+      if (e instanceof AuthError) {
+        throw this.mapError(e);
+      }
+
+      console.error(e);
+      throw e;
+    }
+  }
+
   async refresh(refreshTokens: string): Promise<AuthTokens> {
     try {
       // 1. llamar al source para obtener los tokens
