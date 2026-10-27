@@ -1,29 +1,9 @@
 {
-  "myLists": {
-    "lists": [
-      {
-        "id": "938d0e72-510a-5b93-a21c-5dab47546b70",
-        "name": "Pendientes",
-        "description": "Las que quiero ver cuando tenga un rato.",
-        "visibility": "PUBLIC",
-        "itemCount": 2,
-        "createdAt": "2026-09-20T14:00:00Z",
-        "updatedAt": "2026-10-03T19:20:00Z"
-      },
-      {
-        "id": "ce3d001a-4759-5e14-94a5-c178e9f1d24a",
-        "name": "Favoritas",
-        "description": "Las que volvería a ver sin pensarlo mucho.",
-        "visibility": "PUBLIC",
-        "itemCount": 2,
-        "createdAt": "2026-09-22T16:30:00Z",
-        "updatedAt": "2026-10-04T21:10:00Z"
-      }
-    ]
-  },
-  "details": {
-    "938d0e72-510a-5b93-a21c-5dab47546b70": {
+  "version": 2,
+  "lists": [
+    {
       "id": "938d0e72-510a-5b93-a21c-5dab47546b70",
+      "userId": "2e29b7a1-07c3-5e46-8d0f-745b4f280aa7",
       "name": "Pendientes",
       "description": "Las que quiero ver cuando tenga un rato.",
       "visibility": "PUBLIC",
@@ -52,8 +32,9 @@
       "createdAt": "2026-09-20T14:00:00Z",
       "updatedAt": "2026-10-03T19:20:00Z"
     },
-    "ce3d001a-4759-5e14-94a5-c178e9f1d24a": {
+    {
       "id": "ce3d001a-4759-5e14-94a5-c178e9f1d24a",
+      "userId": "2e29b7a1-07c3-5e46-8d0f-745b4f280aa7",
       "name": "Favoritas",
       "description": "Las que volvería a ver sin pensarlo mucho.",
       "visibility": "PUBLIC",
@@ -82,5 +63,5 @@
       "createdAt": "2026-09-22T16:30:00Z",
       "updatedAt": "2026-10-04T21:10:00Z"
     }
-  }
+  ]
 }

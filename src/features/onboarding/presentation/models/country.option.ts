@@ -1,23 +1,3 @@
-export type CountryOption = {
-  code: string;
-  name: string;
-  flag: string;
-};
-
-export const COUNTRY_OPTIONS: CountryOption[] = [
-  {
-    code: "CL",
-    name: "Chile",
-    flag: "🇨🇱",
-  },
-  {
-    code: "AR",
-    name: "Argentina",
-    flag: "🇦🇷",
-  },
-  {
-    code: "BR",
-    name: "Brasil",
-    flag: "🇧🇷",
-  },
-];
+// ---------- opciones compartidas con la edicion de perfil ----------
+export { COUNTRY_OPTIONS } from "../../../../core/models/supported.countries";
+export type { CountryOption } from "../../../../core/models/supported.countries";

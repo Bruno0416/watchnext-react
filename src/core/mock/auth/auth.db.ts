@@ -21,6 +21,12 @@ export class AuthDb {
   }
 
   // ---------- consultas ----------
+  // agregado para la vista de administracion de usuarios
+  async getAll(): Promise<JsonArray> {
+    const users = await this.load();
+    return structuredClone(users);
+  }
+
   async findByEmail(email: string): Promise<JsonObject | null> {
     const users = await this.load();
     const user = users.find((item) => item.email === email);
@@ -79,4 +85,14 @@ export class AuthDb {
     users.push(stored);
     return structuredClone(stored);
   }
+
+  // ---------- baja administrativa en memoria ----------
+  async deleteById(userId: string): Promise<boolean> {
+    const users = await this.load();
+    const index = users.findIndex((item) => item.id === userId);
+    if (index < 0) return false;
+    users.splice(index, 1);
+    return true;
+  }
+
 }

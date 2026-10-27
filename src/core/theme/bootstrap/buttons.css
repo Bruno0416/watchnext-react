@@ -50,6 +50,33 @@
     --bs-btn-disabled-border-color: var(--th-color-primary-disabled);
 }
 
+/* ---------- variantes delineadas con colores del tema ---------- */
+.btn-outline-primary {
+    --bs-btn-color: var(--th-color-primary);
+    --bs-btn-border-color: var(--th-color-primary);
+    --bs-btn-hover-color: var(--th-color-on-primary);
+    --bs-btn-hover-bg: var(--th-color-primary-hover);
+    --bs-btn-hover-border-color: var(--th-color-primary-hover);
+    --bs-btn-active-color: var(--th-color-on-primary);
+    --bs-btn-active-bg: var(--th-color-primary-active);
+    --bs-btn-active-border-color: var(--th-color-primary-active);
+    --bs-btn-disabled-color: var(--th-color-primary);
+    --bs-btn-disabled-border-color: var(--th-color-primary);
+}
+
+.btn-outline-danger {
+    --bs-btn-color: var(--th-color-error);
+    --bs-btn-border-color: var(--th-color-error);
+    --bs-btn-hover-color: var(--th-color-on-error);
+    --bs-btn-hover-bg: var(--th-color-error);
+    --bs-btn-hover-border-color: var(--th-color-error);
+    --bs-btn-active-color: var(--th-color-on-error);
+    --bs-btn-active-bg: var(--th-color-error);
+    --bs-btn-active-border-color: var(--th-color-error);
+    --bs-btn-disabled-color: var(--th-color-error);
+    --bs-btn-disabled-border-color: var(--th-color-error);
+}
+
 .btn-secondary {
     --bs-btn-color: var(--th-color-on-surface);
     --bs-btn-bg: var(--th-color-surface-container);

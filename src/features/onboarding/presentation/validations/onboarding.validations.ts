@@ -1,3 +1,5 @@
+import { BIO_MAX, DISPLAY_NAME_MAX, isSupportedCountry } from "../../../../core/models/supported.countries";
+
 // ----- validar país -----
 export function validateCountry(country: string): string | null {
   if (!country.trim()) {
@@ -6,6 +8,10 @@ export function validateCountry(country: string): string | null {
 
   if (!/^[A-Za-z]{2}$/.test(country)) {
     return "El país debe usar un código ISO de 2 letras";
+  }
+
+  if (!isSupportedCountry(country)) {
+    return "Selecciona Chile, Argentina o Brasil";
   }
 
   return null;
@@ -28,8 +34,8 @@ export function validateUsername(username: string): string | null {
 
 // ----- validar display name -----
 export function validateDisplayName(displayName: string): string | null {
-  if (displayName.length > 50) {
-    return "El nombre no puede exceder 50 caracteres";
+  if (displayName.length > DISPLAY_NAME_MAX) {
+    return `El nombre no puede exceder ${DISPLAY_NAME_MAX} caracteres`;
   }
 
   return null;
@@ -37,8 +43,8 @@ export function validateDisplayName(displayName: string): string | null {
 
 // ----- validar biografía -----
 export function validateBio(bio: string): string | null {
-  if (bio.length > 500) {
-    return "La descripción no puede exceder 500 caracteres";
+  if (bio.length > BIO_MAX) {
+    return `La descripción no puede exceder ${BIO_MAX} caracteres`;
   }
 
   return null;

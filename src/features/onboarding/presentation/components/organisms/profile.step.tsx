@@ -1,4 +1,5 @@
 import { ProfileVisibility } from "../../../../../core/models/profile.visibility";
+import { BIO_MAX, DISPLAY_NAME_MAX } from "../../../../../core/models/supported.countries";
 import { UsernameStatus } from "../../models/onboarding.state";
 
 type ProfileStepProps = {
@@ -65,15 +66,19 @@ export function ProfileStep({
             Nombre de usuario
           </label>
 
-          <input
-            id="username"
-            className="form-control onboarding input"
-            type="text"
-            value={username}
-            placeholder="nombre_usuario"
-            onChange={(event) => onUsernameChange(event.target.value)}
-            onBlur={onUsernameBlur}
-          />
+          <div className="input-group onboarding username-control">
+            <span className="input-group-text" aria-hidden="true">@</span>
+            <input
+              id="username"
+              className="form-control onboarding input"
+              type="text"
+              autoComplete="username"
+              value={username}
+              placeholder="nombre_usuario"
+              onChange={(event) => onUsernameChange(event.target.value)}
+              onBlur={onUsernameBlur}
+            />
+          </div>
 
           {usernameError && (
             <p className="text-danger small mb-0 mt-1">{usernameError}</p>
@@ -114,6 +119,7 @@ export function ProfileStep({
             className="form-control onboarding input"
             type="text"
             value={displayName}
+            maxLength={DISPLAY_NAME_MAX}
             placeholder="Tu nombre visible"
             onChange={(event) => onDisplayNameChange(event.target.value)}
             onBlur={onDisplayNameBlur}
@@ -134,6 +140,7 @@ export function ProfileStep({
             className="form-control onboarding input"
             rows={3}
             value={bio}
+            maxLength={BIO_MAX}
             placeholder="Cuéntanos un poco sobre ti"
             onChange={(event) => onBioChange(event.target.value)}
             onBlur={onBioBlur}

@@ -19,7 +19,7 @@ export function CountryStep({
         <span className="onboarding eyebrow">Primero, lo básico</span>
         <h1>¿De dónde eres?</h1>
 
-        <p>Selecciona tu país para configurar inicialmente tu perfil.</p>
+        <p>Selecciona tu país para consultar la disponibilidad de películas y series. No aparecerá en tu perfil público.</p>
       </header>
 
       <div

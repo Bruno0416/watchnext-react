@@ -3,16 +3,16 @@ import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 
 // ---------- layout de paginas protegidas (con navbar y footer) ----------
-export function AppLayout() {
+export function AppLayout({ admin = false }: { admin?: boolean }) {
   return (
-    <div className="app-layout d-flex flex-column min-vh-100">
-      <Navbar />
+    <div className="app-layout">
+      <Navbar admin={admin} />
 
-      <main id="main-content" className="app-layout-main grow">
+      <main id="main-content" className="app-layout-main">
         <Outlet />
       </main>
 
-      <Footer />
+      <Footer admin={admin} />
     </div>
   );
 }

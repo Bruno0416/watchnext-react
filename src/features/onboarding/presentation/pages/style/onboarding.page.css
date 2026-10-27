@@ -234,6 +234,18 @@
     box-shadow: none;
 }
 
+.onboarding.username-control .input-group-text {
+    border-color: var(--th-color-outline-variant);
+    border-radius: var(--th-radius-input) 0 0 var(--th-radius-input);
+    background: var(--th-color-surface-container);
+    color: var(--th-color-on-surface-variant);
+}
+
+.onboarding.username-control .onboarding.input {
+    min-width: 0;
+    border-radius: 0 var(--th-radius-input) var(--th-radius-input) 0;
+}
+
 textarea.onboarding.input {
     min-height: 104px;
     resize: vertical;

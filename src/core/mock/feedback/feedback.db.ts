@@ -147,4 +147,31 @@ export class FeedbackDb {
 
     return null;
   }
+
+  // ---------- baja de reseñas y valoraciones propias ----------
+  async deleteByUserId(userId: string): Promise<void> {
+    const data = await this.load();
+    const aggregates: Record<string, JsonObject> = {};
+    for (const [key, aggregate] of Object.entries(data.aggregatedReviews)) {
+      const watchnext = aggregate.watchnext as JsonObject | undefined;
+      const reviews = Array.isArray(watchnext?.reviews)
+        ? (watchnext.reviews as JsonArray).filter((review) => review.userId !== userId)
+        : [];
+      aggregates[key] = watchnext
+        ? {
+            ...aggregate,
+            watchnext: { ...watchnext, reviews, totalElements: reviews.length },
+          }
+        : aggregate;
+    }
+    const next: FeedbackSeed = {
+      ...data,
+      ratings: data.ratings.filter((rating) => rating.userId !== userId),
+      reviews: data.reviews.filter((review) => review.userId !== userId),
+      aggregatedReviews: aggregates,
+    };
+    this.storage.set(next);
+    this.data = next;
+  }
+
 }

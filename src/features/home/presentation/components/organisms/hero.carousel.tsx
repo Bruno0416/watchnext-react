@@ -10,9 +10,10 @@ import type { HomeContent } from "../../../domain/entities/home.content";
 type HeroCarouselProps = {
   items: HomeContent[];
   getDetailPath?: (content: HomeContent) => string;
+  onAddToList?: (content: HomeContent) => void;
 };
 
-export function HeroCarousel({ items, getDetailPath }: HeroCarouselProps) {
+export function HeroCarousel({ items, getDetailPath, onAddToList }: HeroCarouselProps) {
   const featured = items.slice(0, 6);
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -119,12 +120,19 @@ export function HeroCarousel({ items, getDetailPath }: HeroCarouselProps) {
 
             <p className="hero-overview">{active.overview}</p>
 
-            {detailTo && (
-              <Link className="btn btn-primary hero-action" to={detailTo}>
-                Ver más
-                <i className="bi bi-arrow-up-right" aria-hidden="true" />
-              </Link>
-            )}
+            <div className="d-flex flex-wrap gap-2">
+              {detailTo && (
+                <Link className="btn btn-primary hero-action" to={detailTo}>
+                  Ver más
+                  <i className="bi bi-arrow-up-right" aria-hidden="true" />
+                </Link>
+              )}
+              {onAddToList && (
+                <button type="button" className="btn btn-outline-primary hero-action" onClick={() => onAddToList(active)}>
+                  <i className="bi bi-plus-lg" aria-hidden="true" /> Guardar
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

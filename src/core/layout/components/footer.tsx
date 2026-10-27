@@ -1,7 +1,21 @@
 import { Link } from "react-router";
 
-export function Footer() {
+export function Footer({ admin = false }: { admin?: boolean }) {
   const currentYear = new Date().getFullYear();
+  const links = admin
+    ? [
+        { to: "/admin", label: "Resumen" },
+        { to: "/admin/usuarios", label: "Usuarios" },
+        { to: "/admin/noticias", label: "Noticias" },
+      ]
+    : [
+        { to: "/inicio", label: "Inicio" },
+        { to: "/noticias", label: "Noticias" },
+        { to: "/mis-listas", label: "Mis listas" },
+        { to: "/perfil", label: "Perfil" },
+        { to: "/sobre-nosotros", label: "Sobre nosotros" },
+        { to: "/contacto", label: "Contacto" },
+      ];
 
   return (
     <footer className="app-footer">
@@ -21,11 +35,9 @@ export function Footer() {
           >
             <h2>Navegación</h2>
 
-            <Link to="/inicio">Inicio</Link>
-
-            <Link to="/mis-listas">Mis listas</Link>
-
-            <Link to="/perfil">Perfil</Link>
+            {links.map(({ to, label }) => (
+              <Link key={to} to={to}>{label}</Link>
+            ))}
           </nav>
         </div>
 

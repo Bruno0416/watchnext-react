@@ -3,7 +3,7 @@ import type { MediaDetail } from "../../../domain/entities/media.detail";
 import { MediaArtwork } from "../atoms/media.artwork";
 import { MediaHeroInfo } from "../molecules/media.hero.info";
 
-export function MediaHero({ detail }: { detail: MediaDetail }) {
+export function MediaHero({ detail, onAddToList }: { detail: MediaDetail; onAddToList: () => void }) {
   const backdrop = getMediaImageUrl(
     detail.backdropPath ?? detail.posterPath,
     "original",
@@ -23,7 +23,7 @@ export function MediaHero({ detail }: { detail: MediaDetail }) {
             variant="poster"
           />
         </div>
-        <MediaHeroInfo detail={detail} />
+        <MediaHeroInfo detail={detail} onAddToList={onAddToList} />
       </div>
     </header>
   );

@@ -1,4 +1,6 @@
+import { useState } from "react";
 import type { HomeState } from "../models/home.state";
+import { AddToListModal } from "../../../lists/presentation/components/organisms/add.to.list.modal";
 import type { HomeContent } from "../../domain/entities/home.content";
 import { ContentCarousel } from "../components/organisms/content.carousel";
 import { HeroCarousel } from "../components/organisms/hero.carousel";
@@ -46,6 +48,7 @@ function getDetailPath(content: HomeContent): string {
 }
 
 export function HomePage() {
+  const [selectedContent, setSelectedContent] = useState<HomeContent | null>(null);
   // ---------- dependencias de peliculas ----------
   const getNowPlayingMovies = container.resolve<GetNowPlayingMovies>(
     "getNowPlayingMovies",
@@ -87,7 +90,7 @@ export function HomePage() {
       className="home-view"
       aria-label="Inicio de WatchNext"
     >
-      <HeroCarousel items={state.popular.items} getDetailPath={getDetailPath} />
+      <HeroCarousel items={state.popular.items} getDetailPath={getDetailPath} onAddToList={setSelectedContent} />
 
       <div className="container-fluid home-container home-catalog">
         {sections.map((section) => (
@@ -97,9 +100,13 @@ export function HomePage() {
             title={section.title}
             state={state[section.key]}
             getDetailPath={getDetailPath}
+            onAddToList={setSelectedContent}
           />
         ))}
       </div>
+      {selectedContent && (
+        <AddToListModal content={selectedContent} onClose={() => setSelectedContent(null)} />
+      )}
     </section>
   );
 }

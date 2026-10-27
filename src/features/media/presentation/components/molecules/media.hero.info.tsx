@@ -1,7 +1,7 @@
 import { MediaType } from "../../../../../core/models/media.type";
 import type { MediaDetail } from "../../../domain/entities/media.detail";
 
-export function MediaHeroInfo({ detail }: { detail: MediaDetail }) {
+export function MediaHeroInfo({ detail, onAddToList }: { detail: MediaDetail; onAddToList: () => void }) {
   const movie = detail.mediaType === MediaType.MOVIE;
   const rating =
     detail.voteAverage !== null && detail.voteAverage > 0
@@ -37,6 +37,9 @@ export function MediaHeroInfo({ detail }: { detail: MediaDetail }) {
           <span>Catálogo: sin puntuación</span>
         )}
       </div>
+      <button type="button" className="btn btn-primary mt-3" onClick={onAddToList}>
+        <i className="bi bi-plus-lg me-2" aria-hidden="true" />Agregar a Favoritos o listas
+      </button>
       {detail.genres.length > 0 && (
         <div className="media-detail-genres">
           {detail.genres.map((genre) => (

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useLocation, useNavigate } from "react-router";
 
 import { container } from "../../di/container";
 import { useGuestAccess } from "../../router/protected.route";
@@ -7,7 +7,7 @@ import type { Logout } from "../../../features/auth/domain/usecases/logout";
 
 // ---------- navbar global ----------
 
-export function Navbar() {
+export function Navbar({ admin = false }: { admin?: boolean }) {
   // ---------- estado ----------
   const [menuOpen, setMenuOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
@@ -17,6 +17,22 @@ export function Navbar() {
   const accountMenuRef = useRef<HTMLDivElement>(null);
   const isGuest = useGuestAccess();
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const isListDetail = pathname.startsWith("/listas/");
+  const navItems = admin
+    ? [
+        { to: "/admin", label: "Resumen", end: true },
+        { to: "/admin/usuarios", label: "Usuarios", end: false },
+        { to: "/admin/noticias", label: "Noticias", end: false },
+      ]
+    : [
+        { to: "/inicio", label: "Inicio", end: true },
+        { to: "/noticias", label: "Noticias", end: false },
+        { to: "/mis-listas", label: "Mis listas", end: false },
+        { to: "/perfil", label: "Perfil", end: false },
+        { to: "/sobre-nosotros", label: "Sobre nosotros", end: true },
+        { to: "/contacto", label: "Contacto", end: true },
+      ];
 
   // ---------- cerrar menu flotante ----------
   useEffect(() => {
@@ -73,7 +89,7 @@ export function Navbar() {
   // ---------- renderizado ----------
   return (
     <nav
-      className="navbar navbar-expand-md sticky-top border-bottom py-3"
+      className="navbar navbar-expand-xl sticky-top border-bottom py-3"
       aria-label="Navegación principal"
       style={{
         backgroundColor: "var(--th-color-navbar)",
@@ -83,7 +99,7 @@ export function Navbar() {
       <div className="container-fluid px-3 px-lg-5 d-flex align-items-center flex-wrap">
         {/* ---------- marca ---------- */}
         <Link
-          to="/inicio"
+          to={admin ? "/admin" : "/inicio"}
           className="navbar-brand fw-bold fs-4 me-3"
           style={{ color: "var(--th-color-on-surface)" }}
           onClick={() => setMenuOpen(false)}
@@ -92,8 +108,21 @@ export function Navbar() {
         </Link>
 
         {/* ---------- controles de cuenta ---------- */}
-        <div className="d-flex align-items-center gap-2 ms-auto order-md-3">
-          {isGuest ? (
+        <div className="d-flex align-items-center gap-2 ms-auto order-xl-3">
+          {admin ? (
+            <>
+              <button
+                type="button"
+                className="btn btn-secondary rounded-pill d-flex align-items-center gap-2"
+                disabled={isLoggingOut}
+                onClick={() => void handleLogout()}
+              >
+                <i className="bi bi-box-arrow-right" aria-hidden="true" />
+                {isLoggingOut ? "Saliendo..." : "Cerrar sesión"}
+              </button>
+              {error && <span className="small text-danger" role="alert">{error}</span>}
+            </>
+          ) : isGuest ? (
             <Link
               to="/auth"
               className="btn btn-secondary rounded-pill"
@@ -182,41 +211,26 @@ export function Navbar() {
         {/* ---------- enlaces ---------- */}
         <div
           id="watchnext-navbar"
-          className={`collapse navbar-collapse order-3 order-md-2 ${
+          className={`collapse navbar-collapse order-3 order-xl-2 ${
             menuOpen ? "show" : ""
           }`}
         >
-          <ul className="navbar-nav me-auto mb-2 mb-md-0 gap-md-2">
-            <li className="nav-item">
-              <NavLink
-                to="/inicio"
-                end
-                className="nav-link"
-                onClick={() => setMenuOpen(false)}
-              >
-                Inicio
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                to="/mis-listas"
-                className="nav-link"
-                onClick={() => setMenuOpen(false)}
-              >
-                Mis listas
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                to="/perfil"
-                className="nav-link"
-                onClick={() => setMenuOpen(false)}
-              >
-                Perfil
-              </Link>
-            </li>
+          <ul className="navbar-nav me-auto mb-2 mb-xl-0 gap-xl-1">
+            {navItems.map(({ to, label, end }) => (
+              <li className="nav-item" key={to}>
+                <NavLink
+                  to={to}
+                  end={end}
+                  className={({ isActive }) =>
+                    `nav-link${isActive || (!admin && to === "/mis-listas" && isListDetail) ? " active" : ""}`
+                  }
+                  aria-current={!admin && to === "/mis-listas" && isListDetail ? "page" : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

@@ -12,7 +12,7 @@ export type MediaCardContent = {
   mediaType: MediaType;
   title: string;
   posterPath: string | null;
-  backdropPath: string | null;
+  backdropPath?: string | null;
   releaseDate: string | null;
   voteAverage: number;
 };
@@ -21,6 +21,10 @@ type ContentCardProps = {
   content: MediaCardContent;
   detailTo?: string;
   onAddToList?: () => void;
+  position?: number;
+  onRemove?: () => void;
+  removeLabel?: string;
+  busy?: boolean;
 };
 
 // ---------- tarjeta de contenido ----------
@@ -29,6 +33,10 @@ export function ContentCard({
   content,
   detailTo,
   onAddToList,
+  position,
+  onRemove,
+  removeLabel,
+  busy = false,
 }: ContentCardProps) {
   const poster = getMediaImageUrl(
     content.posterPath ?? content.backdropPath,
@@ -60,6 +68,12 @@ export function ContentCard({
       data-content-type={content.mediaType}
     >
       <div className="media-card-poster-wrap">
+        {position !== undefined && (
+          <span className="media-card-position" aria-label={`Posición ${position}`}>
+            {position}
+          </span>
+        )}
+
         {detailTo ? (
           <Link
             className="media-card-poster-link"
@@ -72,7 +86,18 @@ export function ContentCard({
           <div className="media-card-poster-link">{posterContent}</div>
         )}
 
-        {onAddToList && (
+        {onRemove ? (
+          <button
+            className="media-card-action media-card-remove-button"
+            type="button"
+            onClick={onRemove}
+            disabled={busy}
+            aria-label={removeLabel ?? `Quitar ${content.title}`}
+            title="Quitar contenido"
+          >
+            <i className="bi bi-x-lg" aria-hidden="true" />
+          </button>
+        ) : onAddToList ? (
           <button
             className="media-card-action content-add-button"
             type="button"
@@ -82,7 +107,7 @@ export function ContentCard({
           >
             <i className="bi bi-plus-lg" aria-hidden="true" />
           </button>
-        )}
+        ) : null}
       </div>
 
       <div className="media-card-body">

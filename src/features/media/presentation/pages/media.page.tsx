@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { MediaType } from "../../../../core/models/media.type";
+import { AddToListModal } from "../../../lists/presentation/components/organisms/add.to.list.modal";
 import { Link, useParams } from "react-router";
 import { container } from "../../../../core/di/container";
 import type { GetMediaDetail } from "../../domain/usecases/get.media.detail";
@@ -31,6 +33,7 @@ function MediaContent({
   mediaType: string | undefined;
   tmdbId: string | undefined;
 }) {
+  const [saveOpen, setSaveOpen] = useState(false);
   const getMediaDetail = container.resolve<GetMediaDetail>("getMediaDetail");
   const { state, reload } = useMediaViewModel(
     mediaType,
@@ -48,7 +51,7 @@ function MediaContent({
             ? "Dirección de contenido inválida"
             : "No se pudo cargar el contenido";
     return (
-      <main className="media-page media-detail-status" aria-live="polite">
+      <section className="media-page media-detail-status" aria-live="polite">
         <h1>{title}</h1>
         {state.status === "error" && <p>{state.message}</p>}
         {state.status === "notFound" && (
@@ -71,14 +74,30 @@ function MediaContent({
             Volver al inicio
           </Link>
         )}
-      </main>
+      </section>
     );
   }
 
   const { detail } = state;
   return (
-    <main className="media-page">
-      <MediaHero detail={detail} />
+    <section className="media-page">
+      <MediaHero detail={detail} onAddToList={() => setSaveOpen(true)} />
+      {saveOpen && (
+        <AddToListModal
+          content={{
+            tmdbId: detail.tmdbId,
+            mediaType: detail.mediaType,
+            title: detail.title,
+            posterPath: detail.posterPath,
+            backdropPath: detail.backdropPath,
+            voteAverage: detail.voteAverage ?? 0,
+            releaseDate: detail.releaseDate,
+            duration: detail.mediaType === MediaType.MOVIE ? detail.runtimeMinutes : null,
+            numberOfSeasons: detail.mediaType === MediaType.TV ? detail.numberOfSeasons : null,
+          }}
+          onClose={() => setSaveOpen(false)}
+        />
+      )}
       <div className="media-detail-body">
         <section
           className="media-detail-section"
@@ -100,6 +119,6 @@ function MediaContent({
         )}
         <MediaAdditionalInfo detail={detail} />
       </div>
-    </main>
+    </section>
   );
 }
