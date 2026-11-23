@@ -20,7 +20,7 @@ export class ContentSearchResultModel {
       String(json.title ?? ""),
       String(json.overview ?? ""),
       String(json.posterPath ?? ""),
-      json.mediaType === "tv" ? MediaType.TV : MediaType.MOVIE,
+      String(json.mediaType).toLowerCase() === "tv" ? MediaType.TV : MediaType.MOVIE,
       typeof json.year === "number" ? json.year : null,
       Number(json.popularity ?? 0),
       Number(json.voteAverage ?? 0),

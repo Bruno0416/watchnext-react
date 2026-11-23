@@ -1,8 +1,8 @@
 import { asFunction } from "awilix";
-import { SearchService } from "../../mock/search/search.service";
-import { ContentLocalSourceImpl } from "../../../features/onboarding/data/source/content.local.source.impl";
-import type { UserService } from "../../mock/user/user.service";
-import { UserLocalSourceImpl } from "../../../features/onboarding/data/source/user.local.source.impl";
+import { ContentRemoteSourceImpl } from "../../../features/onboarding/data/source/content.remote.source.impl";
+import { UserRemoteSourceImpl } from "../../../features/onboarding/data/source/user.remote.source.impl";
+import type { ContentLocalSource } from "../../../features/onboarding/data/source/content.local.source";
+import type { UserLocalSource } from "../../../features/onboarding/data/source/user.local.source";
 import { ContentRepositoryImpl } from "../../../features/onboarding/data/repositories/content.repository.impl";
 import { UserRepositoryImpl } from "../../../features/onboarding/data/repositories/user.repository.impl";
 import { CheckOnboardingStatus } from "../../../features/onboarding/domain/usecases/check.onboarding.status";
@@ -12,24 +12,18 @@ import { SearchContent } from "../../../features/onboarding/domain/usecases/sear
 
 export const onboardingFeatureDi = {
   // ---------- data sources ----------
-  contentSource: asFunction(
-    ({ searchService }: { searchService: SearchService }) =>
-      new ContentLocalSourceImpl(searchService),
-  ),
+  contentSource: asFunction(() => new ContentRemoteSourceImpl()),
 
-  userSource: asFunction(
-    ({ userService }: { userService: UserService }) =>
-      new UserLocalSourceImpl(userService),
-  ),
+  userSource: asFunction(() => new UserRemoteSourceImpl()),
 
   // ---------- repositories ----------
   contentRepository: asFunction(
-    ({ contentSource }: { contentSource: ContentLocalSourceImpl }) =>
+    ({ contentSource }: { contentSource: ContentLocalSource }) =>
       new ContentRepositoryImpl(contentSource),
   ),
 
   userRepository: asFunction(
-    ({ userSource }: { userSource: UserLocalSourceImpl }) =>
+    ({ userSource }: { userSource: UserLocalSource }) =>
       new UserRepositoryImpl(userSource),
   ),
 

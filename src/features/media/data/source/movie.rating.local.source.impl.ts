@@ -19,7 +19,8 @@ export class MovieRatingLocalSourceImpl implements MovieRatingLocalSource {
     return MovieRatingModel.fromJson(json);
   }
 
-  async deleteRating(id: string): Promise<void> {
-    await this.service.deleteRating(id);
+  async deleteRating(tmdbId: number): Promise<void> {
+    const rating = await this.service.getMyRating(tmdbId);
+    if (rating && typeof rating.id === "string") await this.service.deleteRating(rating.id);
   }
 }

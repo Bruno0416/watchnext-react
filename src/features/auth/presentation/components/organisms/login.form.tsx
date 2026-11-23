@@ -28,10 +28,18 @@ export function LoginForm({
 }: LoginFormProps) {
   // ---------- estado ----------
   const [showPassword, setShowPassword] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit: SubmitEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
-    await submit();
+    if (submitting) return;
+
+    setSubmitting(true);
+    try {
+      await submit();
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -70,8 +78,11 @@ export function LoginForm({
 
       {state.formError && <p className="auth error">{state.formError}</p>}
 
-      <Button type="submit" className="auth submit">
-        Iniciar sesión
+      <Button type="submit" className="auth submit" disabled={submitting}>
+        {submitting && (
+          <span className="spinner-border spinner-border-sm me-2" aria-hidden="true" />
+        )}
+        {submitting ? "Iniciando sesión..." : "Iniciar sesión"}
       </Button>
 
       <AuthSwitch type="login" onSwitch={onSwitch} />

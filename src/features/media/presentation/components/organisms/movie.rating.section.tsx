@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { Link } from "react-router";
+import { LoadingIndicator } from "../../../../../core/ui/components/atoms/loading.indicator";
 import { useGuestAccess } from "../../../../../core/router/protected.route";
 import { container } from "../../../../../core/di/container";
 import type { GetMyMovieRating } from "../../../domain/usecases/get.my.movie.rating";
@@ -28,7 +29,7 @@ export function MovieRatingSection({ tmdbId }: { tmdbId: number }) {
           <Link to="/auth">Inicia sesión</Link> para valorar esta película.
         </p>
       ) : state.status === "loading" ? (
-        <p className="media-detail-muted" role="status">Cargando tu valoración...</p>
+        <LoadingIndicator message="Cargando tu valoración..." small />
       ) : state.status === "error" ? (
         <p role="alert">{state.error}</p>
       ) : state.rating ? (

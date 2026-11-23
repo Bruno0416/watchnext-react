@@ -66,6 +66,12 @@ export function ProtectedRoute({ allowGuest = false }: ProtectedRouteProps) {
       } catch (error) {
         // 5. manejar error
         if (active) {
+          const session = await getSession.call();
+          if (!active) return;
+          if (!session) {
+            setStatus(allowGuest ? "guest" : "unauthenticated");
+            return;
+          }
           console.error("[ERROR] validacion de acceso", error);
           setStatus("error");
         }

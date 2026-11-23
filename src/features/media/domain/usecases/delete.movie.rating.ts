@@ -3,7 +3,7 @@ import type { MovieRatingRepository } from "../repositories/movie.rating.reposit
 export class DeleteMovieRating {
   constructor(private readonly repository: MovieRatingRepository) {}
 
-  call(id: string) {
-    return this.repository.deleteRating(id);
+  call(tmdbId: number) {
+    return this.repository.deleteRating(tmdbId);
   }
 }

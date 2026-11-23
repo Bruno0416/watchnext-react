@@ -20,10 +20,10 @@ export function RootRedirect() {
 
   useEffect(() => {
     async function redirect(): Promise<void> {
-      // 1. esperar validacion de session
+      // 1. esperar la validacion de la sesion
       if (state.isLoading) return;
 
-      // 2. si no existe sesiosion redirigir
+      // 2. redirigir al acceso si no existe sesion
       if (!state.tokens || !state.role) {
         navigate("/auth", { replace: true });
         return;
@@ -39,11 +39,15 @@ export function RootRedirect() {
       try {
         const onboardingcompleted = await checkOnboardingStatus.call();
 
-        // 5. redirigir segun perfil
+        // 5. redirigir segun el estado del perfil
         navigate(onboardingcompleted ? "/inicio" : "/onboarding", {
           replace: true,
         });
       } catch (error) {
+        if (!(await getSession.call())) {
+          navigate("/auth", { replace: true });
+          return;
+        }
         console.error(
           "[ERROR] no se pudo comprobar el estado del onboarding",
           error,

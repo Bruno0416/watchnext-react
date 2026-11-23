@@ -7,10 +7,13 @@ import type { MovieRatingLocalSource } from "../source/movie.rating.local.source
 export class MovieRatingRepositoryImpl implements MovieRatingRepository {
   constructor(private readonly source: MovieRatingLocalSource) {}
 
+  // --- traducir errores del origen de datos ---
   private translateError(error: unknown): MovieRatingError {
-    return error instanceof FeedbackRatingError
-      ? new MovieRatingError(error.code)
-      : new MovieRatingError("UNKNOWN");
+    return error instanceof MovieRatingError
+      ? error
+      : error instanceof FeedbackRatingError
+        ? new MovieRatingError(error.code)
+        : new MovieRatingError("UNKNOWN");
   }
 
   async getMyRating(tmdbId: number): Promise<MovieRating | null> {
@@ -29,9 +32,9 @@ export class MovieRatingRepositoryImpl implements MovieRatingRepository {
     }
   }
 
-  async deleteRating(id: string): Promise<void> {
+  async deleteRating(tmdbId: number): Promise<void> {
     try {
-      await this.source.deleteRating(id);
+      await this.source.deleteRating(tmdbId);
     } catch (error) {
       throw this.translateError(error);
     }

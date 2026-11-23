@@ -1,8 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { ContentService } from "../../mock/content/content.service";
-
-import { HomeLocalSourceImpl } from "../../../features/home/data/source/home.local.source.impl";
+import { HomeRemoteSourceImpl } from "../../../features/home/data/source/home.remote.source.impl";
 import type { HomeLocalSource } from "../../../features/home/data/source/home.local.source";
 import { HomeRepositoryImpl } from "../../../features/home/data/repositories/home.repository.impl";
 import type { HomeRepository } from "../../../features/home/domain/repositories/home.repository";
@@ -19,10 +17,7 @@ import { GetTopRatedTv } from "../../../features/home/domain/usecases/tv/get.top
 
 export const homeFeatureDi = {
   // ---------- data source ----------
-  homeSource: asFunction(
-    ({ contentService }: { contentService: ContentService }) =>
-      new HomeLocalSourceImpl(contentService),
-  ).singleton(),
+  homeSource: asFunction(() => new HomeRemoteSourceImpl()).singleton(),
 
   // ---------- repositorio ----------
   homeRepository: asFunction(
