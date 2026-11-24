@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-router";
 
 import { container } from "../../../../../core/di/container";
-import { AuthStorage } from "../../../../../core/mock/auth/auth.storage";
+import { getStoredTokens, getStoredUserId } from "../../../../../core/http/auth.session";
 import type { MediaCardContent } from "../../../../../core/ui/components/molecules/content.card";
 import { ListItem } from "../../../domain/entities/list.item";
 import type { MediaList } from "../../../domain/entities/media.list";
@@ -34,8 +34,7 @@ export function AddToListModal({ content, onClose }: Props) {
   const closeButton = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef(onClose);
-  const authStorage = container.resolve<AuthStorage>("authStorage");
-  const isGuest = !authStorage.getTokens() || !authStorage.getUserId();
+  const isGuest = !getStoredTokens() || !getStoredUserId();
 
   const [lists, setLists] = useState<MediaList[]>([]);
   const [isFavorite, setIsFavorite] = useState(false);

@@ -1,4 +1,4 @@
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { MediaList } from "../../domain/entities/media.list";
 import { ListItemModel } from "./list.item.model";
 import { toDate, toVisibility } from "./list.summary.model";

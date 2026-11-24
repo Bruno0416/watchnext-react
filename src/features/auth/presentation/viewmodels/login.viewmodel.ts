@@ -4,7 +4,7 @@ import type { LoginState } from "../models/auth.state";
 import {
   validateEmail,
   validateLogin,
-  validatePassword,
+  validateLoginPassword,
 } from "../validators/auth.validator";
 import {
   AuthException,
@@ -27,10 +27,10 @@ export function useLoginViewModel(login: Login): {
   validatePasswordField: () => void;
   submit: () => Promise<boolean>;
 } {
-  // crear estado
+  // ---------- estado del formulario ----------
   const [state, setState] = useState<LoginState>(initialLoginState);
 
-  // actualizar estado correo
+  // ---------- actualizacion y validacion de campos ----------
   function setEmail(email: string): void {
     setState((current) => ({
       ...current,
@@ -40,7 +40,6 @@ export function useLoginViewModel(login: Login): {
     }));
   }
 
-  // validar campo correo
   function validateEmailField(): void {
     const emailError = validateEmail(state.email);
 
@@ -59,9 +58,8 @@ export function useLoginViewModel(login: Login): {
     }));
   }
 
-  // validar campo contrasenia
   function validatePasswordField(): void {
-    const passwordError = validatePassword(state.password);
+    const passwordError = validateLoginPassword(state.password);
 
     setState((current) => ({
       ...current,
@@ -70,10 +68,10 @@ export function useLoginViewModel(login: Login): {
   }
 
   async function submit(): Promise<boolean> {
-    // 1. validar forumulario
+    // 1. validar el formulario
     const errors = validateLogin(state.email, state.password);
 
-    // 2. si hay errores actualizamos el estado
+    // 2. mostrar los errores de validacion
     if (errors.emailError || errors.passwordError) {
       setState((current) => ({
         ...current,
@@ -83,11 +81,12 @@ export function useLoginViewModel(login: Login): {
       return false;
     }
 
-    // 3. llamar al usecase si no hay errores
+    // 3. autenticar al usuario cuando los campos son validos
     try {
       await login.call(state.email, state.password);
       return true;
     } catch (e) {
+      // 4. mostrar el error recibido durante la autenticacion
       const message =
         e instanceof InvalidCredentialsException
           ? "Correo o contraseña incorrectos, inténtalo de nuevo"

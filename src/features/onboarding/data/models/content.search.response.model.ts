@@ -1,4 +1,4 @@
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { ContentSearchResponse } from "../../domain/entities/content.search.response";
 import { ContentSearchResultModel } from "./content.search.result.model";
 

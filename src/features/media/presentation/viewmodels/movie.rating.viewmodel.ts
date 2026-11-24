@@ -98,7 +98,7 @@ export function useMovieRatingViewModel(
     }));
     try {
       // 2. actualizar vista solo tras confirmar la eliminacion
-      await deleteMovieRating.call(state.rating.id);
+      await deleteMovieRating.call(tmdbId);
       setState((current) => ({
         ...current,
         rating: null,

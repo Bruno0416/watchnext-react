@@ -7,10 +7,10 @@ import {
   OnboardingServerException,
   OnboardingUnauthorizedException,
 } from "../errors/onboarding.exceptions";
-import type { ContentLocalSource } from "../source/content.local.source";
+import type { ContentRemoteSource } from "../source/content.remote.source";
 
 export class ContentRepositoryImpl implements ContentRepository {
-  constructor(private readonly source: ContentLocalSource) {}
+  constructor(private readonly source: ContentRemoteSource) {}
 
   async searchContent(query: string): Promise<ContentSearchResponse> {
     try {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MediaType } from "../../../../core/models/media.type";
+import { LoadingIndicator } from "../../../../core/ui/components/atoms/loading.indicator";
 import { AddToListModal } from "../../../lists/presentation/components/organisms/add.to.list.modal";
 import { Link, useParams } from "react-router";
 import { container } from "../../../../core/di/container";
@@ -52,7 +53,11 @@ function MediaContent({
             : "No se pudo cargar el contenido";
     return (
       <section className="media-page media-detail-status" aria-live="polite">
-        <h1>{title}</h1>
+        {state.status === "loading" ? (
+          <LoadingIndicator message={title} />
+        ) : (
+          <h1>{title}</h1>
+        )}
         {state.status === "error" && <p>{state.message}</p>}
         {state.status === "notFound" && (
           <p>No encontramos la película o serie solicitada.</p>

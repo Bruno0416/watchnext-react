@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { ProfileSummary } from "../../domain/entities/profile.summary";
 
 export class ProfileSummaryModel {

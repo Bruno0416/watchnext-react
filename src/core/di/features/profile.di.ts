@@ -1,8 +1,7 @@
 import { asFunction } from "awilix";
 
-import type { UserService } from "../../mock/user/user.service";
-import type { ProfileLocalSource } from "../../../features/profile/data/source/profile.local.source";
-import { ProfileLocalSourceImpl } from "../../../features/profile/data/source/profile.local.source.impl";
+import type { ProfileRemoteSource } from "../../../features/profile/data/source/profile.remote.source";
+import { ProfileRemoteSourceImpl } from "../../../features/profile/data/source/profile.remote.source.impl";
 import { ProfileRepositoryImpl } from "../../../features/profile/data/repositories/profile.repository.impl";
 import type { ProfileRepository } from "../../../features/profile/domain/repositories/profile.repository";
 
@@ -11,8 +10,8 @@ import { GetProfile } from "../../../features/profile/domain/usecases/get.profil
 import { UpdateProfile } from "../../../features/profile/domain/usecases/update.profile";
 import { RemoveFavorite } from "../../../features/profile/domain/usecases/remove.favorite";
 import { AddFavorite } from "../../../features/profile/domain/usecases/add.favorite";
-import type { SocialService } from "../../mock/user/social.service";
-import { type SocialSource, SocialSourceImpl } from "../../../features/profile/data/source/social.source";
+import type { SocialSource } from "../../../features/profile/data/source/social.source";
+import { SocialRemoteSourceImpl } from "../../../features/profile/data/source/social.remote.source.impl";
 import { SocialRepositoryImpl } from "../../../features/profile/data/repositories/social.repository.impl";
 import type { SocialRepository } from "../../../features/profile/domain/repositories/social.repository";
 import { GetFollowers } from "../../../features/profile/domain/usecases/get.followers";
@@ -27,14 +26,11 @@ type SR = { socialRepository: SocialRepository };
 
 export const profileFeatureDi = {
   // ------- data source -------
-  profileSource: asFunction(
-    ({ userService }: { userService: UserService }) =>
-      new ProfileLocalSourceImpl(userService),
-  ).singleton(),
+  profileSource: asFunction(() => new ProfileRemoteSourceImpl()).singleton(),
 
   // ------- repository -------
   profileRepository: asFunction(
-    ({ profileSource }: { profileSource: ProfileLocalSource }) =>
+    ({ profileSource }: { profileSource: ProfileRemoteSource }) =>
       new ProfileRepositoryImpl(profileSource),
   ).singleton(),
 
@@ -65,9 +61,7 @@ export const profileFeatureDi = {
   ).singleton(),
 
   // ------- seguidores (HU 11) -------
-  socialSource: asFunction(
-    ({ socialService }: { socialService: SocialService }) => new SocialSourceImpl(socialService),
-  ).singleton(),
+  socialSource: asFunction(() => new SocialRemoteSourceImpl()).singleton(),
   socialRepository: asFunction(
     ({ socialSource }: { socialSource: SocialSource }) => new SocialRepositoryImpl(socialSource),
   ).singleton(),

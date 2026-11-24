@@ -9,10 +9,10 @@ import {
   NetworkException,
   ServerException,
 } from "../errors/auth.exceptions";
-import type { AuthLocalSource } from "../source/auth.local.source";
+import type { AuthRemoteSource } from "../source/auth.remote.source";
 
 export class AuthRepositoryImpl implements AuthRepository {
-  constructor(private readonly source: AuthLocalSource) {}
+  constructor(private readonly source: AuthRemoteSource) {}
 
   async getSession(): Promise<AuthSession | null> {
     // 1. obtener sesion local
@@ -29,9 +29,9 @@ export class AuthRepositoryImpl implements AuthRepository {
 
   async login(email: string, password: string): Promise<AuthTokens> {
     try {
-      // 1. llamar al source para obtener los tokens
+      // 1. solicitar los tokens al origen de datos
       const tokens = await this.source.login(email, password);
-      // 2. devolver tokens convertidos a domain
+      // 2. convertir los tokens al dominio
       return tokens.toDomain();
     } catch (e) {
       // 3. atrapar error si es de tipo auth
@@ -116,9 +116,9 @@ export class AuthRepositoryImpl implements AuthRepository {
 
   async refresh(refreshTokens: string): Promise<AuthTokens> {
     try {
-      // 1. llamar al source para obtener los tokens
+      // 1. solicitar los tokens al origen de datos
       const tokens = await this.source.refresh(refreshTokens);
-      // 2. devolver tokens convertidos a domain
+      // 2. convertir los tokens al dominio
       return tokens.toDomain();
     } catch (e) {
       if (e instanceof AuthError) {
@@ -132,7 +132,7 @@ export class AuthRepositoryImpl implements AuthRepository {
 
   async logout(): Promise<void> {
     try {
-      this.source.logout();
+      await this.source.logout();
     } catch (e) {
       if (e instanceof AuthError) {
         throw this.mapError(e);
@@ -143,7 +143,7 @@ export class AuthRepositoryImpl implements AuthRepository {
     }
   }
 
-  // ---- helper ----
+  // --- traducir errores de autenticacion ---
   mapError(e: AuthError) {
     let statusCode = e.status;
 

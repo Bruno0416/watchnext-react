@@ -1,15 +1,16 @@
 // @vitest-environment jsdom
-import { beforeEach, expect, test, vi } from "vitest";
+import { afterEach, beforeEach, expect, test, vi } from "vitest";
 
-import { NewsDb } from "../../core/mock/news/news.db";
-import { NewsService } from "../../core/mock/news/news.service";
-import { NewsStorage } from "../../core/mock/news/news.storage";
+import { clearSession } from "../../core/http/auth.session";
 import { NewsNotFoundForEditException } from "../../features/news-management/data/errors/news.management.exceptions";
 import { NewsManagementRepositoryImpl } from "../../features/news-management/data/repositories/news.management.repository.impl";
-import { NewsManagementLocalSourceImpl } from "../../features/news-management/data/source/news.management.local.source.impl";
-import seed from "../../../public/data/news.json";
+import { NewsManagementRemoteSourceImpl } from "../../features/news-management/data/source/news.management.remote.source.impl";
+import { fakeBackend, fakeSession } from "../remote/fake.backend";
+
+type Noticia = Record<string, unknown>;
 
 let repo: NewsManagementRepositoryImpl;
+let noticias: Noticia[];
 
 const borrador = {
   title: "Cuatro títulos nuevos",
@@ -19,28 +20,49 @@ const borrador = {
 };
 
 beforeEach(() => {
-  // el mock de noticias lee /data/news.json y guarda en localStorage
-  vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify(seed))));
-  localStorage.clear();
-  const service = new NewsService(new NewsDb(new NewsStorage()));
-  repo = new NewsManagementRepositoryImpl(new NewsManagementLocalSourceImpl(service));
+  // 1. news-service falso en memoria con dos noticias
+  noticias = [
+    { id: "n1", slug: "vieja", title: "Vieja", summary: "s", content: "c", imageUrl: null, publishedAt: "2026-01-01T00:00:00Z" },
+    { id: "n2", slug: "nueva", title: "Nueva", summary: "s", content: "c", imageUrl: null, publishedAt: "2026-06-01T00:00:00Z" },
+  ];
+  fakeSession();
+  fakeBackend((method, path, body) => {
+    const id = path.split("/")[4];
+    const index = noticias.findIndex((n) => n.id === id);
+    if (method === "GET") return { status: 200, body: noticias };
+    if (method === "POST") {
+      const nueva = { ...(body as Noticia), id: `n${noticias.length + 1}` };
+      noticias.push(nueva);
+      return { status: 201, body: nueva };
+    }
+    if (index < 0) return { status: 404 };
+    if (method === "PUT") {
+      noticias[index] = { ...noticias[index], ...(body as Noticia) };
+      return { status: 200, body: noticias[index] };
+    }
+    noticias.splice(index, 1);
+    return { status: 204 };
+  });
+  repo = new NewsManagementRepositoryImpl(new NewsManagementRemoteSourceImpl());
+});
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+  clearSession();
 });
 
 test("HU14 datos leer: trae las noticias de la mas nueva a la mas vieja", async () => {
-  const noticias = await repo.getAll();
+  const lista = await repo.getAll();
 
-  expect(noticias.length).toBe(seed.articles.length);
-  for (let i = 1; i < noticias.length; i++) {
-    expect(noticias[i - 1].publishedAt.getTime()).toBeGreaterThanOrEqual(noticias[i].publishedAt.getTime());
-  }
+  expect(lista.map((n) => n.id)).toEqual(["n2", "n1"]);
 });
 
-test("HU14 datos crear: genera id, slug y fecha, y queda guardada", async () => {
+test("HU14 datos crear: manda el slug y la fecha, y queda guardada", async () => {
   const nueva = await repo.create(borrador);
 
-  expect(nueva.id.length).toBeGreaterThan(0);
   expect(nueva.slug).toBe("cuatro-titulos-nuevos");
   expect(nueva.imageUrl).toBe(null);
+  expect(Number.isNaN(nueva.publishedAt.getTime())).toBe(false);
   expect((await repo.getAll())[0].id).toBe(nueva.id);
 });
 

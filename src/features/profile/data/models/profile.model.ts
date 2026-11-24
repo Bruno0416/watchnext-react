@@ -1,4 +1,4 @@
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { ProfileVisibility } from "../../../../core/models/profile.visibility";
 import { Profile } from "../../domain/entities/profile";
 import { ProfileFavoriteModel } from "./profile.favorite.model";

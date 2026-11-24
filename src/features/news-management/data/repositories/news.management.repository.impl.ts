@@ -6,10 +6,10 @@ import {
   NewsNotFoundForEditException,
 } from "../errors/news.management.exceptions";
 import { ManagedNewsModel } from "../models/managed.news.model";
-import type { NewsManagementLocalSource } from "../source/news.management.local.source";
+import type { NewsManagementRemoteSource } from "../source/news.management.remote.source";
 
 export class NewsManagementRepositoryImpl implements NewsManagementRepository {
-  constructor(private readonly source: NewsManagementLocalSource) {}
+  constructor(private readonly source: NewsManagementRemoteSource) {}
 
   async getAll(): Promise<ManagedNews[]> {
     try {

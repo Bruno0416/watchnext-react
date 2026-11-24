@@ -68,7 +68,7 @@ test("register muestra errores para todos los campos invalidos", async () => {
     await screen.findByText("El correo no tiene un formato valido"),
   ).toBeInTheDocument();
   expect(
-    screen.getByText("La contraseña debe tener al menos 6 caracteres y como máximo 10"),
+    screen.getByText("La contraseña debe tener entre 8 y 60 caracteres"),
   ).toBeInTheDocument();
   expect(screen.getByText("Las contraseñas no coinciden")).toBeInTheDocument();
   expect(registerCall).not.toHaveBeenCalled();

@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { MediaType } from "../../../../core/models/media.type";
 import { ContentSearchResult } from "../../domain/entities/content.search.result";
 
@@ -20,7 +20,7 @@ export class ContentSearchResultModel {
       String(json.title ?? ""),
       String(json.overview ?? ""),
       String(json.posterPath ?? ""),
-      json.mediaType === "tv" ? MediaType.TV : MediaType.MOVIE,
+      String(json.mediaType).toLowerCase() === "tv" ? MediaType.TV : MediaType.MOVIE,
       typeof json.year === "number" ? json.year : null,
       Number(json.popularity ?? 0),
       Number(json.voteAverage ?? 0),

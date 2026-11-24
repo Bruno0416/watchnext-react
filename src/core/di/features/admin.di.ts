@@ -1,23 +1,18 @@
 import { asFunction } from "awilix";
 
-import type { AdminUsersService } from "../../mock/admin/admin.users.service";
-import type { NewsService } from "../../mock/news/news.service";
-import type { AdminLocalSource } from "../../../features/admin/data/source/admin.local.source";
-import { AdminLocalSourceImpl } from "../../../features/admin/data/source/admin.local.source.impl";
+import type { AdminRemoteSource } from "../../../features/admin/data/source/admin.remote.source";
+import { AdminRemoteSourceImpl } from "../../../features/admin/data/source/admin.remote.source.impl";
 import { AdminRepositoryImpl } from "../../../features/admin/data/repositories/admin.repository.impl";
 import type { AdminRepository } from "../../../features/admin/domain/repositories/admin.repository";
 import { GetAdminSummary } from "../../../features/admin/domain/usecases/get.admin.summary";
 
 export const adminFeatureDi = {
   // ------- data source -------
-  adminSource: asFunction(
-    ({ adminUsersService, newsService }: { adminUsersService: AdminUsersService; newsService: NewsService }) =>
-      new AdminLocalSourceImpl(adminUsersService, newsService),
-  ).singleton(),
+  adminSource: asFunction(() => new AdminRemoteSourceImpl()).singleton(),
 
   // ------- repository -------
   adminRepository: asFunction(
-    ({ adminSource }: { adminSource: AdminLocalSource }) => new AdminRepositoryImpl(adminSource),
+    ({ adminSource }: { adminSource: AdminRemoteSource }) => new AdminRepositoryImpl(adminSource),
   ).singleton(),
 
   // ------- usecases -------

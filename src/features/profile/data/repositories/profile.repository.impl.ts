@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import type { Profile } from "../../domain/entities/profile";
 import type { ProfileFavorite } from "../../domain/entities/profile.favorite";
 import type {
@@ -12,10 +12,10 @@ import {
   ProfileUnavailableException,
 } from "../errors/profile.exceptions";
 import { ProfileFavoriteModel } from "../models/profile.favorite.model";
-import type { ProfileLocalSource } from "../source/profile.local.source";
+import type { ProfileRemoteSource } from "../source/profile.remote.source";
 
 export class ProfileRepositoryImpl implements ProfileRepository {
-  constructor(private readonly source: ProfileLocalSource) {}
+  constructor(private readonly source: ProfileRemoteSource) {}
 
   async getMine(): Promise<Profile> {
     try {

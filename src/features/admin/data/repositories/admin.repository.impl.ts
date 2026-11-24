@@ -1,10 +1,10 @@
 import type { AdminSummary } from "../../domain/entities/admin.summary";
 import type { AdminRepository } from "../../domain/repositories/admin.repository";
 import { AdminSummaryUnavailableException } from "../errors/admin.exceptions";
-import type { AdminLocalSource } from "../source/admin.local.source";
+import type { AdminRemoteSource } from "../source/admin.remote.source";
 
 export class AdminRepositoryImpl implements AdminRepository {
-  constructor(private readonly source: AdminLocalSource) {}
+  constructor(private readonly source: AdminRemoteSource) {}
 
   async getSummary(): Promise<AdminSummary> {
     try {

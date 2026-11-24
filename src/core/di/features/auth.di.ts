@@ -1,10 +1,8 @@
 import { asFunction } from "awilix";
 
-import type { AuthService } from "../../mock/auth/auth.service";
-import { AuthStorage } from "../../mock/auth/auth.storage";
 import { AuthRepositoryImpl } from "../../../features/auth/data/repositories/auth.repository.impl";
-import type { AuthLocalSource } from "../../../features/auth/data/source/auth.local.source";
-import { AuthLocalSourceImpl } from "../../../features/auth/data/source/auth.local.source.impl";
+import type { AuthRemoteSource } from "../../../features/auth/data/source/auth.remote.source";
+import { AuthRemoteSourceImpl } from "../../../features/auth/data/source/auth.remote.source.impl";
 import { GetSession } from "../../../features/auth/domain/usecases/get.session";
 import { Login } from "../../../features/auth/domain/usecases/login";
 import { Logout } from "../../../features/auth/domain/usecases/logout";
@@ -17,19 +15,11 @@ import { VerifyResetCode } from "../../../features/auth/domain/usecases/verify.r
 
 export const authFeatureDi = {
   // ---------- data source ----------
-  authSource: asFunction(
-    ({
-      authService,
-      authStorage,
-    }: {
-      authService: AuthService;
-      authStorage: AuthStorage;
-    }) => new AuthLocalSourceImpl(authService, authStorage),
-  ).singleton(),
+  authSource: asFunction(() => new AuthRemoteSourceImpl()).singleton(),
 
   // ---------- repository ----------
   authRepository: asFunction(
-    ({ authSource }: { authSource: AuthLocalSource }) =>
+    ({ authSource }: { authSource: AuthRemoteSource }) =>
       new AuthRepositoryImpl(authSource),
   ).singleton(),
 

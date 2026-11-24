@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { ManagedNews, type NewsDraft } from "../../domain/entities/managed.news";
 
 // paso el json del NewsService a la entidad y el borrador a json

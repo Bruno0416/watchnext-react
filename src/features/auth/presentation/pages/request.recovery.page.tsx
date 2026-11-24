@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 
+import { AuthVisual } from "../components/atoms/auth.visual";
 import { container } from "../../../../core/di/container";
 import type { RequestPasswordReset } from "../../domain/usecases/request.password.reset";
 import { RequestRecoveryForm } from "../components/organisms/request.recovery.form";
@@ -55,7 +56,7 @@ export function RequestRecoveryPage() {
         </div>
       </section>
 
-      <section className="auth visual" aria-hidden="true" />
+      <AuthVisual />
     </main>
   );
 }

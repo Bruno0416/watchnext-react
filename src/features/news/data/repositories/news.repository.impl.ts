@@ -5,10 +5,10 @@ import {
   NewsNotFoundException,
   NewsUnavailableException,
 } from "../errors/news.exceptions";
-import type { NewsLocalSource } from "../source/news.local.source";
+import type { NewsRemoteSource } from "../source/news.remote.source";
 
 export class NewsRepositoryImpl implements NewsRepository {
-  constructor(private readonly source: NewsLocalSource) {}
+  constructor(private readonly source: NewsRemoteSource) {}
 
   async getAll(): Promise<NewsArticle[]> {
     try {

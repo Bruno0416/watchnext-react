@@ -8,7 +8,7 @@ export type NewsArticleProps = {
   publishedAt: Date;
 };
 
-// la noticia como la usa la app, sin nada del mock ni del json
+// la noticia como la usa la app, sin nada del json del backend
 export class NewsArticle {
   constructor(public readonly props: NewsArticleProps) {}
 

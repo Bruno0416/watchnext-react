@@ -5,7 +5,7 @@ import { container } from "../../../../core/di/container";
 import type { GetUserDetail } from "../../domain/usecases/get.user.detail";
 import type { UpdateUserIdentity } from "../../domain/usecases/update.user.identity";
 import type { DeleteUser } from "../../domain/usecases/delete.user";
-import type { AuthStorage } from "../../../../core/mock/auth/auth.storage";
+import { getStoredUserId } from "../../../../core/http/auth.session";
 import { UserStatus } from "../components/atoms/user.status";
 import { UserDetailCard } from "../components/organisms/user.detail.card";
 import { useUserDetailViewModel } from "../viewmodels/user.detail.viewmodel";
@@ -15,7 +15,6 @@ import "./style/user.management.page.css";
 export function UserDetailPage() {
   const { id = "" } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const authStorage = container.resolve<AuthStorage>("authStorage");
   const getUserDetail = container.resolve<GetUserDetail>("getUserDetail");
   const updateIdentity = container.resolve<UpdateUserIdentity>("updateUserIdentity");
   const deleteUser = container.resolve<DeleteUser>("deleteUser");
@@ -66,7 +65,7 @@ export function UserDetailPage() {
       {state.user && (
         <>
           <UserDetailCard key={`${state.user.userId}:${state.user.username}:${state.user.props.displayName}`} user={state.user} onSave={save} />
-          {state.user.userId !== authStorage.getUserId() && (
+          {state.user.userId !== getStoredUserId() && (
             <button type="button" className="btn btn-outline-danger um-delete-trigger" onClick={() => { setConfirming(true); setDeleteError(null); }}>
               <i className="bi bi-trash" aria-hidden="true" /> Eliminar usuario
             </button>

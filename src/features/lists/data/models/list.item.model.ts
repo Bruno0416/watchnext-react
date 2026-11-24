@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { MediaType } from "../../../../core/models/media.type";
 import { ListItem } from "../../domain/entities/list.item";
 
@@ -39,7 +39,7 @@ export class ListItemModel {
     );
   }
 
-  // el mock de search devuelve otro formato (year en vez de releaseDate), lo adapto aca
+  // el search-service devuelve otro formato (year en vez de releaseDate), lo adapto aca
   static fromSearchJson(json: JsonObject): ListItemModel {
     const year = toNumberOrNull(json.year);
 

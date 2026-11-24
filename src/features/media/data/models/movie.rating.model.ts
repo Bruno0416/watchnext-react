@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import type { MovieRating } from "../../domain/entities/movie.rating";
 
 export class MovieRatingModel {

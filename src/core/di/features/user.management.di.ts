@@ -1,8 +1,7 @@
 import { asFunction } from "awilix";
 
-import type { AdminUsersService } from "../../mock/admin/admin.users.service";
-import type { UserManagementLocalSource } from "../../../features/user-management/data/source/user.management.local.source";
-import { UserManagementLocalSourceImpl } from "../../../features/user-management/data/source/user.management.local.source.impl";
+import type { UserManagementRemoteSource } from "../../../features/user-management/data/source/user.management.remote.source";
+import { UserManagementRemoteSourceImpl } from "../../../features/user-management/data/source/user.management.remote.source.impl";
 import { UserManagementRepositoryImpl } from "../../../features/user-management/data/repositories/user.management.repository.impl";
 import type { UserManagementRepository } from "../../../features/user-management/domain/repositories/user.management.repository";
 
@@ -16,14 +15,11 @@ type R = { userManagementRepository: UserManagementRepository };
 
 export const userManagementFeatureDi = {
   // ------- data source -------
-  userManagementSource: asFunction(
-    ({ adminUsersService }: { adminUsersService: AdminUsersService }) =>
-      new UserManagementLocalSourceImpl(adminUsersService),
-  ).singleton(),
+  userManagementSource: asFunction(() => new UserManagementRemoteSourceImpl()).singleton(),
 
   // ------- repository -------
   userManagementRepository: asFunction(
-    ({ userManagementSource }: { userManagementSource: UserManagementLocalSource }) =>
+    ({ userManagementSource }: { userManagementSource: UserManagementRemoteSource }) =>
       new UserManagementRepositoryImpl(userManagementSource),
   ).singleton(),
 

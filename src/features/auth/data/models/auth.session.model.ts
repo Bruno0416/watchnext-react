@@ -1,5 +1,5 @@
 import { AuthSession } from "../../domain/entities/auth.session";
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { AuthTokensModel } from "./auth.tokens.model";
 
 export class AuthSessionModel {

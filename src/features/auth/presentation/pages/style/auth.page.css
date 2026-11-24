@@ -34,19 +34,26 @@
 
 /* ---------- fondo visual ---------- */
 .auth.visual {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
     min-width: 0;
     min-height: 100dvh;
 
-    background-image: image-set(
-        url("/imgs/auth/desktop.webp") 1x,
-        url("/imgs/auth/desktop4k.webp") 2x
-    );
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
     background-color: var(--th-color-surface);
+}
+
+.auth.visual img {
+    position: absolute;
+    inset: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ---------- saltar autenticacion ---------- */
@@ -204,11 +211,10 @@
 
         min-width: 100%;
         min-height: 0;
+    }
 
-        background-image: url("/imgs/auth/mobile.webp");
-
-        background-position: center 32%;
-        background-size: cover;
+    .auth.visual img {
+        object-position: center 32%;
     }
 
     .auth.panel {
@@ -241,8 +247,10 @@
 @media (max-width: 480px) {
     .auth.visual {
         flex-basis: clamp(160px, 24vh, 220px);
+    }
 
-        background-position: center 28%;
+    .auth.visual img {
+        object-position: center 28%;
     }
 
     .auth.panel {

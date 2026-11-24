@@ -9,10 +9,10 @@ import {
   UsernameAlreadyTakenException,
 } from "../errors/onboarding.exceptions";
 import { OnboardingRequestModel } from "../models/onboarding.request.model";
-import type { UserLocalSource } from "../source/user.local.source";
+import type { UserRemoteSource } from "../source/user.remote.source";
 
 export class UserRepositoryImpl implements UserRepository {
-  constructor(private readonly source: UserLocalSource) {}
+  constructor(private readonly source: UserRemoteSource) {}
 
   async checkOnboardingStatus(): Promise<boolean> {
     try {
