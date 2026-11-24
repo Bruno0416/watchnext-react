@@ -1,5 +1,6 @@
 import { Navigate, useNavigate, useSearchParams } from "react-router";
 
+import { AuthVisual } from "../components/atoms/auth.visual";
 import { container } from "../../../../core/di/container";
 import type { ResetPassword } from "../../domain/usecases/reset.password";
 import { ResetPasswordForm } from "../components/organisms/reset.password.form";
@@ -59,7 +60,7 @@ export function ResetPasswordPage() {
         </div>
       </section>
 
-      <section className="auth visual" aria-hidden="true" />
+      <AuthVisual />
     </main>
   );
 }

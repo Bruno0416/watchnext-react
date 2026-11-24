@@ -8,7 +8,9 @@ export class MovieRatingRepositoryImpl implements MovieRatingRepository {
 
   // --- traducir errores del origen de datos ---
   private translateError(error: unknown): MovieRatingError {
-    return error instanceof MovieRatingError ? error : new MovieRatingError("UNKNOWN");
+    return error instanceof MovieRatingError
+      ? error
+      : new MovieRatingError("UNKNOWN");
   }
 
   async getMyRating(tmdbId: number): Promise<MovieRating | null> {

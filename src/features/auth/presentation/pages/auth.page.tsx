@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
+import { AuthVisual } from "../components/atoms/auth.visual";
 import { container } from "../../../../core/di/container";
 import type { Login } from "../../domain/usecases/login";
 import type { Register } from "../../domain/usecases/register";
@@ -115,7 +116,7 @@ export function AuthPage() {
         </div>
       </section>
 
-      <section className="auth visual" aria-hidden="true" />
+      <AuthVisual />
     </main>
   );
 }

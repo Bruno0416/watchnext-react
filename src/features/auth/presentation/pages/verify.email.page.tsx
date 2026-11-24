@@ -1,5 +1,6 @@
 import { Navigate, useNavigate, useSearchParams } from "react-router";
 
+import { AuthVisual } from "../components/atoms/auth.visual";
 import { container } from "../../../../core/di/container";
 import { CodeType } from "../../domain/entities/code.type";
 import type { VerifyEmail } from "../../domain/usecases/verify.email";
@@ -87,7 +88,7 @@ export function VerifyEmailPage({ codeType }: VerifyEmailPageProps) {
         </div>
       </section>
 
-      <section className="auth visual" aria-hidden="true" />
+      <AuthVisual />
     </main>
   );
 }

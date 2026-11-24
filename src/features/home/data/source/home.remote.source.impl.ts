@@ -6,16 +6,35 @@ import { HomeContentModel } from "../models/home.content.model";
 import type { HomeRemoteSource } from "./home.remote.source";
 
 export class HomeRemoteSourceImpl implements HomeRemoteSource {
-  getNowPlayingMovies() { return this.getCategory("movies/now-playing", MediaType.MOVIE); }
-  getPopularMovies() { return this.getCategory("movies/popular", MediaType.MOVIE); }
-  getTopRatedMovies() { return this.getCategory("movies/top-rated", MediaType.MOVIE); }
-  getUpcomingMovies() { return this.getCategory("movies/upcoming", MediaType.MOVIE); }
-  getOnTheAir() { return this.getCategory("tv/on-the-air", MediaType.TV); }
-  getPopularTv() { return this.getCategory("tv/popular", MediaType.TV); }
-  getTopRatedTv() { return this.getCategory("tv/top-rated", MediaType.TV); }
-  getDiscoverTv() { return this.getCategory("tv/discover", MediaType.TV); }
+  getNowPlayingMovies() {
+    return this.getCategory("movies/now-playing", MediaType.MOVIE);
+  }
+  getPopularMovies() {
+    return this.getCategory("movies/popular", MediaType.MOVIE);
+  }
+  getTopRatedMovies() {
+    return this.getCategory("movies/top-rated", MediaType.MOVIE);
+  }
+  getUpcomingMovies() {
+    return this.getCategory("movies/upcoming", MediaType.MOVIE);
+  }
+  getOnTheAir() {
+    return this.getCategory("tv/on-the-air", MediaType.TV);
+  }
+  getPopularTv() {
+    return this.getCategory("tv/popular", MediaType.TV);
+  }
+  getTopRatedTv() {
+    return this.getCategory("tv/top-rated", MediaType.TV);
+  }
+  getDiscoverTv() {
+    return this.getCategory("tv/discover", MediaType.TV);
+  }
 
-  private async getCategory(path: string, type: MediaType): Promise<HomeContentModel[]> {
+  private async getCategory(
+    path: string,
+    type: MediaType,
+  ): Promise<HomeContentModel[]> {
     try {
       // 1. consultar la categoria de contenidos en el backend
       const json = await apiJson<JsonObject>(`/api/v1/content/${path}`, {

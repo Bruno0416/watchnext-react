@@ -1,4 +1,8 @@
-import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
+import {
+  apiJson,
+  apiVoid,
+  ApiHttpError,
+} from "../../../../core/http/api.client";
 import {
   clearSession,
   getStoredTokens,
@@ -38,24 +42,30 @@ export class AuthRemoteSourceImpl implements AuthRemoteSource {
   }
 
   register(email: string, password: string): Promise<void> {
-    return this.request(() => apiVoid("/api/v1/auth/register", {
-      method: "POST",
-      body: JSON.stringify({ email, password }),
-    }));
+    return this.request(() =>
+      apiVoid("/api/v1/auth/register", {
+        method: "POST",
+        body: JSON.stringify({ email, password }),
+      }),
+    );
   }
 
   verifyEmail(email: string, code: string): Promise<void> {
-    return this.request(() => apiVoid("/api/v1/auth/confirm-email", {
-      method: "POST",
-      body: JSON.stringify({ email, code }),
-    }));
+    return this.request(() =>
+      apiVoid("/api/v1/auth/confirm-email", {
+        method: "POST",
+        body: JSON.stringify({ email, code }),
+      }),
+    );
   }
 
   requestPasswordReset(email: string): Promise<void> {
-    return this.request(() => apiVoid("/api/v1/auth/password/request", {
-      method: "POST",
-      body: JSON.stringify({ email }),
-    }));
+    return this.request(() =>
+      apiVoid("/api/v1/auth/password/request", {
+        method: "POST",
+        body: JSON.stringify({ email }),
+      }),
+    );
   }
 
   verifyResetCode(email: string, code: string): Promise<string> {
@@ -70,10 +80,12 @@ export class AuthRemoteSourceImpl implements AuthRemoteSource {
   }
 
   resetPassword(resetToken: string, newPassword: string): Promise<void> {
-    return this.request(() => apiVoid("/api/v1/auth/password/reset", {
-      method: "POST",
-      body: JSON.stringify({ resetToken, newPassword }),
-    }));
+    return this.request(() =>
+      apiVoid("/api/v1/auth/password/reset", {
+        method: "POST",
+        body: JSON.stringify({ resetToken, newPassword }),
+      }),
+    );
   }
 
   refresh(refreshToken: string): Promise<AuthTokensModel> {
