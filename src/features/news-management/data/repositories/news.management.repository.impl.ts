@@ -2,6 +2,7 @@ import type { ManagedNews, NewsDraft } from "../../domain/entities/managed.news"
 import type { NewsManagementRepository } from "../../domain/repositories/news.management.repository";
 import { NewsManagementError } from "../errors/news.management.errors";
 import {
+  NewsDuplicateTitleException,
   NewsManagementUnavailableException,
   NewsNotFoundForEditException,
 } from "../errors/news.management.exceptions";
@@ -53,6 +54,8 @@ export class NewsManagementRepositoryImpl implements NewsManagementRepository {
   // ---- helper ----
   private mapError(e: unknown): Error {
     if (e instanceof NewsManagementError && e.status === 404) return new NewsNotFoundForEditException();
+    // el backend responde 409 cuando ya hay una noticia con ese titulo
+    if (e instanceof NewsManagementError && e.status === 409) return new NewsDuplicateTitleException();
     console.error(e);
     return new NewsManagementUnavailableException();
   }
