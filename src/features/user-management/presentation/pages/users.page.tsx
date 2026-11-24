@@ -72,7 +72,7 @@ export function UsersPage() {
               <input className="form-control" type="email" autoComplete="off" required maxLength={100} value={email} onChange={(e) => setEmail(e.target.value)} disabled={saving}/>
             </label>
             <label className="um field">Contraseña inicial
-              <input className="form-control" type="password" autoComplete="new-password" required minLength={6} maxLength={10} value={password} onChange={(e) => setPassword(e.target.value)} disabled={saving}/>
+              <input className="form-control" type="password" autoComplete="new-password" required minLength={8} maxLength={60} value={password} onChange={(e) => setPassword(e.target.value)} disabled={saving}/>
             </label>
             <label className="um field">Rol
               <select className="form-select" value={role} onChange={(e) => setNewRole(e.target.value as "USER" | "ADMIN")} disabled={saving}>

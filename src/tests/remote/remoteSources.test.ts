@@ -6,6 +6,7 @@ import { ListContentRemoteSourceImpl } from "../../features/lists/data/source/li
 import { ListError } from "../../features/lists/data/errors/list.errors";
 import { ProfileRemoteSourceImpl } from "../../features/profile/data/source/profile.remote.source.impl";
 import { AdminRemoteSourceImpl } from "../../features/admin/data/source/admin.remote.source.impl";
+import { UserManagementRemoteSourceImpl } from "../../features/user-management/data/source/user.management.remote.source.impl";
 import { clearSession, saveSessionTokens } from "../../core/http/auth.session";
 
 // token falso con id y rol, vence en mucho tiempo
@@ -75,8 +76,8 @@ describe("sources remotos", () => {
   it("admin: el resumen sale de usuarios y noticias del backend", async () => {
     fakeSession();
     const fetchMock = vi.fn((url: string) => {
-      const body = url.includes("/users/search")
-        ? { content: [{ userId: "u1", username: "admin" }, { userId: "u2", username: "ana" }] }
+      const body = url.includes("/auth/admin/users")
+        ? [{ userId: "u1", role: "ADMIN", onboardingCompleted: true }, { userId: "u2", role: "USER", onboardingCompleted: false }]
         : [{ id: "n1", publishedAt: "2026-11-01T00:00:00Z" }];
       return Promise.resolve(new Response(JSON.stringify(body), { status: 200 }));
     });
@@ -84,6 +85,24 @@ describe("sources remotos", () => {
     const summary = (await new AdminRemoteSourceImpl().getSummary()).toDomain();
     expect(summary.totalUsers).toBe(2);
     expect(summary.admins).toBe(1);
+    expect(summary.pendingOnboarding).toBe(1);
     expect(summary.totalNews).toBe(1);
+  });
+
+  it("usuarios: crear va al endpoint de admin del auth-service", async () => {
+    fakeSession();
+    const fetchMock = mockFetch(201, { userId: "u9", email: "nuevo@mail.com", role: "USER" });
+    const user = await new UserManagementRemoteSourceImpl().create({ email: "nuevo@mail.com", password: "clave1234", role: "USER" });
+    const [url, init] = fetchMock.mock.calls[0];
+    expect(String(url)).toContain("/api/v1/auth/admin/users");
+    expect(init.method).toBe("POST");
+    expect(user.toDomain().email).toBe("nuevo@mail.com");
+  });
+
+  it("usuarios: correo repetido muestra el mensaje del backend", async () => {
+    fakeSession();
+    mockFetch(409, {});
+    await expect(new UserManagementRemoteSourceImpl().create({ email: "a@mail.com", password: "clave1234", role: "USER" }))
+      .rejects.toThrow("Ya existe una cuenta con ese correo.");
   });
 });
