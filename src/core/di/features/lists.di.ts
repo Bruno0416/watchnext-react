@@ -1,12 +1,9 @@
 import { asFunction } from "awilix";
 
-import type { ListService } from "../../mock/list/list.service";
-import type { SearchService } from "../../mock/search/search.service";
-
 import type { ListLocalSource } from "../../../features/lists/data/source/list.local.source";
-import { ListLocalSourceImpl } from "../../../features/lists/data/source/list.local.source.impl";
+import { ListRemoteSourceImpl } from "../../../features/lists/data/source/list.remote.source.impl";
 import type { ListContentSource } from "../../../features/lists/data/source/list.content.source";
-import { ListContentSourceImpl } from "../../../features/lists/data/source/list.content.source.impl";
+import { ListContentRemoteSourceImpl } from "../../../features/lists/data/source/list.content.remote.source.impl";
 import { ListRepositoryImpl } from "../../../features/lists/data/repositories/list.repository.impl";
 import { ListContentRepositoryImpl } from "../../../features/lists/data/repositories/list.content.repository.impl";
 import type { ListRepository } from "../../../features/lists/domain/repositories/list.repository";
@@ -22,15 +19,9 @@ import { SearchListContent } from "../../../features/lists/domain/usecases/searc
 
 export const listsFeatureDi = {
   // ------- data sources -------
-  listSource: asFunction(
-    ({ listService }: { listService: ListService }) =>
-      new ListLocalSourceImpl(listService),
-  ).singleton(),
+  listSource: asFunction(() => new ListRemoteSourceImpl()).singleton(),
 
-  listContentSource: asFunction(
-    ({ searchService }: { searchService: SearchService }) =>
-      new ListContentSourceImpl(searchService),
-  ).singleton(),
+  listContentSource: asFunction(() => new ListContentRemoteSourceImpl()).singleton(),
 
   // ------- repositories -------
   listRepository: asFunction(

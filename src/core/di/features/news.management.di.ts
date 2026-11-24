@@ -1,8 +1,7 @@
 import { asFunction } from "awilix";
 
-import type { NewsService } from "../../mock/news/news.service";
 import type { NewsManagementLocalSource } from "../../../features/news-management/data/source/news.management.local.source";
-import { NewsManagementLocalSourceImpl } from "../../../features/news-management/data/source/news.management.local.source.impl";
+import { NewsManagementRemoteSourceImpl } from "../../../features/news-management/data/source/news.management.remote.source.impl";
 import { NewsManagementRepositoryImpl } from "../../../features/news-management/data/repositories/news.management.repository.impl";
 import type { NewsManagementRepository } from "../../../features/news-management/domain/repositories/news.management.repository";
 
@@ -15,10 +14,7 @@ type R = { newsManagementRepository: NewsManagementRepository };
 
 export const newsManagementFeatureDi = {
   // ------- data source -------
-  newsManagementSource: asFunction(
-    ({ newsService }: { newsService: NewsService }) =>
-      new NewsManagementLocalSourceImpl(newsService),
-  ).singleton(),
+  newsManagementSource: asFunction(() => new NewsManagementRemoteSourceImpl()).singleton(),
 
   // ------- repository -------
   newsManagementRepository: asFunction(
