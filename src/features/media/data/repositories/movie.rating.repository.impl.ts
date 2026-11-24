@@ -1,19 +1,14 @@
-import { FeedbackRatingError } from "../../../../core/mock/feedback/feedback.rating.error";
 import type { MovieRating } from "../../domain/entities/movie.rating";
 import { MovieRatingError } from "../../domain/errors/movie.rating.error";
 import type { MovieRatingRepository } from "../../domain/repositories/movie.rating.repository";
-import type { MovieRatingLocalSource } from "../source/movie.rating.local.source";
+import type { MovieRatingRemoteSource } from "../source/movie.rating.remote.source";
 
 export class MovieRatingRepositoryImpl implements MovieRatingRepository {
-  constructor(private readonly source: MovieRatingLocalSource) {}
+  constructor(private readonly source: MovieRatingRemoteSource) {}
 
   // --- traducir errores del origen de datos ---
   private translateError(error: unknown): MovieRatingError {
-    return error instanceof MovieRatingError
-      ? error
-      : error instanceof FeedbackRatingError
-        ? new MovieRatingError(error.code)
-        : new MovieRatingError("UNKNOWN");
+    return error instanceof MovieRatingError ? error : new MovieRatingError("UNKNOWN");
   }
 
   async getMyRating(tmdbId: number): Promise<MovieRating | null> {

@@ -1,9 +1,9 @@
 import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
 import { OnboardingError } from "../errors/onboarding.errors";
 import type { OnboardingRequestModel } from "../models/onboarding.request.model";
-import type { UserLocalSource } from "./user.local.source";
+import type { UserRemoteSource } from "./user.remote.source";
 
-export class UserRemoteSourceImpl implements UserLocalSource {
+export class UserRemoteSourceImpl implements UserRemoteSource {
   private async request<T>(operation: () => Promise<T>): Promise<T> {
     try {
       return await operation();

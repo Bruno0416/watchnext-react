@@ -1,9 +1,9 @@
 import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
 import { MovieRatingError } from "../../domain/errors/movie.rating.error";
 import { MovieRatingModel } from "../models/movie.rating.model";
-import type { MovieRatingLocalSource } from "./movie.rating.local.source";
+import type { MovieRatingRemoteSource } from "./movie.rating.remote.source";
 
-export class MovieRatingRemoteSourceImpl implements MovieRatingLocalSource {
+export class MovieRatingRemoteSourceImpl implements MovieRatingRemoteSource {
   private params(tmdbId: number): string {
     return new URLSearchParams({ tmdbId: String(tmdbId), mediaType: "MOVIE" }).toString();
   }

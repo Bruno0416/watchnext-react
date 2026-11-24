@@ -2,15 +2,15 @@ import type { HomeContent } from "../../domain/entities/home.content";
 import type { HomeRepository } from "../../domain/repositories/home.repository";
 import { HomeError } from "../errors/home.errors";
 import { NetworkException, ServerException } from "../errors/home.exceptions";
-import type { HomeLocalSource } from "../source/home.local.source";
+import type { HomeRemoteSource } from "../source/home.remote.source";
 
 export class HomeRepositoryImpl implements HomeRepository {
-  constructor(private readonly localSource: HomeLocalSource) {}
+  constructor(private readonly remoteSource: HomeRemoteSource) {}
   // ---------- peliculas ----------
   async getNowPlayingMovies(): Promise<HomeContent[]> {
     try {
       // 1. obtener las peliculas en cartelera
-      const movies = await this.localSource.getNowPlayingMovies();
+      const movies = await this.remoteSource.getNowPlayingMovies();
 
       // 2. devolver peliculas domain
       return movies.map((movie) => movie.toDomain());
@@ -25,7 +25,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getPopularMovies(): Promise<HomeContent[]> {
     try {
-      const movies = await this.localSource.getPopularMovies();
+      const movies = await this.remoteSource.getPopularMovies();
 
       return movies.map((movie) => movie.toDomain());
     } catch (e) {
@@ -39,7 +39,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getTopRatedMovies(): Promise<HomeContent[]> {
     try {
-      const movies = await this.localSource.getTopRatedMovies();
+      const movies = await this.remoteSource.getTopRatedMovies();
 
       return movies.map((movie) => movie.toDomain());
     } catch (e) {
@@ -53,7 +53,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getUpcomingMovies(): Promise<HomeContent[]> {
     try {
-      const movies = await this.localSource.getUpcomingMovies();
+      const movies = await this.remoteSource.getUpcomingMovies();
 
       return movies.map((movie) => movie.toDomain());
     } catch (e) {
@@ -69,7 +69,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   // ---------- series ----------
   async getOnTheAir(): Promise<HomeContent[]> {
     try {
-      const series = await this.localSource.getOnTheAir();
+      const series = await this.remoteSource.getOnTheAir();
 
       return series.map((serie) => serie.toDomain());
     } catch (e) {
@@ -83,7 +83,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getPopularTv(): Promise<HomeContent[]> {
     try {
-      const series = await this.localSource.getPopularTv();
+      const series = await this.remoteSource.getPopularTv();
 
       return series.map((serie) => serie.toDomain());
     } catch (e) {
@@ -97,7 +97,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getTopRatedTv(): Promise<HomeContent[]> {
     try {
-      const series = await this.localSource.getTopRatedTv();
+      const series = await this.remoteSource.getTopRatedTv();
 
       return series.map((serie) => serie.toDomain());
     } catch (e) {
@@ -111,7 +111,7 @@ export class HomeRepositoryImpl implements HomeRepository {
   }
   async getDiscoverTv(): Promise<HomeContent[]> {
     try {
-      const series = await this.localSource.getDiscoverTv();
+      const series = await this.remoteSource.getDiscoverTv();
 
       return series.map((serie) => serie.toDomain());
     } catch (e) {

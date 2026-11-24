@@ -1,12 +1,12 @@
 import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { UserManagementError } from "../errors/user.management.errors";
 import { AdminUserModel } from "../models/admin.user.model";
-import type { UserManagementLocalSource } from "./user.management.local.source";
+import type { UserManagementRemoteSource } from "./user.management.remote.source";
 
 const base = "/api/v1/auth/admin/users";
 
-export class UserManagementRemoteSourceImpl implements UserManagementLocalSource {
+export class UserManagementRemoteSourceImpl implements UserManagementRemoteSource {
   private async request<T>(operation: () => Promise<T>, messages: Record<number, string> = {}): Promise<T> {
     // 1. ejecutar la operacion del origen remoto
     try {

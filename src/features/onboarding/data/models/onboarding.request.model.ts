@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import type { OnboardingData } from "../../domain/entities/onboarding.data";
 
 export class OnboardingRequestModel {

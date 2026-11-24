@@ -5,10 +5,10 @@ import {
   AdminUserNotFoundException,
   UserManagementUnavailableException,
 } from "../errors/user.management.exceptions";
-import type { UserManagementLocalSource } from "../source/user.management.local.source";
+import type { UserManagementRemoteSource } from "../source/user.management.remote.source";
 
 export class UserManagementRepositoryImpl implements UserManagementRepository {
-  constructor(private readonly source: UserManagementLocalSource) {}
+  constructor(private readonly source: UserManagementRemoteSource) {}
 
   async search(query: string): Promise<AdminUser[]> {
     try {

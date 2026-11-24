@@ -1,6 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { NewsLocalSource } from "../../../features/news/data/source/news.local.source";
+import type { NewsRemoteSource } from "../../../features/news/data/source/news.remote.source";
 import { NewsRemoteSourceImpl } from "../../../features/news/data/source/news.remote.source.impl";
 import { NewsRepositoryImpl } from "../../../features/news/data/repositories/news.repository.impl";
 import type { NewsRepository } from "../../../features/news/domain/repositories/news.repository";
@@ -14,7 +14,7 @@ export const newsFeatureDi = {
 
   // ------- repository -------
   newsRepository: asFunction(
-    ({ newsSource }: { newsSource: NewsLocalSource }) =>
+    ({ newsSource }: { newsSource: NewsRemoteSource }) =>
       new NewsRepositoryImpl(newsSource),
   ).singleton(),
 

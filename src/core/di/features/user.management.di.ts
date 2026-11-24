@@ -1,6 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { UserManagementLocalSource } from "../../../features/user-management/data/source/user.management.local.source";
+import type { UserManagementRemoteSource } from "../../../features/user-management/data/source/user.management.remote.source";
 import { UserManagementRemoteSourceImpl } from "../../../features/user-management/data/source/user.management.remote.source.impl";
 import { UserManagementRepositoryImpl } from "../../../features/user-management/data/repositories/user.management.repository.impl";
 import type { UserManagementRepository } from "../../../features/user-management/domain/repositories/user.management.repository";
@@ -19,7 +19,7 @@ export const userManagementFeatureDi = {
 
   // ------- repository -------
   userManagementRepository: asFunction(
-    ({ userManagementSource }: { userManagementSource: UserManagementLocalSource }) =>
+    ({ userManagementSource }: { userManagementSource: UserManagementRemoteSource }) =>
       new UserManagementRepositoryImpl(userManagementSource),
   ).singleton(),
 

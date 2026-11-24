@@ -1,10 +1,10 @@
 import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { NewsError } from "../errors/news.errors";
 import { NewsArticleModel } from "../models/news.article.model";
-import type { NewsLocalSource } from "./news.local.source";
+import type { NewsRemoteSource } from "./news.remote.source";
 
-export class NewsRemoteSourceImpl implements NewsLocalSource {
+export class NewsRemoteSourceImpl implements NewsRemoteSource {
   private async request<T>(operation: () => Promise<T>): Promise<T> {
     // 1. ejecutar la operacion del origen remoto
     try {

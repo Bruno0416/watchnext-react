@@ -1,11 +1,11 @@
 import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { MediaType } from "../../../../core/models/media.type";
 import { MediaNotFoundError } from "../errors/media.errors";
 import { MediaDetailModel } from "../models/media.detail.model";
-import type { MediaLocalSource } from "./media.local.source";
+import type { MediaRemoteSource } from "./media.remote.source";
 
-export class MediaRemoteSourceImpl implements MediaLocalSource {
+export class MediaRemoteSourceImpl implements MediaRemoteSource {
   async getMediaDetail(mediaType: MediaType, tmdbId: number): Promise<MediaDetailModel> {
     const section = mediaType === MediaType.MOVIE ? "movies" : "tv";
     const path = `/api/v1/content/${section}/${tmdbId}`;

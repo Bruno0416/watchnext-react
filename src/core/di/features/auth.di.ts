@@ -1,7 +1,7 @@
 import { asFunction } from "awilix";
 
 import { AuthRepositoryImpl } from "../../../features/auth/data/repositories/auth.repository.impl";
-import type { AuthLocalSource } from "../../../features/auth/data/source/auth.local.source";
+import type { AuthRemoteSource } from "../../../features/auth/data/source/auth.remote.source";
 import { AuthRemoteSourceImpl } from "../../../features/auth/data/source/auth.remote.source.impl";
 import { GetSession } from "../../../features/auth/domain/usecases/get.session";
 import { Login } from "../../../features/auth/domain/usecases/login";
@@ -19,7 +19,7 @@ export const authFeatureDi = {
 
   // ---------- repository ----------
   authRepository: asFunction(
-    ({ authSource }: { authSource: AuthLocalSource }) =>
+    ({ authSource }: { authSource: AuthRemoteSource }) =>
       new AuthRepositoryImpl(authSource),
   ).singleton(),
 

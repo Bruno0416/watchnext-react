@@ -1,6 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { ListLocalSource } from "../../../features/lists/data/source/list.local.source";
+import type { ListRemoteSource } from "../../../features/lists/data/source/list.remote.source";
 import { ListRemoteSourceImpl } from "../../../features/lists/data/source/list.remote.source.impl";
 import type { ListContentSource } from "../../../features/lists/data/source/list.content.source";
 import { ListContentRemoteSourceImpl } from "../../../features/lists/data/source/list.content.remote.source.impl";
@@ -25,7 +25,7 @@ export const listsFeatureDi = {
 
   // ------- repositories -------
   listRepository: asFunction(
-    ({ listSource }: { listSource: ListLocalSource }) =>
+    ({ listSource }: { listSource: ListRemoteSource }) =>
       new ListRepositoryImpl(listSource),
   ).singleton(),
 

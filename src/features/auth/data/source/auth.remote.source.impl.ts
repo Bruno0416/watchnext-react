@@ -9,9 +9,9 @@ import {
 import { AuthError } from "../errors/auth.errors";
 import { AuthSessionModel } from "../models/auth.session.model";
 import { AuthTokensModel } from "../models/auth.tokens.model";
-import type { AuthLocalSource } from "./auth.local.source";
+import type { AuthRemoteSource } from "./auth.remote.source";
 
-export class AuthRemoteSourceImpl implements AuthLocalSource {
+export class AuthRemoteSourceImpl implements AuthRemoteSource {
   private async request<T>(operation: () => Promise<T>): Promise<T> {
     // 1. ejecutar la operacion del origen remoto
     try {

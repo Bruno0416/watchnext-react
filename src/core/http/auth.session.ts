@@ -1,4 +1,4 @@
-import { AuthStorage } from "../mock/auth/auth.storage";
+import { AuthStorage } from "./auth.storage";
 
 export type TokenResponse = {
   token: string;
@@ -30,7 +30,7 @@ export function readAccessClaims(token: string): AccessClaims | null {
   }
 }
 
-// ---------- persistencia compatible con las features mock ----------
+// ---------- persistencia de la sesion en el navegador ----------
 export function saveSessionTokens(tokens: TokenResponse): void {
   // 1. validar usuario y rol antes de guardar la sesion
   const claims = readAccessClaims(tokens.token);
@@ -57,4 +57,8 @@ export function getStoredTokens(): TokenResponse | null {
 
 export function getStoredRole(): string | null {
   return storage.getRole();
+}
+
+export function getStoredUserId(): string | null {
+  return storage.getUserId();
 }

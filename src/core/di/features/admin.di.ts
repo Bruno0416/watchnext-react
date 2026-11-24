@@ -1,6 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { AdminLocalSource } from "../../../features/admin/data/source/admin.local.source";
+import type { AdminRemoteSource } from "../../../features/admin/data/source/admin.remote.source";
 import { AdminRemoteSourceImpl } from "../../../features/admin/data/source/admin.remote.source.impl";
 import { AdminRepositoryImpl } from "../../../features/admin/data/repositories/admin.repository.impl";
 import type { AdminRepository } from "../../../features/admin/domain/repositories/admin.repository";
@@ -12,7 +12,7 @@ export const adminFeatureDi = {
 
   // ------- repository -------
   adminRepository: asFunction(
-    ({ adminSource }: { adminSource: AdminLocalSource }) => new AdminRepositoryImpl(adminSource),
+    ({ adminSource }: { adminSource: AdminRemoteSource }) => new AdminRepositoryImpl(adminSource),
   ).singleton(),
 
   // ------- usecases -------

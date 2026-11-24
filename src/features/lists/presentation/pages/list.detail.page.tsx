@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 
 import { container } from "../../../../core/di/container";
-import type { AuthStorage } from "../../../../core/mock/auth/auth.storage";
+import { getStoredTokens, getStoredUserId } from "../../../../core/http/auth.session";
 import type { AddListItem } from "../../domain/usecases/add.list.item";
 import type { DeleteList } from "../../domain/usecases/delete.list";
 import type { GetList } from "../../domain/usecases/get.list";
@@ -63,8 +63,7 @@ export function ListDetailPage() {
   }
 
   const list = state.list;
-  const authStorage = container.resolve<AuthStorage>("authStorage");
-  const canEdit = Boolean(list && authStorage.getTokens() && list.userId === authStorage.getUserId());
+  const canEdit = Boolean(list && getStoredTokens() && list.userId === getStoredUserId());
 
   return (
     <section className="lists page">

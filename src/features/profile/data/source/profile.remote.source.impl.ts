@@ -1,10 +1,10 @@
 import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { ProfileError } from "../errors/profile.errors";
 import { ProfileModel } from "../models/profile.model";
-import type { ProfileLocalSource } from "./profile.local.source";
+import type { ProfileRemoteSource } from "./profile.remote.source";
 
-export class ProfileRemoteSourceImpl implements ProfileLocalSource {
+export class ProfileRemoteSourceImpl implements ProfileRemoteSource {
   private async request<T>(operation: () => Promise<T>): Promise<T> {
     // 1. ejecutar la operacion del origen remoto
     try {

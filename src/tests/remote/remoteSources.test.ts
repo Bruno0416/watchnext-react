@@ -8,13 +8,8 @@ import { ProfileRemoteSourceImpl } from "../../features/profile/data/source/prof
 import { AdminRemoteSourceImpl } from "../../features/admin/data/source/admin.remote.source.impl";
 import { SocialRemoteSourceImpl } from "../../features/profile/data/source/social.remote.source.impl";
 import { UserManagementRemoteSourceImpl } from "../../features/user-management/data/source/user.management.remote.source.impl";
-import { clearSession, saveSessionTokens } from "../../core/http/auth.session";
-
-// token falso con id y rol, vence en mucho tiempo
-function fakeSession() {
-  const payload = btoa(JSON.stringify({ id: "u1", role: "ADMIN", exp: 9999999999 }));
-  saveSessionTokens({ token: `x.${payload}.y`, refreshToken: "r" });
-}
+import { clearSession } from "../../core/http/auth.session";
+import { fakeSession } from "./fake.backend";
 
 // respuesta falsa del gateway
 function mockFetch(status: number, body: unknown) {

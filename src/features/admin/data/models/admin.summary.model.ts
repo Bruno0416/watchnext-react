@@ -1,4 +1,4 @@
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { AdminSummary } from "../../domain/entities/admin.summary";
 
 // junto lo que devuelven los dos servicios y saco los numeros

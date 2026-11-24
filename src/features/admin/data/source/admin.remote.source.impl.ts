@@ -1,10 +1,10 @@
 import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonArray } from "../../../../core/mock/json.types";
+import type { JsonArray } from "../../../../core/http/json.types";
 import { AdminError } from "../errors/admin.errors";
 import { AdminSummaryModel } from "../models/admin.summary.model";
-import type { AdminLocalSource } from "./admin.local.source";
+import type { AdminRemoteSource } from "./admin.remote.source";
 
-export class AdminRemoteSourceImpl implements AdminLocalSource {
+export class AdminRemoteSourceImpl implements AdminRemoteSource {
   async getSummary(): Promise<AdminSummaryModel> {
     try {
       // 1. pedir las cuentas (con rol y perfil) y las noticias a la vez

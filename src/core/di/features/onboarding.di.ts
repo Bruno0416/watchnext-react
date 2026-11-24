@@ -1,8 +1,8 @@
 import { asFunction } from "awilix";
 import { ContentRemoteSourceImpl } from "../../../features/onboarding/data/source/content.remote.source.impl";
 import { UserRemoteSourceImpl } from "../../../features/onboarding/data/source/user.remote.source.impl";
-import type { ContentLocalSource } from "../../../features/onboarding/data/source/content.local.source";
-import type { UserLocalSource } from "../../../features/onboarding/data/source/user.local.source";
+import type { ContentRemoteSource } from "../../../features/onboarding/data/source/content.remote.source";
+import type { UserRemoteSource } from "../../../features/onboarding/data/source/user.remote.source";
 import { ContentRepositoryImpl } from "../../../features/onboarding/data/repositories/content.repository.impl";
 import { UserRepositoryImpl } from "../../../features/onboarding/data/repositories/user.repository.impl";
 import { CheckOnboardingStatus } from "../../../features/onboarding/domain/usecases/check.onboarding.status";
@@ -18,12 +18,12 @@ export const onboardingFeatureDi = {
 
   // ---------- repositories ----------
   contentRepository: asFunction(
-    ({ contentSource }: { contentSource: ContentLocalSource }) =>
+    ({ contentSource }: { contentSource: ContentRemoteSource }) =>
       new ContentRepositoryImpl(contentSource),
   ),
 
   userRepository: asFunction(
-    ({ userSource }: { userSource: UserLocalSource }) =>
+    ({ userSource }: { userSource: UserRemoteSource }) =>
       new UserRepositoryImpl(userSource),
   ),
 

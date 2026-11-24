@@ -9,10 +9,10 @@ import {
   NetworkException,
   ServerException,
 } from "../errors/auth.exceptions";
-import type { AuthLocalSource } from "../source/auth.local.source";
+import type { AuthRemoteSource } from "../source/auth.remote.source";
 
 export class AuthRepositoryImpl implements AuthRepository {
-  constructor(private readonly source: AuthLocalSource) {}
+  constructor(private readonly source: AuthRemoteSource) {}
 
   async getSession(): Promise<AuthSession | null> {
     // 1. obtener sesion local

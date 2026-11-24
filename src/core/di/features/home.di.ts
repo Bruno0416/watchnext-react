@@ -1,7 +1,7 @@
 import { asFunction } from "awilix";
 
 import { HomeRemoteSourceImpl } from "../../../features/home/data/source/home.remote.source.impl";
-import type { HomeLocalSource } from "../../../features/home/data/source/home.local.source";
+import type { HomeRemoteSource } from "../../../features/home/data/source/home.remote.source";
 import { HomeRepositoryImpl } from "../../../features/home/data/repositories/home.repository.impl";
 import type { HomeRepository } from "../../../features/home/domain/repositories/home.repository";
 
@@ -21,7 +21,7 @@ export const homeFeatureDi = {
 
   // ---------- repositorio ----------
   homeRepository: asFunction(
-    ({ homeSource }: { homeSource: HomeLocalSource }) =>
+    ({ homeSource }: { homeSource: HomeRemoteSource }) =>
       new HomeRepositoryImpl(homeSource),
   ).singleton(),
 

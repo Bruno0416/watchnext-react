@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { MediaType } from "../../../../core/models/media.type";
 import { ContentSearchResult } from "../../domain/entities/content.search.result";
 

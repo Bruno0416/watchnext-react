@@ -1,13 +1,13 @@
 import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
 import { getStoredTokens, readAccessClaims } from "../../../../core/http/auth.session";
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { ListError } from "../errors/list.errors";
 import type { ListItemModel } from "../models/list.item.model";
 import { ListSummaryModel } from "../models/list.summary.model";
 import { MediaListModel } from "../models/media.list.model";
-import type { ListLocalSource } from "./list.local.source";
+import type { ListRemoteSource } from "./list.remote.source";
 
-export class ListRemoteSourceImpl implements ListLocalSource {
+export class ListRemoteSourceImpl implements ListRemoteSource {
   private async request<T>(operation: () => Promise<T>): Promise<T> {
     // 1. ejecutar la operacion del origen remoto
     try {

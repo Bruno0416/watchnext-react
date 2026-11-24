@@ -1,5 +1,5 @@
 import { apiFetch, apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonArray, JsonObject } from "../../../../core/mock/json.types";
+import type { JsonArray, JsonObject } from "../../../../core/http/json.types";
 import { ProfileError } from "../errors/profile.errors";
 import { ProfileSummaryModel } from "../models/profile.summary.model";
 import type { SocialSource } from "./social.source";

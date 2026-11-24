@@ -1,10 +1,10 @@
 import { asFunction } from "awilix";
 import { MediaRemoteSourceImpl } from "../../../features/media/data/source/media.remote.source.impl";
-import type { MediaLocalSource } from "../../../features/media/data/source/media.local.source";
+import type { MediaRemoteSource } from "../../../features/media/data/source/media.remote.source";
 import { MediaRepositoryImpl } from "../../../features/media/data/repositories/media.repository.impl";
 import type { MediaRepository } from "../../../features/media/domain/repositories/media.repository";
 import { GetMediaDetail } from "../../../features/media/domain/usecases/get.media.detail";
-import type { MovieRatingLocalSource } from "../../../features/media/data/source/movie.rating.local.source";
+import type { MovieRatingRemoteSource } from "../../../features/media/data/source/movie.rating.remote.source";
 import { MovieRatingRemoteSourceImpl } from "../../../features/media/data/source/movie.rating.remote.source.impl";
 import type { MovieRatingRepository } from "../../../features/media/domain/repositories/movie.rating.repository";
 import { MovieRatingRepositoryImpl } from "../../../features/media/data/repositories/movie.rating.repository.impl";
@@ -18,7 +18,7 @@ export const mediaFeatureDi = {
 
   // ---------- repositorio ----------
   mediaRepository: asFunction(
-    ({ mediaSource }: { mediaSource: MediaLocalSource }) =>
+    ({ mediaSource }: { mediaSource: MediaRemoteSource }) =>
       new MediaRepositoryImpl(mediaSource),
   ).singleton(),
 
@@ -32,7 +32,7 @@ export const mediaFeatureDi = {
   movieRatingSource: asFunction(() => new MovieRatingRemoteSourceImpl()).singleton(),
 
   movieRatingRepository: asFunction(
-    ({ movieRatingSource }: { movieRatingSource: MovieRatingLocalSource }) =>
+    ({ movieRatingSource }: { movieRatingSource: MovieRatingRemoteSource }) =>
       new MovieRatingRepositoryImpl(movieRatingSource),
   ).singleton(),
 

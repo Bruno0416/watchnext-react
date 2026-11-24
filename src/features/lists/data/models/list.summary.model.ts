@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { ListSummary } from "../../domain/entities/list.summary";
 import { ListVisibility } from "../../domain/entities/list.visibility";
 

@@ -15,10 +15,10 @@ import {
   ListUnavailableException,
 } from "../errors/list.exceptions";
 import { ListItemModel } from "../models/list.item.model";
-import type { ListLocalSource } from "../source/list.local.source";
+import type { ListRemoteSource } from "../source/list.remote.source";
 
 export class ListRepositoryImpl implements ListRepository {
-  constructor(private readonly source: ListLocalSource) {}
+  constructor(private readonly source: ListRemoteSource) {}
 
   async getAll(): Promise<ListSummary[]> {
     try {
@@ -66,7 +66,7 @@ export class ListRepositoryImpl implements ListRepository {
 
   async addItem(id: string, item: ListItem): Promise<MediaList> {
     try {
-      // el mock no revisa repetidos, asi que lo reviso yo antes de agregar
+      // reviso repetidos antes de agregar para avisar en la vista
       const current = await this.source.getById(id);
 
       if (current.toDomain().has(item.tmdbId, item.mediaType)) {

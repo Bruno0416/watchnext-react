@@ -1,6 +1,6 @@
 import { asFunction } from "awilix";
 
-import type { ProfileLocalSource } from "../../../features/profile/data/source/profile.local.source";
+import type { ProfileRemoteSource } from "../../../features/profile/data/source/profile.remote.source";
 import { ProfileRemoteSourceImpl } from "../../../features/profile/data/source/profile.remote.source.impl";
 import { ProfileRepositoryImpl } from "../../../features/profile/data/repositories/profile.repository.impl";
 import type { ProfileRepository } from "../../../features/profile/domain/repositories/profile.repository";
@@ -30,7 +30,7 @@ export const profileFeatureDi = {
 
   // ------- repository -------
   profileRepository: asFunction(
-    ({ profileSource }: { profileSource: ProfileLocalSource }) =>
+    ({ profileSource }: { profileSource: ProfileRemoteSource }) =>
       new ProfileRepositoryImpl(profileSource),
   ).singleton(),
 

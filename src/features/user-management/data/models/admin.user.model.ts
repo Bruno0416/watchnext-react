@@ -1,4 +1,4 @@
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { AdminUser, AdminUserRole } from "../../domain/entities/admin.user";
 
 // json del AdminUsersService -> entidad

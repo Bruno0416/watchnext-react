@@ -1,11 +1,11 @@
 import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { MediaType } from "../../../../core/models/media.type";
 import { HomeError } from "../errors/home.errors";
 import { HomeContentModel } from "../models/home.content.model";
-import type { HomeLocalSource } from "./home.local.source";
+import type { HomeRemoteSource } from "./home.remote.source";
 
-export class HomeRemoteSourceImpl implements HomeLocalSource {
+export class HomeRemoteSourceImpl implements HomeRemoteSource {
   getNowPlayingMovies() { return this.getCategory("movies/now-playing", MediaType.MOVIE); }
   getPopularMovies() { return this.getCategory("movies/popular", MediaType.MOVIE); }
   getTopRatedMovies() { return this.getCategory("movies/top-rated", MediaType.MOVIE); }

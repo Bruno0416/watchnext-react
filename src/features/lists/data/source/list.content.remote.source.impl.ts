@@ -1,5 +1,5 @@
 import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
-import type { JsonObject } from "../../../../core/mock/json.types";
+import type { JsonObject } from "../../../../core/http/json.types";
 import { ListError } from "../errors/list.errors";
 import { ListItemModel } from "../models/list.item.model";
 import type { ListContentSource } from "./list.content.source";
