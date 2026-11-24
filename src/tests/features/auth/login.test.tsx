@@ -53,16 +53,12 @@ test("login muestra errores para correo y contrasena invalidos", async () => {
   fireEvent.change(screen.getByPlaceholderText("correo@ejemplo.com"), {
     target: { value: "correo-invalido" },
   });
-  fireEvent.change(screen.getByPlaceholderText("Ingresa tu contraseña"), {
-    target: { value: "123" },
-  });
   fireEvent.click(screen.getByRole("button", { name: "Iniciar sesión" }));
 
   expect(
     await screen.findByText("El correo no tiene un formato valido"),
   ).toBeInTheDocument();
-  expect(
-    screen.getByText("La contraseña debe tener al menos 6 caracteres y como máximo 10"),
-  ).toBeInTheDocument();
+  // en el login solo se pide la clave, el largo lo valida el registro
+  expect(screen.getByText("La contraseña es obligatoria")).toBeInTheDocument();
   expect(loginCall).not.toHaveBeenCalled();
 });
