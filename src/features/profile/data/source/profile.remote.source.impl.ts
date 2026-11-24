@@ -1,4 +1,4 @@
-import { apiJson, ApiHttpError } from "../../../../core/http/api.client";
+import { apiJson, apiVoid, ApiHttpError } from "../../../../core/http/api.client";
 import type { JsonObject } from "../../../../core/mock/json.types";
 import { ProfileError } from "../errors/profile.errors";
 import { ProfileModel } from "../models/profile.model";
@@ -32,6 +32,22 @@ export class ProfileRemoteSourceImpl implements ProfileLocalSource {
   }
 
   async update(request: JsonObject): Promise<ProfileModel> {
+    // 1. los favoritos tienen su propio endpoint en el backend
+    if (Array.isArray(request.favorites)) {
+      const items = (request.favorites as JsonObject[]).map((item, index) => ({
+        tmdbId: item.tmdbId,
+        mediaType: String(item.mediaType ?? "").toUpperCase(),
+        position: typeof item.position === "number" ? item.position : index,
+      }));
+      await this.request(() => apiVoid("/api/v1/users/me/favorites", {
+        method: "PUT",
+        auth: "required",
+        body: JSON.stringify({ items }),
+      }));
+      return this.getMine();
+    }
+
+    // 2. el resto de datos del perfil
     const json = await this.request(() => apiJson<JsonObject>("/api/v1/users/me", {
       method: "PUT",
       auth: "required",
