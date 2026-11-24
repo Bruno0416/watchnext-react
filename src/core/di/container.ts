@@ -18,6 +18,8 @@ import { onboardingFeatureDi } from "./features/onboarding.di";
 import { homeFeatureDi } from "./features/home.di";
 import { mediaFeatureDi } from "./features/media.di";
 import { extraMockDi } from "./mock/extra.di";
+import { apiDi } from "./api/api.di";
+import { USE_API } from "../api/api.config";
 
 export const container = createContainer({
   injectionMode: InjectionMode.PROXY,
@@ -34,6 +36,9 @@ container.register({
   ...searchMockDi,
   ...userMockDi,
   ...extraMockDi,
+
+  // ---------- microservicios (reemplazan a los mocks con VITE_USE_API=true) ----------
+  ...(USE_API ? apiDi : {}),
 
   // ---------- features ----------
   ...authFeatureDi,

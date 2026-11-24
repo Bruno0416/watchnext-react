@@ -16,7 +16,8 @@ export class ApiHttpError extends Error {
 type AuthMode = "none" | "optional" | "required";
 export type ApiRequestOptions = RequestInit & { auth?: AuthMode };
 
-const baseUrl = "http://localhost:8080";
+// gateway configurable por .env (VITE_GATEWAY_URL); por defecto el puerto 8080
+const baseUrl = import.meta.env.VITE_GATEWAY_URL ?? "http://localhost:8080";
 
 // --- compartir la renovacion entre peticiones simultaneas ---
 let pendingRefresh: Promise<string> | null = null;
