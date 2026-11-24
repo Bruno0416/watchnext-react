@@ -18,26 +18,18 @@ export class SocialRemoteSourceImpl implements SocialSource {
   }
 
   // ---------- consultas ----------
-  async getFollowers(username: string): Promise<ProfileSummaryModel[]> {
-    // 1. el backend solo entrega los seguidores propios
-    return (await this.isMe(username)) ? this.page("/api/v1/users/me/followers") : [];
+  getFollowers(username: string): Promise<ProfileSummaryModel[]> {
+    return this.page(`/api/v1/users/${encodeURIComponent(username)}/followers`);
   }
 
-  async getFollowing(username: string): Promise<ProfileSummaryModel[]> {
-    return (await this.isMe(username)) ? this.page("/api/v1/users/me/following") : [];
+  getFollowing(username: string): Promise<ProfileSummaryModel[]> {
+    return this.page(`/api/v1/users/${encodeURIComponent(username)}/following`);
   }
 
-  async getRelationship(username: string): Promise<JsonObject> {
-    // 1. armar la relacion con mis seguidos y mis seguidores
-    const [following, followers] = await Promise.all([
-      this.page("/api/v1/users/me/following"),
-      this.page("/api/v1/users/me/followers"),
-    ]);
-    return {
-      following: following.some((item) => item.username === username),
-      requested: false,
-      followsYou: followers.some((item) => item.username === username),
-    };
+  getRelationship(username: string): Promise<JsonObject> {
+    return this.request(() =>
+      apiJson<JsonObject>(`/api/v1/users/${encodeURIComponent(username)}/relationship`, { auth: "required" }),
+    );
   }
 
   getMyFollowRequests(): Promise<ProfileSummaryModel[]> {
@@ -79,16 +71,15 @@ export class SocialRemoteSourceImpl implements SocialSource {
 
   // ---------- helpers ----------
   private async page(path: string): Promise<ProfileSummaryModel[]> {
-    // 1. el backend pagina; pedir una pagina grande y quedarse con la lista
-    const json = await this.request(() => apiJson<JsonObject>(`${path}?size=100`, { auth: "required" }));
-    const content = Array.isArray(json.content) ? (json.content as JsonArray) : [];
-    return content.map((item) => ProfileSummaryModel.fromJson(item));
-  }
-
-  private async isMe(username: string): Promise<boolean> {
-    const me = await this.request(() =>
-      apiJson<JsonObject>("/api/v1/users/me", { auth: "required" }),
-    );
-    return me.username === username;
+    try {
+      // 1. el backend pagina; pedir una pagina grande y quedarse con la lista
+      const json = await this.request(() => apiJson<JsonObject>(`${path}?size=100`, { auth: "required" }));
+      const content = Array.isArray(json.content) ? (json.content as JsonArray) : [];
+      return content.map((item) => ProfileSummaryModel.fromJson(item));
+    } catch (error) {
+      // 2. perfil privado que no sigo: no se ve la lista
+      if (error instanceof ProfileError && error.status === 403) return [];
+      throw error;
+    }
   }
 }

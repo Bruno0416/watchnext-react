@@ -72,7 +72,7 @@ export class ListRemoteSourceImpl implements ListLocalSource {
     await this.request(() => apiVoid(`/api/v1/list/add-items/${encodeURIComponent(id)}`, {
       method: "POST",
       auth: "required",
-      body: JSON.stringify({ items: [{ tmdbId: item.tmdbId, mediaType: item.mediaType }] }),
+      body: JSON.stringify({ items: [{ tmdbId: item.tmdbId, mediaType: item.mediaType.toUpperCase() }] }),
     }));
     return this.getById(id);
   }
@@ -81,7 +81,7 @@ export class ListRemoteSourceImpl implements ListLocalSource {
     await this.request(() => apiVoid(`/api/v1/list/remove-items/${encodeURIComponent(id)}`, {
       method: "DELETE",
       auth: "required",
-      body: JSON.stringify({ items: [{ tmdbId, mediaType }] }),
+      body: JSON.stringify({ items: [{ tmdbId, mediaType: mediaType.toUpperCase() }] }),
     }));
     return this.getById(id);
   }

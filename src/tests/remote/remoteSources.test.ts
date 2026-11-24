@@ -6,6 +6,7 @@ import { ListContentRemoteSourceImpl } from "../../features/lists/data/source/li
 import { ListError } from "../../features/lists/data/errors/list.errors";
 import { ProfileRemoteSourceImpl } from "../../features/profile/data/source/profile.remote.source.impl";
 import { AdminRemoteSourceImpl } from "../../features/admin/data/source/admin.remote.source.impl";
+import { SocialRemoteSourceImpl } from "../../features/profile/data/source/social.remote.source.impl";
 import { UserManagementRemoteSourceImpl } from "../../features/user-management/data/source/user.management.remote.source.impl";
 import { clearSession, saveSessionTokens } from "../../core/http/auth.session";
 
@@ -49,7 +50,12 @@ describe("sources remotos", () => {
 
   it("buscador de listas: lee content.results", async () => {
     const fetchMock = mockFetch(200, {
-      content: { results: [{ id: 550, media_type: "movie", title: "Fight Club" }] },
+      content: {
+        results: [
+          { tmdbId: 550, mediaType: "movie", title: "Fight Club" },
+          { tmdbId: 287, mediaType: "person", title: "Brad Pitt" },
+        ],
+      },
     });
     const items = await new ListContentRemoteSourceImpl().search("fight");
     expect(String(fetchMock.mock.calls[0][0])).toContain("/api/v1/search?q=fight");
@@ -87,6 +93,21 @@ describe("sources remotos", () => {
     expect(summary.admins).toBe(1);
     expect(summary.pendingOnboarding).toBe(1);
     expect(summary.totalNews).toBe(1);
+  });
+
+  it("seguidores: perfil privado que no sigo devuelve lista vacia", async () => {
+    fakeSession();
+    const fetchMock = mockFetch(403, {});
+    const followers = await new SocialRemoteSourceImpl().getFollowers("privado");
+    expect(String(fetchMock.mock.calls[0][0])).toContain("/api/v1/users/privado/followers");
+    expect(followers).toEqual([]);
+  });
+
+  it("seguidores: la relacion sale del endpoint del backend", async () => {
+    fakeSession();
+    mockFetch(200, { following: false, requested: true, followsYou: true });
+    const relation = await new SocialRemoteSourceImpl().getRelationship("ana");
+    expect(relation).toEqual({ following: false, requested: true, followsYou: true });
   });
 
   it("usuarios: crear va al endpoint de admin del auth-service", async () => {
